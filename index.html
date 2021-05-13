@@ -26,7 +26,10 @@
         <div class="content-video">
           <div class="content-video-source">
             <video loop="true" autoplay="autoplay" muted>
-              <source src="assets/img/video-principal.mp4" type="video/mp4" />
+              <source
+                src="https://drive.google.com/uc?export=download&id=1PpJagn3IiPJe5X6G9tE5NLdGkgRAJ-bU"
+                type="video/mp4"
+              />
             </video>
           </div>
           <!-- <div class="content-video-data">
@@ -66,7 +69,10 @@
       <div class="section-2">
         <div class="main-video">
           <video id="video_main_carousel" controls>
-            <source id="video_main" src="assets/img/video-principal.mp4" />
+            <source
+              id="video_main"
+              src="https://drive.google.com/uc?export=download&id=1tLq_lXN5nqBiv2HET46-_VSjS_X642uF"
+            />
           </video>
         </div>
         <div class="section-2-title">RETOS EN LA MANUFACTURA</div>
@@ -74,7 +80,7 @@
           <div class="video-carousel-item">
             <div
               class="video-carousel-item-video"
-              onclick="changeVideo('carousel-optimizar-producción')"
+              onclick="changeVideo('1PpJagn3IiPJe5X6G9tE5NLdGkgRAJ-bU')"
             >
               <img
                 src="assets/img/metales.jpg"
@@ -279,7 +285,8 @@
 
     <script>
       function changeVideo(e) {
-        document.getElementById("video_main").src = "assets/img/" + e + ".mp4";
+        document.getElementById("video_main").src =
+          "https://drive.google.com/uc?export=download&id=" + e;
         document.getElementById("video_main_carousel").load();
       }
     </script>
