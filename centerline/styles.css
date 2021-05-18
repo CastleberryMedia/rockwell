@@ -1,0 +1,108 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+  *{
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: -1px;
+}
+
+button{border-radius: 3px;}
+
+
+
+header{
+  
+    background-color: #ffffff;
+    display: flex;
+    height: 84px;
+
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-logo {
+    margin-left: 40px;
+}
+
+
+
+.header-separator{
+    border: 1px solid rgb(171, 171, 171);
+   margin-right: 40px;
+    height: 25px;
+}
+
+.header-options{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.header-search img{width: 45%;}
+
+.header-button{
+    border: 1px solid rgb(197,26,68);
+    background-color: #ffffff;
+    height: 36px;
+    text-transform: uppercase;
+    color:rgb(197,26,68);
+    cursor: pointer;
+}
+
+
+
+footer{
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+    position: absolute;
+    bottom: 0;
+}
+
+.social-media {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.social-media-title {
+    margin: 0 auto;
+    width: 250px;
+    color: rgb(197,26,68);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.dots{
+    margin-left: 160px
+}
+
+.footer-copyright{
+    background-image: url("http://drive.google.com/uc?export=view&id=1BAfgTYsGduiJK9R6j2XbWmwx8rrPSzYG");
+    height: 77px;
+    width: 820px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}

@@ -1,22 +1,5 @@
 
 
-/* @font-face {
-    font-family: "Barlow-Bold";
-    src: url("assets/fonts/Barlow-Bold.otf");
-  }
-  @font-face {
-    font-family: "Barlow-Light";
-    src: url("assets/fonts/Barlow-Light.otf");
-  }
-  @font-face {
-    font-family: "Barlow-Medium";
-    src: url("assets/fonts/Barlow-Medium.otf");
-  }
-  @font-face {
-    font-family: "Barlow-Regular";
-    src: url("http://drive.google.com/uc?export=view&id=1R-H-do2vsUtHj0LiV7_B1IhQhuvERoOs");
-  } */
-
   @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
   *{
