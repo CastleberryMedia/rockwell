@@ -76,10 +76,57 @@ a {
 }
 
 .background {
+    width: 100%;
+}
+.section-main {
+    padding-top: 84px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.section-main .content {
     position: absolute;
+    right: 0;
+    display: flex;
+    width: 100%;
+}
+
+.section-main .img-main {
+    width: 100%;
+}
+.section-main .img-img-product {
+    width: 100%;
+}
+.section-main .img-product {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.section-main .img-product p {
+    margin-top: 40px;
+    color: rgb(144, 144, 145);
+    font-weight: 100;
+}
+
+.section-main .img-product,
+.section-main .title-buttons {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.section-main .content .title {
+    font-size: 32px;
+    margin: 20px 0 20px 0;
+}
+.section-main .content .logo-allen {
+    width: 13em;
 }
 
 .general-description {
+    position: relative;
+    display: flex;
+}
+.general-description .columns {
+    position: absolute;
     display: flex;
 }
 
@@ -122,9 +169,13 @@ a {
     margin-bottom: 30px;
 }
 
-.aditional-information,
-.documentation {
-    padding: 20px 100px 20px 100px;
+.aditional-information {
+    position: relative;
+    display: flex;
+}
+.aditional-information .content-information {
+    position: absolute;
+    margin: 20px 100px;
 }
 
 .aditional-information .subtitle {
@@ -141,6 +192,9 @@ a {
     flex-basis: 0;
     margin-left: 10px;
 }
+.aditional-information .card .img-card {
+    width: 100%;
+}
 
 .aditional-information .card .category {
     text-transform: uppercase;
@@ -153,9 +207,32 @@ a {
     font-size: 12px;
 }
 
+.documentation {
+    position: relative;
+    display: flex;
+    height: 36em;
+    overflow: hidden;
+}
+
 .documentation .table {
     width: 100%;
     border-collapse: collapse;
+}
+.documentation .doc-content {
+    position: absolute;
+}
+
+.documentation .background {
+    height: 50em;
+}
+
+.doc-content {
+    width: 100%;
+}
+
+.documentation .main-title,
+.table-main {
+    margin: 20px 100px 20px 100px;
 }
 
 .documentation .table thead {
@@ -177,7 +254,6 @@ a {
 .documentation .table tbody .center {
     text-align: center;
 }
-
 footer {
     height: 250px;
     position: relative;
