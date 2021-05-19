@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+
+* {
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    /*    letter-spacing: -1px; */
+}
+
+button {
+    border-radius: 3px;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    height: 84px;
+    z-index: 100;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-logo {
+    margin-left: 40px;
+}
+
+.header-separator {
+    border: 1px solid rgb(171, 171, 171);
+    margin-right: 40px;
+    height: 25px;
+}
+
+.header-options {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.header-search img {
+    width: 45%;
+}
+
+.header-button {
+    border: 1px solid rgb(197, 26, 68);
+    background-color: #ffffff;
+    height: 36px;
+    text-transform: uppercase;
+    color: rgb(197, 26, 68);
+    cursor: pointer;
+}
+
+.button-white {
+    border: 1px solid rgb(197, 26, 68);
+    background-color: #ffffff;
+    height: 36px;
+    text-transform: uppercase;
+    color: rgb(197, 26, 68);
+    cursor: pointer;
+    letter-spacing: 0;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-red {
+    border: 1px solid rgb(197, 26, 68);
+    background-color: rgb(197, 26, 68);
+    height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 0;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-text {
+    color: rgb(104, 186, 230);
+}
+
+.background {
+    width: 100%;
+}
+
+.general-description {
+    display: flex;
+    position: relative;
+}
+
+.section-main {
+    padding-top: 84px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.section-main .content {
+    position: absolute;
+    right: 0;
+    display: flex;
+    width: 100%;
+}
+
+.section-main .img-main {
+    width: 100%;
+}
+.section-main .img-img-product {
+    width: 100%;
+}
+.section-main .img-product {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.section-main .img-product,
+.section-main .title-buttons {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.section-main .content .title {
+    font-size: 32px;
+    margin: 20px 0 20px 0;
+}
+.section-main .content .logo-allen {
+    width: 13em;
+}
+
+.general-description .description,
+.general-description .spec {
+    width: 50%;
+}
+
+.general-description .spec {
+    margin: 20px 100px 20px 50px;
+}
+
+.general-description .description {
+    margin: 20px 50px 20px 100px;
+}
+.general-description .all-content {
+    display: flex;
+    position: absolute;
+}
+
+.general-description .description .subtitle {
+    font-size: 25px;
+}
+
+.main-title {
+    color: rgb(197, 26, 68);
+    font-size: 30px;
+}
+.general-description .subtitle {
+    margin: 20px 0 10px 0;
+}
+.general-description ul {
+    margin-top: 10px;
+}
+.general-description li,
+.general-description p {
+    color: rgb(144, 144, 145);
+    font-weight: 100;
+}
+
+.general-description .aditional .title {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.general-description .aditional p {
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.selection-products {
+    padding: 20px 100px 20px 100px;
+}
+
+.documentation {
+    position: relative;
+    display: flex;
+    height: 27em;
+    overflow: hidden;
+}
+
+.documentation .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.documentation .doc-content {
+    position: absolute;
+}
+
+.documentation .background {
+    height: 50em;
+}
+
+.doc-content {
+    width: 100%;
+}
+
+.documentation .main-title,
+.table-main {
+    margin: 20px 100px 20px 100px;
+}
+
+.documentation .table thead {
+    background-color: rgb(197, 26, 68);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.documentation .table thead tr {
+    height: 55px;
+}
+.documentation .table tbody tr {
+    color: rgb(144, 144, 145);
+    font-weight: 100;
+    height: 40px;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(178, 178, 179);
+}
+
+.documentation .table tbody .center {
+    text-align: center;
+}
+
+.selection-products {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.selection-products .text,
+.selection-products .button {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.selection-products .button {
+    margin-left: 100px;
+}
+
+.selection-products .text .subtitle {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.selection-products .text .subtitle {
+    font-size: 25px;
+    margin-top: 10px;
+}
+.selection-products .text p {
+    color: rgb(144, 144, 145);
+    font-weight: 100;
+}
+
+.related-products {
+    position: relative;
+    display: flex;
+    height: 40em;
+    overflow: hidden;
+}
+.related-products img.imgcard {
+    width: 100%;
+    border: 1px solid #000000;
+}
+.related-products .related-content {
+    position: absolute;
+    padding: 40px 100px 40px 100px;
+}
+
+.related-products .cards {
+    display: flex;
+    margin-top: 50px;
+}
+.related-products .card {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-left: 10px;
+}
+
+.related-products .card .category {
+    text-transform: uppercase;
+    color: rgb(144, 144, 145);
+    font-weight: 100;
+    margin-top: 10px;
+}
+.related-products .card a {
+    color: rgb(104, 186, 230);
+    font-size: 12px;
+}
+
+footer {
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+footer .background {
+    height: 67em;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 0;
+}
+
+.social-media {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.social-media-title {
+    margin: 0 auto;
+    width: 250px;
+    color: rgb(197, 26, 68);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-copyright {
+    background-image: url("http://drive.google.com/uc?export=view&id=1BAfgTYsGduiJK9R6j2XbWmwx8rrPSzYG");
+    height: 77px;
+    width: 820px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
