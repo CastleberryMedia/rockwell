@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
 
 * {
     margin: 0;
@@ -56,8 +57,43 @@ a {
     cursor: pointer;
 }
 
+.button-red {
+    border: 1px solid rgb(197, 26, 68);
+    background-color: rgb(197, 26, 68);
+    height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 0;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .section-1 {
     height: 950px;
+}
+
+.content-video {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.content-video-data {
+    position: absolute;
+    right: 200px;
+}
+
+.content-video-data-title {
+    font-size: 50px;
+}
+
+.content-video-data-subtitle {
+    font-size: 22px;
+    margin: 15px 0;
+    font-weight: 100;
 }
 
 .content-video-source video {
