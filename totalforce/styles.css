@@ -362,11 +362,22 @@ a {
     color: blue;
 }
 
+.dots {
+    margin-left: 160px;
+}
+
 footer {
     height: 250px;
     position: relative;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+}
+
+footer .background {
+    height: 67em;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-content {
@@ -391,10 +402,6 @@ footer {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 15px;
-}
-
-.dots {
-    margin-left: 160px;
 }
 
 .footer-copyright {

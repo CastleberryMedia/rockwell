@@ -71,6 +71,20 @@ a {
     align-items: center;
 }
 
+.button-red {
+    border: 1px solid rgb(197, 26, 68);
+    background-color: rgb(197, 26, 68);
+    height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 0;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .blue-text {
     color: rgb(104, 186, 230);
 }
