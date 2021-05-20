@@ -107,10 +107,10 @@ a {
 }
 .content-video-description-subtitle {
     width: 680px;
-    font-family: "Barlow", sans-serif;
+    font-weight: 100;
 }
 .content-video-description-subtitle p {
-    font-family: "Barlow", sans-serif;
+    font-weight: 100;
 }
 
 .content-video-description {
