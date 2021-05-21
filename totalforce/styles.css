@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap");
 
 * {
     margin: 0;
@@ -24,6 +25,11 @@ header {
 a {
     color: #ffffff;
     text-decoration: none;
+    cursor: pointer;
+}
+
+b {
+    font-weight: 700;
 }
 
 .header-logo {
@@ -109,6 +115,12 @@ a {
     width: 680px;
     font-weight: 100;
 }
+
+.content-video-description-subtitle a {
+    color: rgb(104, 186, 230);
+    text-decoration: none;
+}
+
 .content-video-description-subtitle p {
     font-weight: 100;
 }
@@ -147,6 +159,8 @@ a {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    flex-grow: 2;
+    flex-basis: 0;
 }
 
 .section-2 .video-carousel-title {
@@ -156,6 +170,8 @@ a {
     align-items: center;
     padding: 0 20px;
     font-size: 20px;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .section-2 .video-carousel-item-video .img-carousel {
@@ -189,6 +205,15 @@ a {
     color: #ffffff;
 }
 
+.text-footer {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 100px;
+    color: #ffffff;
+    margin-bottom: 9px;
+}
+
 .statistics .title {
     text-align: center;
     font-size: 30px;
@@ -201,6 +226,7 @@ a {
 .statistics .subtitle {
     font-size: 20px;
     text-align: center;
+    font-weight: 100;
 }
 .statistics .item {
     width: 25%;
@@ -311,6 +337,7 @@ a {
 
 .img-section {
     height: 100%;
+    width: 100%;
 }
 
 .section-7 {
