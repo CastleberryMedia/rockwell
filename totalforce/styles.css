@@ -214,6 +214,9 @@ b {
     right: 100px;
     color: #ffffff;
     margin-bottom: 9px;
+    font-size: 13px;
+    letter-spacing: normal;
+    font-weight: 100;
 }
 
 .statistics .title {
@@ -441,4 +444,13 @@ footer .background {
     justify-content: center;
     align-items: center;
     color: #ffffff;
+}
+
+img.logo-footer {
+    width: 150px;
+}
+.separator {
+    border: 0.5px solid #ffffff;
+    height: 21px;
+    margin: 0 20px 0 20px;
 }
