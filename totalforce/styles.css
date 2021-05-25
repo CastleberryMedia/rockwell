@@ -63,6 +63,11 @@ b {
     text-transform: uppercase;
     color: rgb(197, 26, 68);
     cursor: pointer;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .button-red {
