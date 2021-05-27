@@ -189,6 +189,7 @@ a {
 .aditional-information {
     position: relative;
     display: flex;
+    height: 700px;
 }
 .aditional-information .content-information {
     position: absolute;
@@ -208,6 +209,16 @@ a {
     flex-grow: 1;
     flex-basis: 0;
     margin-left: 10px;
+}
+.aditional-information .card .card-video {
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.aditional-information .img-video {
+    min-height: 197px;
+    display: flex;
+    align-items: center;
 }
 .aditional-information .card .img-card {
     width: 100%;
