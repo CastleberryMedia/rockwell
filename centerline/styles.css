@@ -65,10 +65,11 @@ a {
     color: rgb(197, 26, 68);
     cursor: pointer;
     letter-spacing: 0;
-    padding: 14px;
+    padding: 0 14px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: fit-content;
 }
 
 .button-red {
@@ -79,10 +80,12 @@ a {
     color: #ffffff;
     cursor: pointer;
     letter-spacing: 0;
-    padding: 14px;
+    padding: 0 14px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 300;
+    width: fit-content;
 }
 
 .blue-text {
