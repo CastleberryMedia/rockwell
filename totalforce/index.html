@@ -655,7 +655,10 @@ on the container’s size */
         right: 30px;
       }
     }
-    @media (max-width: 400px) {
+    @media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) {
 
       .header-options {
     display: none;
