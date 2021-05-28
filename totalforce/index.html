@@ -2,7 +2,9 @@
 
 <head>
 
- 
+
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+
 
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
@@ -32,7 +34,7 @@
     }
 
     main {
-    margin-top: 84px;
+      margin-top: 84px;
     }
 
     a {
@@ -145,7 +147,7 @@
     .content-video-description-subtitle {
       width: 680px;
       font-weight: 100;
-      
+
     }
 
     .content-video-description-subtitle a {
@@ -172,7 +174,9 @@
     .section-2 .video-carousel {
       display: flex;
       height: fit-content;
-      background-color: #e6e7eaff;;
+      background-color: #e6e7eaff;
+      flex-wrap: wrap;
+      flex: 1 2 200px;
     }
 
     .section-2 .video-carousel-item {
@@ -199,7 +203,7 @@
 
     .section-2 .video-carousel-title {
       background-color: #e6e7eaff;
-      
+
       display: flex;
       align-items: center;
       padding: 0 20px;
@@ -229,7 +233,18 @@
     }
 
     .statistics {
-      position: relative;
+      /* position: relative; */
+      background-image: url("https://drive.google.com/uc?export=view&id=16jcCb3KNHVcu0KG93VL69G9VfQ_TH12E");
+
+
+      /* Background image doesn’t tile */
+      background-repeat: no-repeat;
+
+
+
+      /* This is what makes the background image rescale based
+on the container’s size */
+      background-size: cover;
     }
 
     .statistics .img-statistics-main {
@@ -239,9 +254,10 @@
 
     .statistics .contents {
       display: flex;
-      position: absolute;
+      /* position: absolute; */
       top: 0;
       color: #ffffff;
+      flex-wrap: wrap;
     }
 
     .text-footer {
@@ -273,11 +289,12 @@
     }
 
     .statistics .item {
-      /* width: 25%; */
+
       flex-grow: 1;
       flex-basis: 0;
       border-left: 1px solid #ffff;
       padding: 34px;
+      flex: 1 2 200px;
     }
 
     .statistics .item:first-child {
@@ -424,7 +441,9 @@
       display: flex;
       justify-content: center;
       /* align-items: center; */
-      width: 100%;
+      width: 100%;max-height: 320px;
+      height: 320px;
+
     }
 
     .item-img img {
@@ -518,6 +537,102 @@
       height: 21px;
       margin: 0 20px 0 20px;
     }
+
+    @media (max-width: 800px) {
+
+      .statistics .item,
+      .statistics .item:first-child {
+
+        border-bottom: 1px solid #ffff;
+
+      }
+
+      .section-2-title {
+        margin: 30px 40px;
+
+      }
+      .section-2 .video-carousel-item {
+        display: block;
+        margin-left: 20px;
+      }
+
+      .section-2 .video-carousel-item:first-child {
+        margin-left: 0;
+      }
+
+      .section-2 .video-carousel {
+
+        padding-bottom: 20px;
+      }
+
+      .section-2 .video-carousel-title {
+        font-size: 26px;
+        margin-top: 10px;
+      }
+      .content-video-description {
+   
+    padding: 20px 51px;
+}
+.content-video-description-title {
+    font-size: 36px;
+   
+}
+.content-video-description-subtitle {
+    
+    font-size: 19px;
+}
+      .dots {
+    margin-left: 10px;
+    width: 50%;
+}
+.section-5, .section-3 {
+height: auto;
+}
+.section-4, .section-6 {
+    height: auto;
+}
+.section-4-content  {
+  
+    padding-right: 62px;
+    width: 200px;
+}
+.section-6-content {
+  
+  padding-right: 62px;
+  width: 376px;
+}
+.section-6-subtitle {
+   
+    font-size: 27px;
+   
+}
+.section-5-backgroung, .section-3-backgroung {
+    max-width: 60%;
+}.section-5-main, .section-3-main {
+  
+    margin-right: 30px;
+}
+
+.section-7 {
+  
+    padding: 30px;
+}
+
+.item-img {
+   
+    height: 250px;
+}.footer-copyright {
+  height: 60px;
+  background-position-y: bottom;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content-video-data {
+ 
+    right: 30px;
+}
+    }
   </style>
 </head>
 
@@ -533,7 +648,8 @@
         <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1iWKrq-1oyJYFygPcXHFzZOVk6jshzv2X"
           alt="search" />
       </div>
-      <a href="https://campaigns.rockwellautomation.com/Formulario_ES_TF" data-targettype="webpage" target="_blank" class="header-button">
+      <a href="https://campaigns.rockwellautomation.com/Formulario_ES_TF" data-targettype="webpage" target="_blank"
+        class="header-button">
         Busque asesoría de un experto</a>
       <!-- <a href="#gate-7a4e2c37-0c8e-4f33-8c6f-22170f88ad23" data-targettype="webpage" target="_blank" class="header-button">
         Busque asesoría de un experto</a> -->
@@ -541,7 +657,7 @@
   </header>
   <main>
 
-    
+
     <div class="section-1">
       <div class="content-video">
         <div class="content-video-source">
@@ -561,7 +677,8 @@
           </div>
           <div class="content-video-data-button">
 
-            <a href="https://campaigns.rockwellautomation.com/Formulario_ES_TF" data-targettype="webpage" target="_blank" class="button-red">
+            <a href="https://campaigns.rockwellautomation.com/Formulario_ES_TF" data-targettype="webpage"
+              target="_blank" class="button-red">
               Busque asesoría de un experto</a>
             <!-- <a href="#gate-7a4e2c37-0c8e-4f33-8c6f-22170f88ad23" data-targettype="webpage" target="_blank" class="button-red">
               Busque asesoría de un experto</a> -->
@@ -614,8 +731,7 @@
           </div>
           <div class="video-carousel-title">
             <div>
-              <b>Optimización</b> <br />
-              de la producción
+              <b>Optimización</b> de la producción
             </div>
           </div>
         </div>
@@ -628,9 +744,10 @@
           </div>
           <div class="video-carousel-title">
             <div>
-              <b>Minimizar</b><br />
+              <!-- <b>Minimizar</b><br />
               los paros <br />
-              no deseados
+              no deseados -->
+              <b>Minimizar</b> los paros no deseados
             </div>
           </div>
         </div>
@@ -644,9 +761,7 @@
 
           <div class="video-carousel-title">
             <div>
-              <b>Reducir</b><br />
-              costos de <br />
-              energía
+              <b>Reducir</b> costos de energía
             </div>
           </div>
         </div>
@@ -655,8 +770,8 @@
     <br>
 
     <div class="statistics">
-      <img loading="lazy" src="https://drive.google.com/uc?export=view&id=16jcCb3KNHVcu0KG93VL69G9VfQ_TH12E" alt="fondo"
-        class="img-statistics-main" />
+      <!-- <img loading="lazy" src="https://drive.google.com/uc?export=view&id=16jcCb3KNHVcu0KG93VL69G9VfQ_TH12E" alt="fondo"
+        class="img-statistics-main" /> -->
       <div class="contents">
         <div class="item">
           <div class="title">Industria de Neumáticos & Cauchos</div>
@@ -763,7 +878,7 @@
         <button class="button-red">
           <a target="_blank"
             href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br001_-es-p.pdf">Descarga</a>
-             
+
         </button>
       </div>
     </div>
@@ -790,8 +905,7 @@
         </div>
         <div class="section-7-item">
           <div class="item-img">
-            <img loading="lazy" src="https://i.postimg.cc/Z5J6P16N/755T.webp"
-              alt="item" />
+            <img loading="lazy" src="https://i.postimg.cc/Z5J6P16N/755T.webp" alt="item" />
             <!-- <img loading="lazy" src="https://drive.google.com/uc?export=view&id=11U2WQHDyAhaTwUzhkgM8R4SsjacbhbRp"
               alt="item" /> -->
           </div>

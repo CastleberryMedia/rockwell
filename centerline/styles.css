@@ -7,6 +7,11 @@
     /*    letter-spacing: -1px; */
 }
 
+html,
+body {
+    height: 100%;
+}
+
 button {
     border-radius: 3px;
 }
@@ -186,10 +191,16 @@ a {
     margin-bottom: 30px;
 }
 
+.especific-bg {
+    position: absolute;
+    right: 0;
+    width: 60%;
+}
+
 .aditional-information {
     position: relative;
     display: flex;
-    height: 700px;
+    height: 750px;
 }
 .aditional-information .content-information {
     position: absolute;
