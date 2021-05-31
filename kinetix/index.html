@@ -1,11 +1,498 @@
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css" />
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap");
+
+      * {
+        margin: 0;
+        font-family: "Barlow", sans-serif;
+        /*    letter-spacing: -1px; */
+      }
+
+      button {
+        border-radius: 3px;
+      }
+
+      header {
+        background-color: #ffffff;
+        display: flex;
+        height: 84px;
+        z-index: 100;
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        top: 0;
+      }
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .header-logo {
+        margin-left: 40px;
+      }
+
+      .header-separator {
+        border: 1px solid rgb(171, 171, 171);
+        margin-right: 40px;
+        height: 25px;
+      }
+
+      .header-options {
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+      }
+
+      .header-search img {
+        width: 45%;
+      }
+
+      .header-button {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: #ffffff;
+        height: 36px;
+        text-transform: uppercase;
+        color: rgb(197, 26, 68);
+        cursor: pointer;
+      }
+
+      .button-white {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: #ffffff;
+        height: 36px;
+        text-transform: uppercase;
+        color: rgb(197, 26, 68);
+        cursor: pointer;
+        letter-spacing: 0;
+        padding: 0 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+      }
+
+      .button-red {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: rgb(197, 26, 68);
+        height: 36px;
+        text-transform: uppercase;
+        color: #ffffff;
+        cursor: pointer;
+        letter-spacing: 0;
+        padding: 0 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        width: fit-content;
+      }
+      .blue-text {
+        color: rgb(104, 186, 230);
+        font-weight: 500;
+      }
+
+      .background {
+        width: 100%;
+      }
+
+      .general-description {
+        display: flex;
+        position: relative;
+      }
+
+      .section-main {
+        background-image: url(https://drive.google.com/uc?export=view&id=1iH00jnD3APvbaAa2_3H6Tgio_1QoKBzF);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 516px;
+        padding-top: 84px;
+        display: flex;
+        align-items: center;
+      }
+      .section-main .content {
+        display: flex;
+        width: 100%;
+      }
+
+      .section-main .img-main {
+        width: 100%;
+      }
+      .section-main .img-img-product {
+        width: 100%;
+      }
+      .section-main .img-product {
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+
+      .section-main .img-product,
+      .section-main .title-buttons {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .section-main .content .title {
+        font-size: 32px;
+        margin: 20px 0 20px 0;
+      }
+      .section-main .content .logo-allen {
+        width: 13em;
+      }
+
+      .general-description {
+        background-image: url(https://drive.google.com/uc?export=view&id=1weooB2QArCv2oWFhE7sFOFOj2pOEkgo8);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .general-description .description,
+      .general-description .spec {
+        width: 50%;
+      }
+
+      .general-description .spec {
+        margin: 20px 100px 20px 50px;
+      }
+
+      .general-description .description {
+        margin: 20px 50px 20px 100px;
+      }
+      .general-description .all-content {
+        display: flex;
+      }
+
+      .general-description .description .subtitle {
+        font-size: 25px;
+      }
+
+      .main-title {
+        color: rgb(197, 26, 68);
+        font-size: 30px;
+      }
+      .general-description .subtitle {
+        margin: 20px 0 10px 0;
+      }
+      .general-description ul {
+        margin-top: 10px;
+      }
+      .general-description li,
+      .general-description p {
+        color: rgb(144, 144, 145);
+        font-weight: 100;
+      }
+
+      .general-description .aditional .title {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .general-description .aditional p {
+        font-weight: 100;
+        margin-bottom: 30px;
+      }
+
+      .selection-products {
+        padding: 20px 100px 20px 100px;
+      }
+
+      .documentation {
+        background-image: url(https://drive.google.com/uc?export=view&id=1weooB2QArCv2oWFhE7sFOFOj2pOEkgo8);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        position: relative;
+        display: flex;
+        height: 27em;
+        overflow: hidden;
+      }
+
+      .documentation .table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .documentation .doc-content {
+        /*    position: absolute; */
+      }
+      .especific-bg {
+        position: absolute;
+        right: 0;
+        width: 60%;
+        top: 3em;
+      }
+
+      .documentation .background {
+        height: 50em;
+      }
+
+      .doc-content {
+        width: 100%;
+      }
+
+      .documentation .main-title,
+      .table-main {
+        margin: 20px 100px 20px 100px;
+      }
+
+      .documentation .table thead {
+        background-color: rgb(197, 26, 68);
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+      .documentation .table thead tr {
+        height: 55px;
+      }
+      .documentation .table tbody tr {
+        color: rgb(144, 144, 145);
+        font-weight: 100;
+        height: 40px;
+        font-size: 15px;
+        border-bottom: 1px solid rgb(178, 178, 179);
+      }
+
+      .documentation .table tbody .center {
+        text-align: center;
+      }
+
+      .selection-products {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        align-items: center;
+      }
+
+      .selection-products .text,
+      .selection-products .button {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+
+      .selection-products .button {
+        margin-left: 100px;
+      }
+
+      .selection-products .text .subtitle {
+        font-size: 25px;
+        margin-top: 10px;
+      }
+
+      .selection-products .text .subtitle {
+        font-size: 25px;
+        margin-top: 10px;
+      }
+      .selection-products .text p {
+        color: rgb(144, 144, 145);
+        font-weight: 100;
+      }
+
+      .related-products {
+        position: relative;
+        display: flex;
+        height: 40em;
+        overflow: hidden;
+      }
+      .related-products img.imgcard {
+        height: 150px;
+        width: 100%;
+        border: 1px solid rgb(144, 144, 145);
+      }
+      .related-products .related-content {
+        position: absolute;
+        padding: 40px 100px 40px 100px;
+      }
+      .img-video {
+        display: flex;
+        align-items: center;
+      }
+
+      .related-products .cards {
+        display: flex;
+        margin-top: 50px;
+      }
+      .related-products .card {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin-left: 10px;
+      }
+
+      .related-products .subtitle {
+        color: rgb(144, 144, 145);
+        font-weight: 100;
+      }
+
+      .related-products .card .category {
+        text-transform: uppercase;
+        color: rgb(144, 144, 145);
+        font-weight: 100;
+        margin-top: 10px;
+      }
+      .related-products .card a {
+        color: rgb(104, 186, 230);
+        font-size: 12px;
+      }
+
+      footer {
+        height: 250px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+      }
+      img.logo-footer {
+        width: 150px;
+      }
+      .separator {
+        border: 0.5px solid #ffffff;
+        height: 21px;
+        margin: 0 20px 0 20px;
+      }
+
+      footer .background {
+        height: 67em;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .footer-content {
+        position: absolute;
+        bottom: 0;
+      }
+
+      .social-media {
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      .social-media-title {
+        margin: 0 auto;
+        width: 250px;
+        color: rgb(197, 26, 68);
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .footer-copyright {
+        background-image: url("http://drive.google.com/uc?export=view&id=1BAfgTYsGduiJK9R6j2XbWmwx8rrPSzYG");
+        height: 77px;
+        width: 820px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+      }
+
+      @media (max-width: 700px) {
+        .section-main .img-product {
+          margin: auto;
+        }
+        .section-main {
+          background-image: url(https://drive.google.com/uc?export=view&id=1xx9X0RenD-PS8gEIxczkzJufYKEbQBgo);
+          height: auto;
+          padding: 20px 30px;
+          margin-top: 84px;
+        }
+        .section-main .content {
+          flex-direction: column-reverse;
+        }
+        .general-description .all-content {
+          display: block;
+          padding: 30px 30px;
+        }
+        .general-description .description,
+        .general-description .spec {
+          width: 100%;
+          margin: 0;
+        }
+        .general-description .spec {
+          margin: 40px 0;
+        }
+        .general-description .aditional {
+          margin-top: 40px;
+        }
+        .selection-products {
+          display: none;
+        }
+        .header-options {
+          display: none;
+        }
+        .documentation {
+          height: auto;
+        }
+        .documentation .main-title,
+        .table-main {
+          margin: 20px;
+        }
+        .related-products .cards {
+          display: block;
+          background-color: #ffffff;
+        }
+        .related-products .card {
+          margin-bottom: 20px;
+        }
+        .related-products .related-content {
+          padding: 20px;
+        }
+
+        .related-products .related-content {
+          position: initial;
+          z-index: 99;
+        }
+        .related-products {
+          height: auto;
+        }
+        .especific-bg {
+          width: 100%;
+          top: 5em;
+        }
+        .footer-copyright {
+          height: 35px;
+          font-size: 12px;
+          background-size: 100%;
+          width: 100%;
+        }
+        img.logo-footer {
+          width: 70px;
+        }
+        .text-footer {
+          right: auto;
+        }
+        .footer-content {
+          width: 100%;
+        }
+        .separator {
+          border: 0.5px solid #ffffff;
+          height: 21px;
+          margin: 0 20px 0 20px;
+          margin: 0 5px;
+        }
+      }
+
+      @media (max-width: 700px) {
+      }
+    </style>
   </head>
   <body>
     <header class="header">
       <div class="header-logo">
         <img
+          loading="lazy"
           src="https://drive.google.com/uc?export=view&id=1C6I91qo8Ulv4BUGOuVVdd1ANgXS113qR"
           alt="logo"
         />
@@ -14,31 +501,35 @@
         <div class="header-separator"></div>
         <div class="header-search">
           <img
+            loading="lazy"
             src="https://drive.google.com/uc?export=view&id=1iWKrq-1oyJYFygPcXHFzZOVk6jshzv2X"
             alt="search"
           />
         </div>
-        <button class="header-button">Busca asesoría de un experto</button>
+        <a
+          href="https://campaigns.rockwellautomation.com/Formulario_ES_Kinetix"
+          data-targettype="webpage"
+          target="_blank"
+          class="button-red"
+        >
+          Busque asesoría de un experto</a
+        >
       </div>
     </header>
     <main>
       <div class="section-main">
-        <img
-          src="https://drive.google.com/uc?export=view&id=1iH00jnD3APvbaAa2_3H6Tgio_1QoKBzF"
-          alt="background"
-          class="img-main"
-        />
-        <!-- src="http://golombianos.com/wp-content/uploads/2014/10/default-img.gif" -->
         <div class="content">
           <div class="img-product">
             <img
-              src="http://golombianos.com/wp-content/uploads/2014/10/default-img.gif"
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1Vway-c9IzhIIYdmL1w30Vo3xo-vAMr0i"
               alt="imgproduct"
               class="img-img-product"
             />
           </div>
           <div class="title-buttons">
             <img
+              loading="lazy"
               src="https://drive.google.com/uc?export=view&id=1DA1Zk8unG4ahb6DV3NMNjAHlc6D5YFDB"
               alt="logo-allen"
               class="logo-allen"
@@ -47,18 +538,25 @@
               Servo drives para un solo <br />
               eje <b>Kinetix 5300 EtherNet/IP</b>
             </div>
-            <button class="button-red">comuniquese con un distribuidor</button>
-            <br />
-            <button class="button-white">Busca asesoría de un experto</button>
+
+            <a
+              href="https://campaigns.rockwellautomation.com/Formulario_ES_Kinetix"
+              data-targettype="webpage"
+              target="_blank"
+              class="button-white"
+            >
+              Busque asesoría de un experto</a
+            >
+            <br /><a
+              class="button-red"
+              href="https://locator.rockwellautomation.com/Distributor"
+              target="_blank"
+              >comuniquese con un distribuidor</a
+            >
           </div>
         </div>
       </div>
       <div class="general-description">
-        <img
-          src="https://drive.google.com/uc?export=view&id=1weooB2QArCv2oWFhE7sFOFOj2pOEkgo8"
-          alt="background"
-          class="background"
-        />
         <div class="all-content">
           <div class="description">
             <div class="subtitle">
@@ -125,6 +623,7 @@
             <div class="subtitle">HOMOLOGACIONES</div>
             <hr />
             <img
+              loading="lazy"
               src="https://drive.google.com/uc?export=view&id=1NC2lCf1hXk-vmli_yBlPxCp92AMXs_Su"
               alt="homologations"
             />
@@ -144,7 +643,12 @@
                 catálogo de productos.
               </p>
             </div>
-            <button class="button-white">Catalogo de productos</button>
+            <a
+              class="button-white"
+              href="https://configurator.rockwellautomation.com/#/browse"
+              target="_blank"
+              >Catálogo de productos</a
+            >
           </div>
         </div>
       </div>
@@ -162,18 +666,17 @@
           </p>
         </div>
         <div class="button">
-          <button class="button-red">
+          <a
+            class="button-red"
+            target="_blank"
+            href="https://configurator.rockwellautomation.com/#/configurator/9C5192F2D2BA439C8E1BB486ABF5A024"
+          >
             Asistente de configuración de productos
-          </button>
+          </a>
         </div>
       </div>
 
       <div class="documentation">
-        <img
-          src="https://drive.google.com/uc?export=view&id=1weooB2QArCv2oWFhE7sFOFOj2pOEkgo8"
-          alt="background"
-          class="background"
-        />
         <div class="doc-content">
           <div class="main-title">Documentación</div>
           <div class="table-main">
@@ -189,12 +692,28 @@
                 <tr>
                   <td>Perfil de Producto Kinetix 5100, 5300 y TLP</td>
                   <td class="center">KINETIX-PP001</td>
-                  <td class="center">Seleccionar un idioma</td>
+                  <td class="center">
+                    <a
+                      target="_blank"
+                      class="blue-text"
+                      href="https://drive.google.com/uc?export=view&id=1GGcKoLOBY-N6AyoBXvV8c_Itii0NpCYL"
+                    >
+                      Español
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <td>Especicaciónes del servo drive Kinetix</td>
                   <td class="center">KNX-TD003</td>
-                  <td class="center">English</td>
+                  <td class="center">
+                    <a
+                      target="_blank"
+                      class="blue-text"
+                      href="https://drive.google.com/uc?export=view&id=1VKU8eA4Cw8758NuAcDdEVd7L5qDvvOyd"
+                    >
+                      English
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -202,7 +721,15 @@
                     Kinetix 5300
                   </td>
                   <td class="center">KNX-RM012</td>
-                  <td class="center">English</td>
+                  <td class="center">
+                    <a
+                      target="_blank"
+                      class="blue-text"
+                      href="https://drive.google.com/uc?export=view&id=1AnDfhQpf9UJ4umrZ_1UcPhOMAHwc3TQ6"
+                    >
+                      English
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -210,7 +737,15 @@
                     EtherNet/IP Kinetix 5300
                   </td>
                   <td class="center">2198-UM005</td>
-                  <td class="center">English</td>
+                  <td class="center">
+                    <a
+                      target="_blank"
+                      class="blue-text"
+                      href="https://drive.google.com/uc?export=view&id=1IR7dlyBo4TyZ_QZCSC27kDYGJLZIuR9D"
+                    >
+                      English
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -218,7 +753,15 @@
                     5300
                   </td>
                   <td class="center">2198-RM005</td>
-                  <td class="center">English</td>
+                  <td class="center">
+                    <a
+                      target="_blank"
+                      class="blue-text"
+                      href="https://drive.google.com/uc?export=view&id=1yG7nzdd6nfeAfS6eb6JANYjkzeBwH-fu"
+                    >
+                      English
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <td>
@@ -226,7 +769,15 @@
                     Kinetix 5300
                   </td>
                   <td class="center">2198-RM006</td>
-                  <td class="center">English</td>
+                  <td class="center">
+                    <a
+                      target="_blank"
+                      class="blue-text"
+                      href="https://drive.google.com/uc?export=view&id=1n4ZxdRov1naNyaC-WtoliThiD-HYgKhP"
+                    >
+                      English
+                    </a>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -235,39 +786,76 @@
       </div>
 
       <div class="related-products">
-        <img
-          src="https://drive.google.com/uc?export=view&id=1YsqCHa3TuLm0-Geij9vWDGzNRHqPZlbN"
-          alt="background"
-          class="background"
-        />
+        <div class="especific-bg">
+          <img
+            loading="lazy"
+            src="https://drive.google.com/uc?export=view&id=1YsqCHa3TuLm0-Geij9vWDGzNRHqPZlbN"
+            alt="background"
+            class="background"
+          />
+        </div>
         <div class="related-content">
           <div class="main-title">Productos Relacionados</div>
 
           <div class="cards">
             <div class="card">
+              <div class="img-video">
+                <iframe
+                  width=""
+                  height=""
+                  src="https://www.youtube.com/embed/QqCZV_nB5R4?controls=0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <br />
+              <div class="category">video</div>
+              <div class="title">
+                Completo Sistemas de movimiento para máquinas inteligentes
+              </div>
+              <br />
+              <div class="subtitle">
+                En el entorno competitivo actual, el diseño simplificado de la
+                máquina, la flexibilidad del sistema y el rendimiento general
+                mejorado de la máquina son ventajas clave. Ya sea que esté
+                construyendo máquinas pequeñas e independientes o sistemas
+                grandes y complejos, los productos de control de movimiento
+                Allen-Bradley Kinetix pueden ayudarle a alcanzar sus objetivos.
+              </div>
+              <br />
+              <a href="">Conozca más</a>
+            </div>
+            <div class="card">
               <img
-                src="http://golombianos.com/wp-content/uploads/2014/10/default-img.gif"
+                loading="lazy"
+                src="https://drive.google.com/uc?export=view&id=1-0272FOC2hHAr3l3IKn5KouyN31UTnPC"
                 alt="imgcard"
                 class="imgcard"
               />
+              <br />
               <div class="category">hadware</div>
               <div class="title">Servomotores Kinetix TL-Series</div>
+              <br />
               <div class="subtitle">
                 Los servomotores Kinetix® TL-SeriesTM proporcionan una solución
                 asequible para diseñadores de máquinas con un amplio rango de
                 necesidades de aplicación.
               </div>
               <br />
-              <a href="">Primeros pasos</a>
+              <a href="">Conozca más</a>
             </div>
             <div class="card">
               <img
+                loading="lazy"
                 src="http://golombianos.com/wp-content/uploads/2014/10/default-img.gif"
                 alt="imgcard"
                 class="imgcard"
-              />
+              /><br />
               <div class="category">hadware</div>
               <div class="title">
+                <br />
                 Cables Kinetix con conectores DIN SpeedTEC
               </div>
               <div class="subtitle">
@@ -276,16 +864,18 @@
                 DIN SpeedTEC® para una conexión rápida de un cuarto de vuelta.
               </div>
               <br />
-              <a href="">Primeros Pasos</a>
+              <a href="">Conozca más</a>
             </div>
             <div class="card">
               <img
-                src="http://golombianos.com/wp-content/uploads/2014/10/default-img.gif"
+                loading="lazy"
+                src="https://drive.google.com/uc?export=view&id=1iBYak_vkzd907lpwG1e9mubPu2cRhPHH"
                 alt="imgcard"
                 class="imgcard"
-              />
+              /><br />
               <div class="category">hadware</div>
               <div class="title">Sistemas de control CompactLogix</div>
+              <br />
               <div class="subtitle">
                 Los controladores CompactLogixTM y Compact GuardLogix®
                 proporcionan mayorrendimiento, capacidad, productividad y
@@ -293,7 +883,7 @@
                 máquinas y equipos inteligentes para la fabricación.
               </div>
               <br />
-              <a href="">Primeros pasos</a>
+              <a href="">Conozca más</a>
             </div>
           </div>
         </div>
@@ -301,6 +891,7 @@
     </main>
     <footer>
       <img
+        loading="lazy"
         src="https://drive.google.com/uc?export=view&id=1mMWswgMHOXe0IujDct-f5k6hF1tmzUOg"
         alt="background"
         class="background"
@@ -311,6 +902,7 @@
         <div class="social-media">
           <a href="https://www.facebook.com/ROKAutomation" target="_blank"
             ><img
+              loading="lazy"
               src="https://drive.google.com/uc?export=view&id=10n8DUxKYarozrH00gahwnmhDTRnhL77Y"
               alt="logo-face"
           /></a>
@@ -319,29 +911,43 @@
             target="_blank"
           >
             <img
+              loading="lazy"
               src="https://drive.google.com/uc?export=view&id=1ydjUGhzU4rSDtgmV-AQdHmVJQNHAp59a"
               alt="logo-linkedin"
           /></a>
           <a href="https://twitter.com/ROKAutomationLA" target="_blank">
             <img
+              loading="lazy"
               src="https://drive.google.com/uc?export=view&id=1iEMGRDBdiVywu9H9giQiW4zAl7MKUxdh"
               alt="logo-twitter"
           /></a>
           <a href="https://www.youtube.com/user/ROKAutomation" target="_blank">
             <img
+              loading="lazy"
               src="https://drive.google.com/uc?export=view&id=1K8xmSoglqfVu_62LaFXYPFlNFJOsOvTc"
               alt="logo-youtube"
           /></a>
-          <a href="" target="_blank">
+          <a
+            href="https://www.rockwellautomation.com/en-us/company/news/blogs.html"
+            target="_blank"
+          >
             <img
+              loading="lazy"
               src="https://drive.google.com/uc?export=view&id=1SWvZ8J8L4_y4jnUhF1HpZ0FKctkyRmJX"
               alt="logo-blob"
           /></a>
         </div>
         <div class="footer-copyright">
-          <p>Copyright © 2021 Rockwell Automation, Inc</p>
+          <p>Copyright © 2021 Rockwell Automation, Inc.</p>
           <div class="separator"></div>
-          <div class="logo"></div>
+          <div class="logo">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1K6mIxwEk97hq-SkR4St6I9ySdGzBN7oO"
+              alt="logo-blob"
+              class="logo-footer"
+            />
+          </div>
         </div>
       </div>
     </footer>
