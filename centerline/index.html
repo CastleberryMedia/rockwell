@@ -1,6 +1,495 @@
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css" />
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap");
+
+      * {
+        margin: 0;
+        font-family: "Barlow", sans-serif;
+        /*    letter-spacing: -1px; */
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      button {
+        border-radius: 3px;
+      }
+
+      header {
+        background-color: #ffffff;
+        display: flex;
+        height: 84px;
+        z-index: 101;
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        top: 0;
+      }
+      main {
+        margin-top: 84px;
+      }
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      p {
+        color: rgb(134, 134, 135);
+        font-weight: 100;
+      }
+
+      .header-logo {
+        margin-left: 40px;
+      }
+
+      .header-separator {
+        border: 1px solid rgb(171, 171, 171);
+        margin-right: 40px;
+        height: 25px;
+      }
+
+      .header-options {
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+      }
+
+      .header-search img {
+        width: 45%;
+      }
+
+      .header-button {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: #ffffff;
+        height: 36px;
+        text-transform: uppercase;
+        color: rgb(197, 26, 68);
+        cursor: pointer;
+      }
+
+      .button-white {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: #ffffff;
+        height: 36px;
+        text-transform: uppercase;
+        color: rgb(197, 26, 68);
+        cursor: pointer;
+        letter-spacing: 0;
+        padding: 0 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+      }
+
+      .button-red {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: rgb(197, 26, 68);
+        height: 36px;
+        text-transform: uppercase;
+        color: #ffffff;
+        cursor: pointer;
+        letter-spacing: 0;
+        padding: 0 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        width: fit-content;
+      }
+
+      .blue-text {
+        color: rgb(104, 186, 230);
+        font-weight: 500;
+      }
+
+      .background {
+        width: 100%;
+      }
+      .section-main {
+        background-image: url(https://drive.google.com/uc?export=view&id=1UTBl2ER1c9PqY892Wm1Q65rDKzmsDLPC);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* width: 100%; */
+        height: 32em;
+        padding-top: 6em;
+      }
+      .section-main .content {
+        /* position: absolute; */
+        right: 0;
+        display: flex;
+        width: 100%;
+      }
+
+      .section-main .img-main {
+        width: 100%;
+      }
+      .section-main .img-img-product {
+        width: 100%;
+      }
+      .section-main .img-product {
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+
+      .section-main .img-product p {
+        margin-top: 40px;
+        color: rgb(134, 134, 135);
+        font-weight: 100;
+      }
+
+      .section-main .img-product,
+      .section-main .title-buttons {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .section-main .content .title {
+        font-size: 32px;
+        margin: 20px 0 20px 0;
+      }
+      .section-main .content .logo-allen {
+        width: 13em;
+      }
+
+      .general-description {
+        position: relative;
+        display: flex;
+        background-image: url("https://drive.google.com/uc?export=view&id=1oSgTVvdcTpKTTLpk2xwRxWwLnQb5q58z");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 40px 0;
+      }
+      .general-description .columns {
+        display: flex;
+      }
+      .general-description .title {
+        font-size: 20px;
+      }
+
+      .general-description .description,
+      .general-description .spec {
+        width: 50%;
+      }
+
+      .general-description .spec {
+        margin: 20px 100px 20px 50px;
+      }
+
+      .general-description .description {
+        margin: 20px 50px 20px 100px;
+      }
+
+      .main-title {
+        color: rgb(197, 26, 68);
+        font-size: 30px;
+      }
+
+      .general-description .subtitle {
+        margin: 20px 0 10px 0;
+      }
+      .general-description ul {
+        margin-top: 10px;
+      }
+      .general-description li {
+        color: rgb(134, 134, 135);
+        font-weight: 100;
+      }
+
+      .general-description .aditional .title {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .general-description .aditional p {
+        font-weight: 100;
+        margin-bottom: 30px;
+      }
+
+      .especific-bg {
+        position: absolute;
+        right: 0;
+        width: 60%;
+      }
+
+      .aditional-information {
+        position: relative;
+        display: flex;
+      }
+      .aditional-information .content-information {
+        margin: 20px 100px;
+        z-index: 100;
+      }
+
+      .aditional-information .subtitle {
+        margin-top: 30px;
+        color: rgb(134, 134, 135);
+        font-weight: 100;
+      }
+      .aditional-information .cards {
+        display: flex;
+        margin-top: 50px;
+      }
+      .aditional-information .card {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin-left: 10px;
+      }
+      .aditional-information .card .card-video {
+        background-color: black;
+        display: flex;
+        align-items: center;
+      }
+      .aditional-information .img-video {
+        min-height: 197px;
+        display: flex;
+        align-items: center;
+      }
+      .aditional-information .card .img-card {
+        width: 100%;
+      }
+
+      .aditional-information .card .category {
+        text-transform: uppercase;
+        color: rgb(134, 134, 135);
+        font-weight: 100;
+        margin-top: 10px;
+      }
+      .aditional-information .card a {
+        color: rgb(104, 186, 230);
+        font-size: 12px;
+      }
+
+      .documentation {
+        position: relative;
+        display: flex;
+        height: 36em;
+        overflow: hidden;
+      }
+
+      .documentation .table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .documentation .doc-content {
+        position: absolute;
+      }
+
+      .documentation .background {
+        height: 50em;
+      }
+
+      .doc-content {
+        width: 100%;
+      }
+
+      .documentation .main-title,
+      .table-main {
+        margin: 20px 100px 20px 100px;
+      }
+
+      .documentation .table thead {
+        background-color: rgb(197, 26, 68);
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+      .documentation .table thead tr {
+        height: 55px;
+      }
+      .documentation .table tbody tr {
+        color: rgb(134, 134, 135);
+        font-weight: 100;
+        height: 40px;
+        font-size: 15px;
+        border-bottom: 1px solid rgb(178, 178, 179);
+      }
+
+      .documentation .table tbody .center {
+        text-align: center;
+      }
+      footer {
+        height: 250px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer-content {
+        position: absolute;
+        bottom: 0;
+      }
+
+      .social-media {
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      .social-media-title {
+        margin: 0 auto;
+        width: 250px;
+        color: rgb(197, 26, 68);
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .dots {
+        margin-left: 160px;
+      }
+
+      .footer-copyright {
+        background-image: url("http://drive.google.com/uc?export=view&id=1BAfgTYsGduiJK9R6j2XbWmwx8rrPSzYG");
+        height: 77px;
+        width: 820px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+      }
+
+      .footer-copyright p {
+        color: #ffffff;
+      }
+
+      .img-product-movil {
+        display: none;
+      }
+      img.logo-footer {
+        width: 150px;
+      }
+      .separator {
+        border: 0.5px solid #ffffff;
+        height: 21px;
+        margin: 0 20px 0 20px;
+      }
+
+      @media (max-width: 800px) {
+        .section-main {
+          /*  background-image: url(https://drive.google.com/uc?export=view&id=1UTBl2ER1c9PqY892Wm1Q65rDKzmsDLPC);
+          background-repeat: no-repeat; */
+          background-size: contain;
+          height: auto;
+          padding: 80px;
+        }
+        .img-product-movil {
+          display: block;
+        }
+        .img-product {
+          display: none;
+        }
+
+        .section-main .content {
+          display: block;
+        }
+
+        .general-description .columns {
+          display: block;
+        }
+
+        .aditional-information .cards {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .aditional-information .card {
+          flex: 1 2 200px;
+          margin-bottom: 20px;
+        }
+        .especific-bg {
+          top: 11%;
+          width: 100%;
+        }
+        .documentation .main-title,
+        .table-main {
+          margin: 20px;
+        }
+        .aditional-information .content-information {
+          margin: 40px 40px 40px 73px;
+          z-index: 100;
+        }
+        .general-description .description,
+        .general-description .spec {
+          margin: 40px 40px 40px 73px;
+          width: auto;
+        }
+
+        .aditional {
+          margin: 40px 0px;
+          width: auto;
+        }
+        hr {
+          width: 100%;
+        }
+        .footer-copyright {
+          height: 60px;
+          background-position-y: bottom;
+          background-size: 80%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      @media (max-width: 700px) {
+        .header-options {
+          display: none;
+        }
+        .footer-copyright {
+          height: 35px;
+          font-size: 12px;
+          background-size: 100%;
+          width: 100%;
+        }
+        .section-main {
+          padding: 30px;
+        }
+        .general-description .description,
+        .general-description .spec {
+          margin: 0px 20px 40px 30px;
+          width: auto;
+        }
+        .aditional-information .content-information {
+          margin: 10px 20px 40px 20px;
+          z-index: 100;
+        }
+        .documentation {
+          height: auto;
+        }
+
+        img.logo-footer {
+          width: 70px;
+        }
+        .text-footer {
+          right: auto;
+        }
+        .footer-content {
+          width: 100%;
+        }
+        .separator {
+          border: 0.5px solid #ffffff;
+          height: 21px;
+          margin: 0 20px 0 20px;
+          margin: 0 5px;
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -20,17 +509,24 @@
             alt="search"
           />
         </div>
-        <button class="header-button">Busca asesoría de un experto</button>
+        <a
+          href="https://campaigns.rockwellautomation.com/Formulario_ES_TF"
+          data-targettype="webpage"
+          target="_blank"
+          class="button-red"
+        >
+          Busque asesoría de un experto</a
+        >
       </div>
     </header>
     <main>
       <div class="section-main">
-        <img
+        <!--  <img
           loading="lazy"
           src="https://drive.google.com/uc?export=view&id=1UTBl2ER1c9PqY892Wm1Q65rDKzmsDLPC"
           alt="background"
           class="img-main"
-        />
+        /> -->
 
         <div class="content">
           <div class="img-product">
@@ -40,7 +536,7 @@
               alt="imgproduct"
               class="img-img-product"
             />
-            <p>
+            <!--   <p>
               Los centros de control de motores (CCM) de bajo voltaje
               CENTERLINE® 2500 IEC están diseñados para cumplir con los
               requisitos de las aplicaciones globales. Al combinar una dimensión
@@ -49,7 +545,7 @@
               también ayudan a atender la demanda global por soluciones de
               control de motores eléctricos ecientes en cuanto al costo, al uso
               de la energía y del espacio, y listas de fábrica.
-            </p>
+            </p> -->
           </div>
           <div class="title-buttons">
             <img
@@ -60,8 +556,8 @@
             />
             <div class="title">
               Centro de control de motores de <br />
-              bajo voltaje CENTERLINE 2500 IEC <br />
-              con SecureConnect
+              bajo voltaje <b>CENTERLINE 2500 IEC</b> <br />
+              con <b>SecureConnect</b>
             </div>
             <a
               href="https://locator.rockwellautomation.com/Distributor"
@@ -70,20 +566,51 @@
               >comuniquese con un distribuidor</a
             >
             <br />
-            <button class="button-white">Busca asesoría de un experto</button>
+            <a
+              href="https://campaigns.rockwellautomation.com/Formulario_ES_TF"
+              data-targettype="webpage"
+              target="_blank"
+              class="button-white"
+            >
+              Busque asesoría de un experto</a
+            >
+          </div>
+          <div class="img-product-movil">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o"
+              alt="imgproduct"
+              class="img-img-product"
+            />
           </div>
         </div>
       </div>
       <div class="general-description">
-        <img
+        <!-- <img
           loading="lazy"
           src="https://drive.google.com/uc?export=view&id=1oSgTVvdcTpKTTLpk2xwRxWwLnQb5q58z"
           alt="background"
           class="background"
-        />
+        /> -->
         <div class="columns">
           <div class="description">
-            <div class="main-title">Descripción general</div>
+            <div class="title">
+              Centro de control de motores de bajo voltaje
+              <b>CENTERLINE 2500 IEC</b> con <b>SecureConnect</b>
+            </div>
+            <br />
+            <p>
+              Los centros de control de motores (CCM) de bajo voltaje
+              CENTERLINE® 2500 IEC están diseñados para cumplir con los
+              requisitos de las aplicaciones globales. Al combinar una dimensión
+              más compacta y una prueba de tipo integral, los CCM CENTERLINE
+              2500 contribuyen a satisfacer las necesidades de los clientes. Los
+              CCM también ayudan a atender la demanda global por soluciones de
+              control de motores eléctricos ecientes en cuanto al costo, al uso
+              de la energía y del espacio, y listas de fábrica.
+            </p>
+
+            <!-- <div class="main-title">Descripción general</div>
             <ul>
               <li>Incluye diseños de unidades jas o desmontables</li>
               <li>
@@ -102,7 +629,7 @@
                 Ofrece distintas opciones de control inteligente de motores
               </li>
               <li>Ofrece diseños estándar de tipo probado completo</li>
-            </ul>
+            </ul> -->
             <div class="subtitle">CENTERLINE 2500 con tecnología ArcShield</div>
             <hr />
             <ul>
@@ -344,7 +871,7 @@
               <a
                 href="https://idp.rockwellautomation.com/adfs/oauth2/authorize/?client_id=e6138ccb-db57-46ea-9139-fe190ae4e201&redirect_uri=https%3A%2F%2Fdownload.rockwellautomation.com%2F&resource=RADARProd&response_mode=form_post&response_type=code%20id_token&scope=openid%20profile&state=OpenIdConnect.AuthenticationProperties%3DoOiRjvJG0xRCDRx2u6hkyqKfDFScBxiSQ9Dhi41toW__2jdFqzrUhCjG0BE2Yyp8ZEpr7fgLeR4BYXIkIlCCK9dQVkLdX0cTqfkwusZvGue1uQb3T9sw8mtYgjn4cPO7cSKmMZS24EvD3OJ5q3wULSLMEYaHLVModuOGbOsxMMeOi2c9leAEH7pnzQIUA8nq6_BsJOizQXA-8yY9nomGSYgSFZo&nonce=637577327284454470.OTFlY2NlODQtZGZlMi00M2JjLTkyYzgtNjk4ZDNmNGRmMTgzMTY4ZDY5MTgtOTNkMS00MzhhLWIwN2EtMWQ0NDg2MTBiZGJm&x-client-SKU=ID_NET451&x-client-ver=5.2.1.0"
                 target="_blank"
-                >Primeros pasos</a
+                >Conozca más</a
               >
             </div>
           </div>
@@ -396,13 +923,7 @@
                     >
                   </td>
                 </tr>
-                <tr>
-                  <td>Descripción de producto de Fastrak CENTERLINE 2500</td>
-                  <td class="center">2500-PP004</td>
-                  <td class="center">
-                    <a class="blue-text" href="" target="_blank">Español</a>
-                  </td>
-                </tr>
+
                 <tr>
                   <td>Guía de selección de CENTERLINE 2500</td>
                   <td class="center">2500-SG001</td>
@@ -427,13 +948,7 @@
                     >
                   </td>
                 </tr>
-                <tr>
-                  <td>Instrucciones de instalación de CENTERLINE 2500</td>
-                  <td class="center">2500-IN002</td>
-                  <td class="center">
-                    <a class="blue-text" href="" target="_blank">Español</a>
-                  </td>
-                </tr>
+
                 <tr>
                   <td>
                     Readaptación de las columnas de las series A a C de
@@ -459,7 +974,7 @@
                       class="blue-text"
                       href="https://drive.google.com/file/d/1hD7apuS77j_fTOm3TOMldM0V1Q6NS39I/view?usp=sharing"
                       target="_blank"
-                      >Español</a
+                      >English</a
                     >
                   </td>
                 </tr>
@@ -512,7 +1027,10 @@
               src="https://drive.google.com/uc?export=view&id=1K8xmSoglqfVu_62LaFXYPFlNFJOsOvTc"
               alt="logo-youtube"
           /></a>
-          <a href="" target="_blank">
+          <a
+            href="https://www.rockwellautomation.com/en-us/company/news/blogs.html"
+            target="_blank"
+          >
             <img
               loading="lazy"
               src="https://drive.google.com/uc?export=view&id=1SWvZ8J8L4_y4jnUhF1HpZ0FKctkyRmJX"
@@ -520,9 +1038,16 @@
           /></a>
         </div>
         <div class="footer-copyright">
-          <p>Copyright © 2021 Rockwell Automation, Inc</p>
+          <p>Copyright © 2021 Rockwell Automation, Inc.</p>
           <div class="separator"></div>
-          <div class="logo"></div>
+          <div class="logo">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1K6mIxwEk97hq-SkR4St6I9ySdGzBN7oO"
+              alt="logo-blob"
+              class="logo-footer"
+            />
+          </div>
         </div>
       </div>
     </footer>
