@@ -22,6 +22,10 @@
         border-radius: 3px;
       }
 
+      b {
+        font-weight: 600;
+      }
+
       header {
         background-color: #ffffff;
         display: flex;
@@ -222,9 +226,9 @@
         width: 100%;
         border-collapse: collapse;
       }
-      .documentation .doc-content {
-        /*    position: absolute; */
-      }
+      /*   .documentation .doc-content {
+        
+      } */
       .especific-bg {
         position: absolute;
         right: 0;
@@ -303,7 +307,6 @@
         overflow: hidden;
       }
       .related-products img.imgcard {
-        height: 150px;
         width: 100%;
         border: 1px solid rgb(144, 144, 145);
       }
@@ -340,6 +343,22 @@
       .related-products .card a {
         color: rgb(104, 186, 230);
         font-size: 12px;
+      }
+      .video-responsive {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 50%;
+        padding-top: 19px;
+        position: relative;
+      }
+      .video-responsive iframe,
+      .video-responsive object,
+      .video-responsive embed {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
       }
 
       footer {
@@ -538,7 +557,13 @@
               Servo drives para un solo <br />
               eje <b>Kinetix 5300 EtherNet/IP</b>
             </div>
-
+            <a
+              class="button-red"
+              href="https://locator.rockwellautomation.com/Distributor"
+              target="_blank"
+              >comuníquese con un distribuidor</a
+            >
+            <br />
             <a
               href="https://campaigns.rockwellautomation.com/Formulario_ES_Kinetix"
               data-targettype="webpage"
@@ -547,12 +572,6 @@
             >
               Busque asesoría de un experto</a
             >
-            <br /><a
-              class="button-red"
-              href="https://locator.rockwellautomation.com/Distributor"
-              target="_blank"
-              >comuniquese con un distribuidor</a
-            >
           </div>
         </div>
       </div>
@@ -560,17 +579,23 @@
         <div class="all-content">
           <div class="description">
             <div class="subtitle">
-              Servo drives para un solo eje Kinetix 5300 EtherNet/IP
+              Servo drives para un solo eje <b>Kinetix 5300 EtherNet/IP</b>
             </div>
             <p>
               En el entorno competitivo de hoy, el diseño simplificado de la
               maquinaria, la flexibilidad del sistema y la mejora general del
-              desempeño de las maquina son ventajas clave. Ya sea que construya
-              maquinas pequeñas e independientes o grandes y complejos sistemas,
+              desempeño de las máquinas son ventajas clave. Ya sea que construya
+              máquinas pequeñas e independientes o grandes y complejos sistemas,
               los productos de
-              <span class="blue-text">control de movimiento</span> Kinetix de
-              Allen-Bradley pueden ayudarle a alcanzar sus objetivos.
+              <a
+                class="blue-text"
+                href="https://www.rockwellautomation.com/es-co/products/hardware/allen-bradley/motion-control.html"
+                target="_blank"
+                >control de movimiento</a
+              >
+              Kinetix de Allen-Bradley pueden ayudarle a alcanzar sus objetivos.
             </p>
+            <br />
             <p>
               Ideales para máquinas pequeñas y medianas, los servo drives
               Ethernet/IP de un solo eje Kinetix® 5300 Boletin 2198 proporcionan
@@ -586,7 +611,7 @@
               <li>
                 Ofrece un rango de potencia mayor que otras soluciones
                 comparables 0.05...2 kW a 120...230V, 3...7.5 kW a 230V y
-                0.4...7.5 kW a 460V
+                0.4...7.5 kW a 460V.
               </li>
               <li>
                 Proporciona características de seguridad sin partes o cables
@@ -596,7 +621,7 @@
               <li>
                 La potencia nominal hace referencia a la potencia de salida del
                 motor. Cuando Kinetix 5300 está emparejado con el motor Kinetix
-                TLP, por lo que reduce los esfuerzos de medición
+                TLP, por lo que reduce los esfuerzos de medición.
               </li>
               <li>
                 Incluye cuatro entradas digitales, dos de las cuales se pueden
@@ -608,13 +633,19 @@
                 e-Taps.
               </li>
               <li>
-                Incluye la tecnología de sintonización con el observadr de carga
-                y el filtro de muesca de seguimiento para que pueda comenzar lo
-                antes posible
+                Incluye la tecnología de sintonización con el observador de
+                carga y el filtro de muesca de seguimiento para que pueda
+                comenzar lo antes posible.
               </li>
               <li>
-                Utiliza instrucciones de control de movimiento estándar en el
-                entorno de diseño Studio 5000®
+                Utiliza instrucciones de
+                <a
+                  class="blue-text"
+                  href="https://www.rockwellautomation.com/es-co/products/hardware/allen-bradley/motion-control.html"
+                  target="_blank"
+                  >control de movimiento</a
+                >
+                estándar en el entorno de diseño Studio 5000®.
               </li>
             </ul>
           </div>
@@ -659,8 +690,11 @@
           <div class="subtitle">Asistente de configuración de producto</div>
           <p>
             Utilice
-            <span class="blue-text"
-              >Asistente de configuración de productos</span
+            <a
+              class="blue-text"
+              href="https://configurator.rockwellautomation.com/#/configurator/19C2AEE297C141C7AD132B06D9C3B686"
+              target="_blank"
+              >Asistente de configuración de productos</a
             >
             el para nuestra oferta completa de productos.
           </p>
@@ -799,14 +833,12 @@
 
           <div class="cards">
             <div class="card">
-              <div class="img-video">
+              <div class="video-responsive">
                 <iframe
                   width=""
                   height=""
                   src="https://www.youtube.com/embed/QqCZV_nB5R4?controls=0"
-                  title="YouTube video player"
                   frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
               </div>
@@ -860,7 +892,7 @@
               </div>
               <div class="subtitle">
                 Los cables Kinetix® Bulletin 2090 son una familia completa de
-                cables flexibles estandar y continuos, equipados con conectores
+                cables flexibles estándar y continuos, equipados con conectores
                 DIN SpeedTEC® para una conexión rápida de un cuarto de vuelta.
               </div>
               <br />
@@ -878,8 +910,8 @@
               <br />
               <div class="subtitle">
                 Los controladores CompactLogixTM y Compact GuardLogix®
-                proporcionan mayorrendimiento, capacidad, productividad y
-                seguridad para ayudar a satisfacerlas demandas crecientes de
+                proporcionan mayor rendimiento, capacidad, productividad y
+                seguridad para ayudar a satisfacer las demandas crecientes de
                 máquinas y equipos inteligentes para la fabricación.
               </div>
               <br />
