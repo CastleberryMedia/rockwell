@@ -110,13 +110,13 @@
       height: fit-content;
     }
 
-    #s7video_div.s7videoviewer{
+    #s7video_div.s7videoviewer {
 
-width:100%;
+      width: 100%;
 
- height:auto;
+      height: auto;
 
-}
+    }
 
     .content-video {
       position: relative;
@@ -562,17 +562,6 @@ on the container’s size */
     @media (max-width: 800px) {
 
 
-    #s7video_div_videoPlayer {
-
-        height: auto !important;
-}
- /*  
-.section-2 video {
-  width: 100%;
-  height: 800px !important;
-}.section-2 .main-video {
-    margin-top: -25em;
-} */
 
       .statistics .item,
       .statistics .item:first-child {
@@ -699,16 +688,49 @@ on the container’s size */
         right: 30px;
       }
 
+
+      .main-video {
+    height: 27em;
+    max-height: 27em;
+
+
+    }
+
+    @media (max-width: 400px) {
+
+      .main-video {
+    height: 13em;
+    max-height: 13em;
+}
+    @media (max-width: 1500px) {
+
+      .main-video {
+    height: 50em;
+    max-height: 50em;
+}
+    @media (max-width: 1024px) {
+
+      .main-video {
+    height: 36em;
+    max-height: 36em;
+}
+    }
+    @media (max-width: 414px) {
+
+      .main-video {
+    height: 15em;
+    max-height: 15em;
+}
     }
 
     @media (max-width: 700px) {
 
-      div#s7video_div {
-   
-    margin: -283px 0;
-}
+    /*   div#s7video_div {
 
+        margin: -283px 0;
+      }
 
+ */
 
 
       .statistics .item:first-child {
@@ -964,7 +986,7 @@ on the container’s size */
       <div class="video-carousel">
         <div class="video-carousel-item">
           <div class="video-carousel-item-video" onclick="loadVideo('Total Force 1-AVS')">
-          <!-- <div class="video-carousel-item-video" onclick="changeVideo('1eMVrnHZ_ILSPJoYTyn-4C84Povn3ovX8')"> -->
+            <!-- <div class="video-carousel-item-video" onclick="changeVideo('1eMVrnHZ_ILSPJoYTyn-4C84Povn3ovX8')"> -->
             <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1fzdmplbhvTD_lny8FKQkWo95t4jmYqL7"
               class="img-carousel" alt="img-carousel" />
             <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1Vkhiw6sAg_tg57rM8bBqklSBWai7FjCB"
@@ -978,7 +1000,7 @@ on the container’s size */
         </div>
         <div class="video-carousel-item">
           <div class="video-carousel-item-video" onclick="loadVideo('Total Force 2-AVS')">
-          <!-- <div class="video-carousel-item-video" onclick="changeVideo('1g0uDckkIir8aAG1Lt5mtVe93CcbAJz5Q')"> -->
+            <!-- <div class="video-carousel-item-video" onclick="changeVideo('1g0uDckkIir8aAG1Lt5mtVe93CcbAJz5Q')"> -->
             <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1PzSOjwJIK--SfbsU-YIC_TUa6Ui2Kl2a"
               class="img-carousel" alt="img-carousel" />
             <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1Vkhiw6sAg_tg57rM8bBqklSBWai7FjCB"
@@ -992,7 +1014,7 @@ on the container’s size */
         </div>
         <div class="video-carousel-item">
           <div class="video-carousel-item-video" onclick="loadVideo('Total Force 3-AVS')">
-        <!--   <div class="video-carousel-item-video" onclick="changeVideo('1frnygK7kxEW3pS-3kDu10K6zZvjU4EE6')"> -->
+            <!--   <div class="video-carousel-item-video" onclick="changeVideo('1frnygK7kxEW3pS-3kDu10K6zZvjU4EE6')"> -->
             <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1ltOA9qnAaoU5UdLJk3Ixy7OjL_ADMsFE"
               class="img-carousel" alt="img-carousel" />
             <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1Vkhiw6sAg_tg57rM8bBqklSBWai7FjCB"
@@ -1204,27 +1226,27 @@ on the container’s size */
 
   <script>
 
-function loadVideo(e){  
-    var s7videoviewer = new s7viewers.VideoViewer({
-      "containerId": "s7video_div",
-      "params": {
-        "serverurl": "https://rockwellautomation.scene7.com/is/image/",
-        "contenturl": "https://rockwellautomation.scene7.com/is/content/",
-        "config": "rockwellautomation/Video",
-        "posterimage": "rockwellautomation/"+e,
-        "videoserverurl": "https://rockwellautomation.scene7.com/is/content",
-        "asset": "rockwellautomation/"+e
-      }
-    })
-  
-    s7videoviewer.init();
-  
-  }
+    function loadVideo(e) {
+      var s7videoviewer = new s7viewers.VideoViewer({
+        "containerId": "s7video_div",
+        "params": {
+          "serverurl": "https://rockwellautomation.scene7.com/is/image/",
+          "contenturl": "https://rockwellautomation.scene7.com/is/content/",
+          "config": "rockwellautomation/Video",
+          "posterimage": "rockwellautomation/" + e,
+          "videoserverurl": "https://rockwellautomation.scene7.com/is/content",
+          "asset": "rockwellautomation/" + e
+        }
+      })
 
-  loadVideo("Total Force 1-AVS");
-    
+      s7videoviewer.init();
 
-   
+    }
+
+    loadVideo("Total Force 1-AVS");
+
+
+
     /* function changeVideo(e) {
       document.getElementById("video_main").src =
         "https://drive.google.com/uc?export=download&id=" + e;
