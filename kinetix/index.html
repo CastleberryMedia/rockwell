@@ -26,6 +26,10 @@
         font-weight: 600;
       }
 
+      p {
+        color: rgb(134, 134, 135);
+      }
+
       header {
         background-color: #ffffff;
         display: flex;
@@ -135,11 +139,42 @@
         width: 100%;
       }
       .section-main .img-img-product {
-        width: 100%;
+        width: 50%;
       }
       .section-main .img-product {
         margin-left: 80px;
         margin-right: 80px;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
 
       .section-main .img-product,
@@ -227,8 +262,8 @@
         border-collapse: collapse;
       }
       /*   .documentation .doc-content {
-        
-      } */
+
+            } */
       .especific-bg {
         position: absolute;
         right: 0;
@@ -327,10 +362,11 @@
         flex-grow: 1;
         flex-basis: 0;
         margin-left: 10px;
+        flex: 1 2 200px;
       }
 
       .related-products .subtitle {
-        color: rgb(144, 144, 145);
+        color: rgb(134, 134, 135);
         font-weight: 100;
       }
 
@@ -417,7 +453,18 @@
         color: #ffffff;
       }
 
+      .footer-copyright p {
+        color: #ffffff;
+      }
+
       @media (max-width: 700px) {
+        .swiper-container {
+          overflow: visible !important;
+        }
+        .section-main .img-img-product {
+          width: 100%;
+        }
+
         .section-main .img-product {
           margin: auto;
         }
@@ -503,9 +550,76 @@
         }
       }
 
-      @media (max-width: 700px) {
+      @media (max-width: 800px) {
+        .section-main {
+          background-image: url(https://drive.google.com/uc?export=view&id=1xx9X0RenD-PS8gEIxczkzJufYKEbQBgo);
+          height: auto;
+          padding: 30px 70px;
+          margin-top: 84px;
+        }
+        .swiper-container {
+          overflow: visible !important;
+        }
+        .section-main .img-img-product {
+          width: 60%;
+        }
+
+        .section-main .content {
+          flex-direction: column-reverse;
+        }
+
+        .section-main .img-product {
+          margin: auto;
+        }
+        .related-products .related-content {
+          padding: 20px;
+        }
+
+        .related-products .cards {
+          flex-wrap: wrap;
+        }
+        .related-products .card {
+          margin: 0 27px;
+          margin-bottom: 20px;
+        }
+        .related-products {
+          height: 64em;
+        }
+
+        .especific-bg {
+          width: 100%;
+          top: 5em;
+        }
+        .documentation .main-title,
+        .table-main {
+          margin: 40px 20px;
+        }
+
+        .selection-products {
+          padding: 40px 20px;
+        }
+        .selection-products .button {
+          margin-left: 0;
+        }
+        .general-description .all-content {
+          display: block;
+          padding: 30px 30px;
+        }
+        .general-description .description {
+          margin: 40px 20px;
+        }
+
+        .general-description .description,
+        .general-description .spec {
+          width: 100%;
+        }
       }
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -529,7 +643,7 @@
           href="https://campaigns.rockwellautomation.com/Formulario_ES_Kinetix"
           data-targettype="webpage"
           target="_blank"
-          class="button-red"
+          class="button-white"
         >
           Busque asesoría de un experto</a
         >
@@ -538,14 +652,29 @@
     <main>
       <div class="section-main">
         <div class="content">
-          <div class="img-product">
-            <img
-              loading="lazy"
-              src="https://drive.google.com/uc?export=view&id=1Vway-c9IzhIIYdmL1w30Vo3xo-vAMr0i"
-              alt="imgproduct"
-              class="img-img-product"
-            />
+          <div class="swiper-container mySwiper img-product">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  loading="lazy"
+                  src="https://drive.google.com/uc?export=view&id=1xVgPEyv3vkV7nByR0mXM8-lm0RBP149N"
+                  alt="imgproduct"
+                  class="img-img-product one"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  loading="lazy"
+                  src="https://drive.google.com/uc?export=view&id=1wLu5TWdslM_aytg7B38tR0ASfyRRUcyH"
+                  alt="imgproduct"
+                  class="img-img-product two"
+                />
+              </div>
+            </div>
+            <br />
+            <div class="swiper-pagination"></div>
           </div>
+
           <div class="title-buttons">
             <img
               loading="lazy"
@@ -557,13 +686,7 @@
               Servo drives para un solo <br />
               eje <b>Kinetix 5300 EtherNet/IP</b>
             </div>
-            <a
-              class="button-red"
-              href="https://locator.rockwellautomation.com/Distributor"
-              target="_blank"
-              >comuníquese con un distribuidor</a
-            >
-            <br />
+
             <a
               href="https://campaigns.rockwellautomation.com/Formulario_ES_Kinetix"
               data-targettype="webpage"
@@ -572,9 +695,16 @@
             >
               Busque asesoría de un experto</a
             >
+            <br /><a
+              class="button-red"
+              href="https://locator.rockwellautomation.com/Distributor"
+              target="_blank"
+              >comuníquese con un distribuidor</a
+            >
           </div>
         </div>
       </div>
+
       <div class="general-description">
         <div class="all-content">
           <div class="description">
@@ -689,12 +819,12 @@
           <div class="main-title">Selección de productos</div>
           <div class="subtitle">Asistente de configuración de producto</div>
           <p>
-            Utilice
+            Utilice el
             <a
               class="blue-text"
-              href="https://configurator.rockwellautomation.com/#/configurator/19C2AEE297C141C7AD132B06D9C3B686"
+              href="https://configurator.rockwellautomation.com/#/configurator/6F07DD7B5B364287ABF2D955A53DC572"
               target="_blank"
-              >Asistente de configuración de productos</a
+              >asistente de configuración de productos</a
             >
             el para nuestra oferta completa de productos.
           </p>
@@ -717,9 +847,9 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th>Resource</th>
-                  <th>Publication number</th>
-                  <th>Language</th>
+                  <th>Catálogos</th>
+                  <th>Número de Publicación</th>
+                  <th>Idioma</th>
                 </tr>
               </thead>
               <tbody>
@@ -751,8 +881,7 @@
                 </tr>
                 <tr>
                   <td>
-                    Guía de diseño de sistemas de los de los servo drives
-                    Kinetix 5300
+                    Guía de diseño de sistemas de los servo drives Kinetix 5300
                   </td>
                   <td class="center">KNX-RM012</td>
                   <td class="center">
@@ -783,8 +912,7 @@
                 </tr>
                 <tr>
                   <td>
-                    Guía de migración del servo drives Kinetix 350 a Kinetix
-                    5300
+                    Guía de migración del servo drive Kinetix 350 a Kinetix 5300
                   </td>
                   <td class="center">2198-RM005</td>
                   <td class="center">
@@ -845,7 +973,7 @@
               <br />
               <div class="category">video</div>
               <div class="title">
-                Completo Sistemas de movimiento para máquinas inteligentes
+                Sistemas de movimiento para máquinas inteligentes
               </div>
               <br />
               <div class="subtitle">
@@ -856,8 +984,6 @@
                 grandes y complejos, los productos de control de movimiento
                 Allen-Bradley Kinetix pueden ayudarle a alcanzar sus objetivos.
               </div>
-              <br />
-              <a href="">Conozca más</a>
             </div>
             <div class="card">
               <img
@@ -871,17 +997,22 @@
               <div class="title">Servomotores Kinetix TL-Series</div>
               <br />
               <div class="subtitle">
-                Los servomotores Kinetix® TL-SeriesTM proporcionan una solución
+                Los servomotores Kinetix® TL-Series™ proporcionan una solución
                 asequible para diseñadores de máquinas con un amplio rango de
                 necesidades de aplicación.
               </div>
               <br />
-              <a href="">Conozca más</a>
+              <a
+                target="_blank"
+                href="https://www.rockwellautomation.com/es-mx/products/hardware/allen-bradley/motion-control/servo-motors/rotary-motors/tl-series.html"
+                >Conozca más</a
+              >
             </div>
+
             <div class="card">
               <img
                 loading="lazy"
-                src="http://golombianos.com/wp-content/uploads/2014/10/default-img.gif"
+                src="https://drive.google.com/uc?export=view&id=1hq61PHqB-Hp_j6bA3VzApHzkJssokPCP"
                 alt="imgcard"
                 class="imgcard"
               /><br />
@@ -896,12 +1027,16 @@
                 DIN SpeedTEC® para una conexión rápida de un cuarto de vuelta.
               </div>
               <br />
-              <a href="">Conozca más</a>
+              <a
+                target="_blank"
+                href="https://www.rockwellautomation.com/es-pr/products/hardware/allen-bradley/motion-control/servo-motors/kinetix-cables.html"
+                >Conozca más</a
+              >
             </div>
             <div class="card">
               <img
                 loading="lazy"
-                src="https://drive.google.com/uc?export=view&id=1iBYak_vkzd907lpwG1e9mubPu2cRhPHH"
+                src="https://drive.google.com/uc?export=view&id=14aq2DqoYIdRWpKL6k97XAbbvureFaFD0"
                 alt="imgcard"
                 class="imgcard"
               /><br />
@@ -909,13 +1044,17 @@
               <div class="title">Sistemas de control CompactLogix</div>
               <br />
               <div class="subtitle">
-                Los controladores CompactLogixTM y Compact GuardLogix®
+                Los controladores CompactLogix™ y Compact GuardLogix®
                 proporcionan mayor rendimiento, capacidad, productividad y
                 seguridad para ayudar a satisfacer las demandas crecientes de
                 máquinas y equipos inteligentes para la fabricación.
               </div>
               <br />
-              <a href="">Conozca más</a>
+              <a
+                target="_blank"
+                href="https://www.rockwellautomation.com/es-co/products/hardware/allen-bradley/programmable-controllers/small-controllers/compactlogix-family.html#:~:text=Esta%20homogeneidad%20brinda%20la%20integraci%C3%B3n,y%20variadores%20en%20un%20controlador"
+                >Conozca más</a
+              >
             </div>
           </div>
         </div>
@@ -983,5 +1122,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
