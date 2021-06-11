@@ -175,34 +175,74 @@
         width: 13em;
       }
 
+      .section-description {
+        background-image: url(https://drive.google.com/uc?export=view&id=1nFu94ANFZXyeeI9ZHVq5XeOYHWRKoy8i);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+        padding: 70px 50px;
+      }
+
+      .section-description p {
+        display: flex;
+        justify-content: center;
+      }
+
       .info-colors {
         display: flex;
+
+        background-image: url(https://drive.google.com/uc?export=view&id=1J4N43qadPWPcEfb_iFwol8MD6vV0pzFE);
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       .info-card {
-        padding: 70px 50px;
+        margin: 30px 0 30px 50px;
+        padding: 30px;
         flex-grow: 1;
         flex-basis: 0;
+        color: #ffffff;
+        border-right: 1px solid;
       }
+      .info-card:last-child {
+        border: none;
+      }
+
       .info-card-img {
         width: 100%;
         margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        height: 40%;
       }
       .info-card-title {
         margin-bottom: 10px;
       }
       .img-info {
-        width: 100%;
+        /*  width: 100%; */
       }
 
-      .products {
+      .products-main {
         display: flex;
       }
 
+      .products h2 {
+        color: rgb(197, 26, 68);
+        font-weight: 300;
+        margin-left: 50px;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
+
       .product-card {
-        padding: 70px 50px;
+        padding: 30px 50px 70px 50px;
         flex-grow: 1;
         flex-basis: 0;
         position: relative;
+        transition: transform 0.2s;
+      }
+
+      .product-card:hover {
+        transform: scale(1.1);
       }
 
       .product-card-title {
@@ -214,6 +254,9 @@
       }
       .product-card-img {
         width: 100%;
+        border-bottom: 1px solid rgb(197, 26, 68);
+        margin-bottom: 20px;
+        padding-bottom: 20px;
       }
 
       .img-product {
@@ -221,19 +264,28 @@
       }
 
       .video-info {
-        display: flex;
+        display: table;
         align-items: center;
         margin-top: 5em;
+        padding-left: 50px;
       }
       .video-info-video {
-        flex-grow: 1;
+        /*  flex-grow: 1;
         flex-basis: 0;
-        min-width: 50%;
+        min-width: 50%; */
+        width: 50%;
+        display: table-cell;
+      }
+      .video-info-info-main {
+        background-image: url(https://drive.google.com/uc?export=view&id=1nFu94ANFZXyeeI9ZHVq5XeOYHWRKoy8i);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        display: table-cell;
+        vertical-align: middle;
       }
       .video-info-info {
-        flex-grow: 1;
-        flex-basis: 0;
-        padding: 0 100px;
+        margin: 0px 10%;
       }
 
       .video-info-video {
@@ -397,20 +449,20 @@
       <div class="section-main">
         <div class="content">
           <div class="img-product">
-            <!--  src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o" -->
+            <!--  src="https://drive.google.com/uc?export=view&id=1mUsJpt-EV2Za-cGCzo1d7CZ6bS3pHyGX" -->
             <img
               loading="lazy"
               src="https://www.pulsorunner.com/wp-content/uploads/2014/10/default-img.gif"
               alt="imgproduct"
               class="img-img-product"
             />
-            <p>
+            <!--  <p>
               En la fabricación moderna es fundamental tener una visión completa
               y coordinada de los datos haciendo que la producción sea más
               eciente. Versaview 6300 las nueva generación de PCs, clientes
               lgeros (Thin clients) y monitores idustriales brindan soluciones
               para las limitaciones físicas y los requisitos de su entorno.
-            </p>
+            </p> -->
           </div>
           <div class="title-buttons">
             <div class="title">
@@ -433,13 +485,24 @@
           </div>
         </div>
       </div>
+      <div class="section-description">
+        <p>
+          En la fabricación moderna es fundamental tener una visión completa y
+          coordinada <br />
+          de los datos haciendo que la producción sea más eciente. Versaview
+          6300 las nueva <br />
+          generación de PCs, clientes lgeros (Thin clients) y monitores
+          idustriales brindan <br />
+          soluciones para las limitaciones físicas y los requisitos de su
+          entorno.
+        </p>
+      </div>
       <div class="info-colors">
         <div class="info-card">
           <div class="info-card-img">
-            <!--  src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o" -->
             <img
               loading="lazy"
-              src="https://www.pulsorunner.com/wp-content/uploads/2014/10/default-img.gif"
+              src="https://drive.google.com/uc?export=view&id=1CvEPSZs0GP7E1QrAR3XvRSKeu1pC3MU8"
               alt="img-info"
               class="img-info"
             />
@@ -453,10 +516,9 @@
         </div>
         <div class="info-card">
           <div class="info-card-img">
-            <!--  src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o" -->
             <img
               loading="lazy"
-              src="https://www.pulsorunner.com/wp-content/uploads/2014/10/default-img.gif"
+              src="https://drive.google.com/uc?export=view&id=18_leqTiSF2VOZIPJvWEv64c-ERHlIt23"
               alt="img-info"
               class="img-info"
             />
@@ -470,10 +532,9 @@
         </div>
         <div class="info-card">
           <div class="info-card-img">
-            <!--  src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o" -->
             <img
               loading="lazy"
-              src="https://www.pulsorunner.com/wp-content/uploads/2014/10/default-img.gif"
+              src="https://drive.google.com/uc?export=view&id=1F_pYxd0d7liNfUSOWr3j2OnoA6ocWgr3"
               alt="img-info"
               class="img-info"
             />
@@ -486,112 +547,104 @@
         </div>
       </div>
       <div class="products">
-        <div class="product-card">
-          <div class="product-card-img">
-            <!--  src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o" -->
-            <img
-              loading="lazy"
-              src="https://www.pulsorunner.com/wp-content/uploads/2014/10/default-img.gif"
-              alt="img-product"
-              class="img-product"
-            />
+        <h2>Implemente operaciones más eficientes</h2>
+        <div class="products-main">
+          <div class="product-card">
+            <div class="product-card-img">
+              <img
+                loading="lazy"
+                src="https://drive.google.com/uc?export=view&id=1mUsJpt-EV2Za-cGCzo1d7CZ6bS3pHyGX"
+                alt="img-product"
+                class="img-product"
+              />
+            </div>
+
+            <div class="product-card-title">
+              <b>VersaView 6300B Box PCss</b>
+            </div>
+            <br />
+            <div class="product-card-subtitle">
+              Los Box PC Allen-Bradley® <b>VersaView® 6300B</b> están
+              disponibles en varias formas factores y procesadores para
+              adaptarse a su aplicación. Unidades de montaje de libros tienen un
+              diseño sin ventilador que los hace óptimos para aplicaciones que
+              requieren bajos mantenimiento.
+            </div>
+            <br />
+            <a
+              href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
+              data-targettype="webpage"
+              target="_blank"
+              class="button-red"
+            >
+              descarga</a
+            >
           </div>
-          <div class="product-card-img-separator">-</div>
-          <div class="product-card-title"><b>VersaView 6300B Box PCss</b></div>
-          <br />
-          <div class="product-card-subtitle">
-            Los Box PC Allen-Bradley® <b>VersaView® 6300B</b> están disponibles
-            en varias formas factores y procesadores para adaptarse a su
-            aplicación. Unidades de montaje de libros tienen un diseño sin
-            ventilador que los hace óptimos para aplicaciones que requieren
-            bajos mantenimiento. Las unidades más compactas de esta familia
-            cuentan con Apollo Lake Procesadores Atom, lo que los hace ideales
-            para la interfaz hombre-máquina (HMI). Aplicaciones de registro de
-            datos y puerta de enlace IIoT. Las unidades de clase Atom también
-            son disponibles como clientes ligeros preparados para ThinManager® y
-            no están equipados con un sistema operativo o unidad de estado
-            sólido (SSD).
+          <div class="product-card">
+            <div class="product-card-img">
+              <!--  src="https://drive.google.com/uc?export=view&id=1PJBBXl2jDgPyto77mEnoW9-ABCccElRD" -->
+              <img
+                loading="lazy"
+                src="https://drive.google.com/uc?export=view&id=1v3mpnospWSFwt6PfISVZjqTxTZbwr9JV"
+                alt="img-product"
+                class="img-product"
+              />
+            </div>
+
+            <div class="product-card-title">
+              <b>Clientes ligeros VersaView 6300T Box</b>
+            </div>
+            <br />
+            <div class="product-card-subtitle">
+              Los <b>VersaView® 6300T</b> Box cuentan con procesadores Intel
+              Apollo Lake Atom, lo que los hace ideales para aplicaciones de
+              interfaz hombre-máquina (HMI), puerta de enlace IIoT y registro de
+              datos. Las unidades de clase Atom también están disponibles como
+              clientes ligeros.
+            </div>
+            <br />
+            <a
+              href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
+              data-targettype="webpage"
+              target="_blank"
+              class="button-red"
+            >
+              descarga</a
+            >
           </div>
-          <br />
-          <a
-            href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
-            data-targettype="webpage"
-            target="_blank"
-            class="button-red"
-          >
-            descarga</a
-          >
-        </div>
-        <div class="product-card">
-          <div class="product-card-img">
-            <!--  src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o" -->
-            <img
-              loading="lazy"
-              src="https://www.pulsorunner.com/wp-content/uploads/2014/10/default-img.gif"
-              alt="img-product"
-              class="img-product"
-            />
+          <div class="product-card">
+            <div class="product-card-img">
+              <!--  src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o" -->
+              <img
+                loading="lazy"
+                src="https://drive.google.com/uc?export=view&id=15KkFjpRJL--DN-ND1O9FHhnkCyBPGt-a"
+                alt="img-product"
+                class="img-product"
+              />
+            </div>
+
+            <div class="product-card-title">
+              <b>VersaView 6300P Panel PC</b>
+            </div>
+            <br />
+            <div class="product-card-subtitle">
+              Los <b>Panel PC VersaView 6300P</b> cuentan con Core i3, i5 e i7
+              de séptima generación de la plataforma Intel Kaby Lake H, lo que
+              le permite manejar aplicaciones industriales complejas. Las
+              tecnologías de pantalla táctil, que mejoran la facilidad de uso,
+              incluyen resistiva analógica y capacitiva proyectada (para
+              operación multitáctil).
+            </div>
+            <br />
+            <a
+              href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
+              data-targettype="webpage"
+              target="_blank"
+              class="button-red"
+            >
+              descarga</a
+            >
           </div>
-          <div class="product-card-img-separator">-</div>
-          <div class="product-card-title">
-            <b>Clientes ligeros VersaView 6300T Box</b>
-          </div>
-          <br />
-          <div class="product-card-subtitle">
-            Los <b>VersaView® 6300T</b>Box cuentan con procesadores Intel Apollo
-            Lake Atom, lo que los hace ideales para aplicaciones de interfaz
-            hombre-máquina (HMI), puerta de enlace IIoT y registro de datos. Las
-            unidades de clase Atom también están disponibles como clientes
-            ligeros preparados para ThinManager® para arrancar de forma nativa
-            en el software ThinManager sin una unidad de estado sólido (SSD) a
-            bordo. Estas unidades tienen un diseño sin ventilador que las hace
-            óptimas para aplicaciones que requieren poco mantenimiento, así como
-            múltiples métodos de montaje para adaptarse a las necesidades de la
-            aplicación.
-          </div>
-          <br />
-          <a
-            href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
-            data-targettype="webpage"
-            target="_blank"
-            class="button-red"
-          >
-            descarga</a
-          >
-        </div>
-        <div class="product-card">
-          <div class="product-card-img">
-            <!--  src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o" -->
-            <img
-              loading="lazy"
-              src="https://www.pulsorunner.com/wp-content/uploads/2014/10/default-img.gif"
-              alt="img-product"
-              class="img-product"
-            />
-          </div>
-          <div class="product-card-img-separator">-</div>
-          <div class="product-card-title"><b>VersaView 6300P Panel PC</b></div>
-          <br />
-          <div class="product-card-subtitle">
-            Los <b>Panel PC VersaView 6300P</b> cuentan con Core i3, i5 e i7 de
-            séptima generación de la plataforma Intel Kaby Lake H, lo que le
-            permite manejar aplicaciones industriales complejas. Las tecnologías
-            de pantalla táctil, que mejoran la facilidad de uso, incluyen
-            resistiva analógica y capacitiva proyectada (para operación
-            multitáctil). Este Panel PC está disponible en una variedad de
-            tamaños y resoluciones de pantalla. Hay opciones de unidades de
-            bisel estándar o de perl bajo. Ambos tienen resoluciones de hasta
-            alta denición completa.
-          </div>
-          <br />
-          <a
-            href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
-            data-targettype="webpage"
-            target="_blank"
-            class="button-red"
-          >
-            descarga</a
-          >
         </div>
       </div>
       <div class="video-info">
@@ -606,22 +659,25 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="video-info-info">
-          <div class="video-title">
-            <b
-              >ThinManager® Entrega y gestión de Connected Enterprise®:
-              descripción general</b
-            >
-          </div>
-          <br /><br />
-          <div class="video-subtitle">
-            La plataforma ThinManager® está diseñada para simplicar la forma en
-            que se entrega el contenido de productividad y los dispositivos se
-            administran dentro de los entornos de fabricación o producción.
-            Descubra cómo el software ThinManager® puede revolucionar todo,
-            desde el piso de la planta hasta la sala de control, cambiar la
-            forma en que ve la movilidad en esas áreas y entregar y administrar
-            The Connected Enterprise® hoy.
+
+        <div class="video-info-info-main">
+          <div class="video-info-info">
+            <div class="video-title">
+              <b
+                >ThinManager® Entrega y gestión de Connected Enterprise®:
+                descripción general</b
+              >
+            </div>
+            <br /><br />
+            <div class="video-subtitle">
+              La plataforma ThinManager® está diseñada para simplicar la forma
+              en que se entrega el contenido de productividad y los dispositivos
+              se administran dentro de los entornos de fabricación o producción.
+              Descubra cómo el software ThinManager® puede revolucionar todo,
+              desde el piso de la planta hasta la sala de control, cambiar la
+              forma en que ve la movilidad en esas áreas y entregar y
+              administrar The Connected Enterprise® hoy.
+            </div>
           </div>
         </div>
       </div>
