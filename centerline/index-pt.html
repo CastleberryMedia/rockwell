@@ -1,0 +1,1028 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
+
+      * {
+        margin: 0;
+        font-family: "Barlow", sans-serif;
+        /*    letter-spacing: -1px; */
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      button {
+        border-radius: 3px;
+      }
+
+      header {
+        background-color: #ffffff;
+        display: flex;
+        height: 84px;
+        z-index: 101;
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        top: 0;
+      }
+      main {
+        margin-top: 84px;
+      }
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      p {
+        color: #000000;
+        font-weight: 300;
+      }
+
+      .header-logo {
+        margin-left: 40px;
+      }
+
+      .header-separator {
+        border: 1px solid rgb(171, 171, 171);
+        margin-right: 40px;
+        height: 25px;
+      }
+
+      .header-options {
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+      }
+
+      .header-search img {
+        width: 45%;
+      }
+
+      .header-button {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: #ffffff;
+        height: 36px;
+        text-transform: uppercase;
+        color: rgb(197, 26, 68);
+        cursor: pointer;
+      }
+
+      .button-white {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: #ffffff;
+        height: 36px;
+        text-transform: uppercase;
+        color: rgb(197, 26, 68);
+        cursor: pointer;
+        letter-spacing: 0;
+        padding: 0 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+      }
+
+      .button-red {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: rgb(197, 26, 68);
+        height: 36px;
+        text-transform: uppercase;
+        color: #ffffff;
+        cursor: pointer;
+        letter-spacing: 0;
+        padding: 0 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        width: fit-content;
+      }
+
+      .blue-text {
+        color: rgb(104, 186, 230);
+        font-weight: 600;
+      }
+
+      .background {
+        width: 100%;
+      }
+      .section-main {
+        background-image: url(https://drive.google.com/uc?export=view&id=1UTBl2ER1c9PqY892Wm1Q65rDKzmsDLPC);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* width: 100%; */
+        height: 32em;
+        padding-top: 6em;
+      }
+      .section-main .content {
+        /* position: absolute; */
+        right: 0;
+        display: flex;
+        width: 100%;
+      }
+
+      .section-main .img-main {
+        width: 100%;
+      }
+      .section-main .img-img-product {
+        width: 100%;
+      }
+      .section-main .img-product {
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+
+      .section-main .img-product p {
+        margin-top: 40px;
+        color: #000000;
+        font-weight: 300;
+      }
+
+      .section-main .img-product,
+      .section-main .title-buttons {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .section-main .content .title {
+        font-size: 32px;
+        margin: 20px 0 20px 0;
+      }
+      .section-main .content .logo-allen {
+        width: 13em;
+      }
+
+      .general-description {
+        position: relative;
+        display: flex;
+        background-image: url("https://drive.google.com/uc?export=view&id=1oSgTVvdcTpKTTLpk2xwRxWwLnQb5q58z");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 40px 0;
+      }
+      .general-description .columns {
+        display: flex;
+      }
+      .general-description .title {
+        font-size: 20px;
+      }
+
+      .general-description .description,
+      .general-description .spec {
+        width: 50%;
+      }
+
+      .general-description .spec {
+        margin: 20px 100px 20px 50px;
+      }
+
+      .general-description .description {
+        margin: 20px 50px 20px 100px;
+      }
+
+      .main-title {
+        color: rgb(197, 26, 68);
+        font-size: 30px;
+      }
+
+      .general-description .subtitle {
+        margin: 20px 0 10px 0;
+      }
+      .general-description ul {
+        margin-top: 10px;
+      }
+      .general-description li {
+        color: #000000;
+        font-weight: 300;
+      }
+
+      .general-description .aditional .title {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .general-description .aditional p {
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+
+      .especific-bg {
+        position: absolute;
+        right: 0;
+        width: 60%;
+      }
+
+      .aditional-information {
+        position: relative;
+        display: flex;
+      }
+      .aditional-information .content-information {
+        margin: 20px 100px;
+        z-index: 100;
+      }
+
+      .aditional-information .subtitle {
+        margin-top: 30px;
+        color: #000000;
+        font-weight: 300;
+        background-color: #ffffff;
+        width: fit-content;
+      }
+      .aditional-information .cards {
+        display: flex;
+        margin-top: 50px;
+      }
+      .aditional-information .card {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin-left: 10px;
+      }
+      .aditional-information .card .card-video {
+        background-color: black;
+        display: flex;
+        align-items: center;
+      }
+      .aditional-information .img-video {
+        min-height: 197px;
+        display: flex;
+        align-items: center;
+      }
+      .aditional-information .card .img-card {
+        width: 100%;
+      }
+
+      .aditional-information .card .category {
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+      .aditional-information .card a {
+        color: rgb(104, 186, 230);
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .documentation {
+        position: relative;
+        display: flex;
+        height: 36em;
+        overflow: hidden;
+      }
+
+      .documentation .table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .documentation .doc-content {
+        position: absolute;
+      }
+
+      .documentation .background {
+        height: 50em;
+      }
+
+      .doc-content {
+        width: 100%;
+      }
+
+      .documentation .main-title,
+      .table-main {
+        margin: 20px 100px 20px 100px;
+      }
+
+      .documentation .table thead {
+        background-color: rgb(197, 26, 68);
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+      .documentation .table thead tr {
+        height: 55px;
+      }
+      .documentation .table tbody tr {
+        color: #000000;
+        font-weight: 300;
+        height: 40px;
+        font-size: 15px;
+        border-bottom: 1px solid rgb(178, 178, 179);
+      }
+
+      .documentation .table tbody .center {
+        text-align: center;
+      }
+      footer {
+        height: 250px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer-content {
+        position: absolute;
+        bottom: 0;
+      }
+
+      .social-media {
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      .social-media-title {
+        margin: 0 auto;
+        width: 250px;
+        color: rgb(197, 26, 68);
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .dots {
+        margin-left: 160px;
+      }
+
+      .footer-copyright {
+        background-image: url("http://drive.google.com/uc?export=view&id=1BAfgTYsGduiJK9R6j2XbWmwx8rrPSzYG");
+        height: 77px;
+        width: 820px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+      }
+
+      .footer-copyright p {
+        color: #ffffff;
+      }
+
+      .img-product-movil {
+        display: none;
+      }
+      img.logo-footer {
+        width: 150px;
+      }
+      .separator {
+        border: 0.5px solid #ffffff;
+        height: 21px;
+        margin: 0 20px 0 20px;
+      }
+
+      @media (max-width: 800px) {
+        .section-main {
+          background-image: url(https://drive.google.com/uc?export=view&id=1xx9X0RenD-PS8gEIxczkzJufYKEbQBgo);
+          background-repeat: no-repeat;
+
+          height: auto;
+          padding: 80px;
+        }
+        .img-product-movil {
+          display: block;
+        }
+        .img-product {
+          display: none;
+        }
+
+        .section-main .content {
+          display: block;
+        }
+
+        .general-description .columns {
+          display: block;
+        }
+
+        .aditional-information .cards {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .aditional-information .card {
+          flex: 1 2 200px;
+          margin-bottom: 20px;
+        }
+        .especific-bg {
+          top: 11%;
+          width: 100%;
+        }
+        .documentation .main-title,
+        .table-main {
+          margin: 20px;
+        }
+        .aditional-information .content-information {
+          margin: 40px 40px 40px 73px;
+          z-index: 100;
+        }
+        .general-description .description,
+        .general-description .spec {
+          margin: 40px 40px 40px 73px;
+          width: auto;
+        }
+
+        .aditional {
+          margin: 40px 0px;
+          width: auto;
+        }
+        hr {
+          width: 100%;
+        }
+        .footer-copyright {
+          height: 60px;
+          background-position-y: bottom;
+          background-size: 80%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      @media (max-width: 700px) {
+        .header-options {
+          display: none;
+        }
+        .footer-copyright {
+          height: 35px;
+          font-size: 12px;
+          background-size: 100%;
+          width: 100%;
+        }
+        .section-main {
+          padding: 30px;
+          background-size: contain;
+        }
+        .general-description .description,
+        .general-description .spec {
+          margin: 0px 20px 40px 30px;
+          width: auto;
+        }
+        .aditional-information .content-information {
+          margin: 10px 20px 40px 20px;
+          z-index: 100;
+        }
+        .documentation {
+          height: auto;
+        }
+
+        img.logo-footer {
+          width: 70px;
+        }
+        .text-footer {
+          right: auto;
+        }
+        .footer-content {
+          width: 100%;
+        }
+        .separator {
+          border: 0.5px solid #ffffff;
+          height: 21px;
+          margin: 0 20px 0 20px;
+          margin: 0 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img
+          loading="lazy"
+          src="https://drive.google.com/uc?export=view&id=1C6I91qo8Ulv4BUGOuVVdd1ANgXS113qR"
+          alt="logo"
+        />
+      </div>
+      <div class="header-options">
+        <div class="header-separator"></div>
+        <div class="header-search">
+          <img
+            loading="lazy"
+            src="https://drive.google.com/uc?export=view&id=1iWKrq-1oyJYFygPcXHFzZOVk6jshzv2X"
+            alt="search"
+          />
+        </div>
+        <a
+          href="https://campaigns.rockwellautomation.com/Formulario_PT_Centerline"
+          data-targettype="webpage"
+          target="_blank"
+          class="button-white"
+        >
+          BUSQUE A ASSESSORIA</a
+        >
+      </div>
+    </header>
+    <main>
+      <div class="section-main">
+        <div class="content">
+          <div class="img-product">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o"
+              alt="imgproduct"
+              class="img-img-product"
+            />
+            <!--   <p>
+              Los centros de control de motores (CCM) de bajo voltaje
+              CENTERLINE® 2500 IEC están diseñados para cumplir con los
+              requisitos de las aplicaciones globales. Al combinar una dimensión
+              más compacta y una prueba de tipo integral, los CCM CENTERLINE
+              2500 ayudan a satisfacer las necesidades de los clientes. Los CCM
+              también ayudan a atender la demanda global por soluciones de
+              control de motores eléctricos ecientes en cuanto al costo, al uso
+              de la energía y del espacio, y listas de fábrica.
+            </p> -->
+          </div>
+          <div class="title-buttons">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1DA1Zk8unG4ahb6DV3NMNjAHlc6D5YFDB"
+              alt="logo-allen"
+              class="logo-allen"
+            />
+            <div class="title">
+              Centro de controle de motores de
+              <br />
+              baixa tensão <b>CENTERLINE 2500 IEC</b> <br />
+              com <b>SecureConnect</b>
+            </div>
+
+            <a
+              href="https://campaigns.rockwellautomation.com/Formulario_PT_Centerline"
+              data-targettype="webpage"
+              target="_blank"
+              class="button-white"
+            >
+              BUSQUE A ASSESSORIA</a
+            >
+            <br />
+            <a
+              href="https://locator.rockwellautomation.com/Distributor"
+              target="_blank"
+              class="button-red"
+              >ENTRE EM CONTATO COM UM DISTRIBUIDOR</a
+            >
+          </div>
+          <div class="img-product-movil">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o"
+              alt="imgproduct"
+              class="img-img-product"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="general-description">
+        <div class="columns">
+          <div class="description">
+            <div class="title">
+              Centro de controle de motores de baixa tensão
+              <b>CENTERLINE 2500 IEC</b> con <b>SecureConnect</b>
+            </div>
+            <br />
+            <p>
+              Os centros de controle de motores (CCM) de baixa tensão
+              CENTERLINE® 2500 IEC são projetados para atender aos requisitos de
+              aplicações globais. Combinando dimensões menores e um teste de
+              tipo integral, os CCM CENTERLINE 2500 contribuem para atender às
+              necessidades dos clientes. Os CCMs também ajudam a atender à
+              demanda global por soluções de controle de motores elétricos
+              prontas para uso, econômicas e eficientes em termos de uso de
+              energia e espaço.
+            </p>
+
+            <div class="subtitle">CENTERLINE 2500 com tecnología ArcShield</div>
+            <hr />
+            <ul>
+              <li>
+                Ajuda a reduzir os riscos elétricos, inclusive de arco, e
+                aumenta a proteção contra falhas internas de arco elétrico.
+              </li>
+              <li>
+                Proporciona proteção de pessoal e montagem conforme a IEC/TR
+                61641:2014.
+              </li>
+              <li>
+                Inclui travas resistentes a arcos elétricos em todas as portas
+                para alívio de pressão, para manter a porta do CCM travada
+                durante uma falha de arco elétrico.
+              </li>
+              <li>
+                Inclui deetores resistentes a arcos elétricos para inversores
+                de velocidade variável PowerFlex® a fim de permitir dissipação
+                de calor adequada e a manutenção da resistência ao arco
+                elétrico.
+              </li>
+            </ul>
+            <div class="subtitle">
+              CENTERLINE 2500 com tecnología IntelliCENTER
+            </div>
+            <hr />
+            <ul>
+              <li>
+                Oferece uma rede EtherNet/IP™ integrada que fornece dados em
+                tempo real para minimizar a necessidade de se aproximar do CCM.
+              </li>
+              <li>
+                Oferece as tecnologias EtherNet/IP e DeviceNet™ incorporadas,
+                projetadas e testadas conforme as especificações da ODVA para
+                ajudar a garantir comunicações confiáveis.
+              </li>
+              <li>
+                Inclui o software IntelliCENTER® que permite acesso a dados
+                operacionais e localização de falhas para reduzir o tempo de
+                parada não programada.
+              </li>
+            </ul>
+            <div class="subtitle">
+              CENTERLINE 2500 com tecnología SecureConnect
+            </div>
+            <hr />
+            <ul>
+              <li>
+                Reduz a exposição a riscos elétricos desconectando a energia do
+                barramento de força vertical em uma unidade individual com a
+                porta fechada.
+              </li>
+              <li>
+                Oferece quatro posições operacionais: conectada, em teste,
+                desconectada e liberada. Um pistão próximo à manopla também pode
+                ser bloqueado para segurança adicional.
+              </li>
+              <li>
+                Está em conformidade com a norma IEC/TR 61641 e oferece o acesso
+                exigido pela IEC 61892 para aplicações marítimas de petróleo e
+                gás.
+              </li>
+            </ul>
+          </div>
+          <div class="spec">
+            <div class="main-title">Especificações</div>
+            <div class="subtitle">CERTIFICAÇÕES</div>
+            <hr />
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1NC2lCf1hXk-vmli_yBlPxCp92AMXs_Su"
+              alt="homologations"
+            />
+            <ul>
+              <li>ABS</li>
+              <li>Certificação ASTA de terceiros para IEC61439-1 e 2</li>
+              <li>Com marcação CE de conformidade</li>
+              <li>Certificação obrigatória da China (CCC)</li>
+              <li>Certificação DEKRA de terceiros para IEC61439-1 e 2</li>
+              <li>EAC</li>
+              <li>ERA</li>
+              <li>IBC 2010</li>
+              <li>ICC-ES AC156</li>
+              <li>RETIE</li>
+              <li>SEI/ASCE 7-05</li>
+              <li>SEI/ASCE 7-10</li>
+              <li>Sísmica</li>
+              <li>
+                SII (Standards Institution of Israel, Institución de normas de
+                Israel)
+              </li>
+            </ul>
+
+            <div class="aditional">
+              <div class="title">Procurando informações adicionais?</div>
+              <p>
+                Para encontrar informações adicionais sobre produtos, inclusive
+                arquivos de desenho CAD, modelos 3D e muito mais, use nosso
+                catálogo de produtos.
+              </p>
+            </div>
+            <a
+              class="button-white"
+              href="https://configurator.rockwellautomation.com/#/browse"
+              target="_blank"
+              >Catálogo de produtos</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="aditional-information">
+        <div class="especific-bg">
+          <img
+            loading="lazy"
+            src="https://drive.google.com/uc?export=view&id=1EEqlnifdICQ3slA8NMZ65hF-0ssXioiX"
+            alt="background"
+            class="background b-dots"
+          />
+        </div>
+        <div class="content-information">
+          <div class="main-title">Informações adicionais</div>
+          <div class="subtitle">
+            Tenha um centro de controle de motores mais rápido com o
+            <a
+              class="blue-text"
+              href="https://literature.rockwellautomation.com/idc/groups/literature/documents/pp/2500-pp004_-en-p.pdf"
+              target="_blank"
+              >programa FasTRAK</a
+            >
+            para os CCM 2500 de CENTERLINE.
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="card-video">
+                <div class="img-video">
+                  <iframe
+                    width=""
+                    height=""
+                    src="https://www.youtube.com/embed/C2bFvcCg7IM?controls=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <div class="category">video</div>
+              <div class="title">
+                Centros de controle de motores CENTERLINE 2500 IEC
+              </div>
+              <div class="subtitle">
+                <p>
+                  Assista a este vídeo para saber como os centros de controle de
+                  motores CENTERLINE 2500 IEC foram projetados para ajudar a
+                  centralizar o controle de motores em uma grande variedade de
+                  aplicações. Eles vêm prontos de fábrica para uso imediato e
+                  oferecem testes de tipo integral. Tudo isso com dimensões
+                  menores.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-video">
+                <img
+                  loading="lazy"
+                  src="https://drive.google.com/uc?export=view&id=1liAIlEzRf3GPu-HkLk9tmxc26elLVDK9"
+                  alt="imgcard"
+                  class="img-card"
+                />
+              </div>
+              <div class="category">blog</div>
+              <div class="title">
+                Os três principais recursos de projeto para um centro de
+                controle de motores (CCM) mais seguro
+              </div>
+              <div class="subtitle">
+                Seu centro de controle de motores foi projetado com foco na
+                segurança? Aqui estão os três principais recursos de projeto
+                para um centro de controle de motores mais seguro.
+              </div>
+              <br />
+              <a
+                href="https://www.rockwellautomation.com/es-mx/company/news/blogs/top-3-design-features-for-a-safer-mcc.html"
+                target="_blank"
+                >Leia agora</a
+              >
+            </div>
+            <div class="card">
+              <div class="img-video">
+                <img
+                  loading="lazy"
+                  src="https://drive.google.com/uc?export=view&id=1JcyaDMYRD1BJ0wAIcGbAUNUKoYUpoHGZ"
+                  alt="imgcard"
+                  class="img-card"
+                />
+              </div>
+              <div class="category">recursos</div>
+              <div class="title">Controle de motores</div>
+              <div class="subtitle">
+                Os dispositivos inteligentes compõem sistemas conectados
+                inteligentes. Com as informações recebidas desses dispositivos
+                de controle de motores, você pode tomar decisões inteligentes e
+                embasadas. Descubra como as informações de nosso portfólio de
+                controle inteligente de motores podem preparar você para tomar
+                melhores decisões operacionais, otimizar o desempenho do sistema
+                e ganhar eficiência operacional.
+              </div>
+              <br />
+              <a
+                href="https://www.rockwellautomation.com/es-mx/capabilities/industrial-automation-control/intelligent-motor-control.html"
+                target="_blank"
+                >Explore nossos recursos</a
+              >
+            </div>
+            <div class="card">
+              <div class="img-video">
+                <img
+                  loading="lazy"
+                  src="https://drive.google.com/uc?export=view&id=1KgquwvNu0oZ77vbDx9xBKNM7Bt4AztmM"
+                  alt="imgcard"
+                  class="img-card"
+                />
+              </div>
+              <div class="category">ferramentas</div>
+              <div class="title">Ferramenta CENTERLINE Builder</div>
+              <div class="subtitle">
+                Use o CENTERLINE® Builder para projetar sua linha de CCM
+                CENTERLINE. Esta ferramenta permite inserir informações de
+                configuração geral do centro de controle de motores com
+                características centrais, adicionar unidades e projetar o CCM. A
+                ferramenta produz um layout da configuração, um diagrama
+                unifilar e esquemas típicos personalizados conforme os
+                requisitos do projeto. (É preciso fazer login para acessar esta
+                página.)
+              </div>
+              <br />
+              <a
+                href="https://idp.rockwellautomation.com/adfs/oauth2/authorize/?client_id=e6138ccb-db57-46ea-9139-fe190ae4e201&redirect_uri=https%3A%2F%2Fdownload.rockwellautomation.com%2F&resource=RADARProd&response_mode=form_post&response_type=code%20id_token&scope=openid%20profile&state=OpenIdConnect.AuthenticationProperties%3DoOiRjvJG0xRCDRx2u6hkyqKfDFScBxiSQ9Dhi41toW__2jdFqzrUhCjG0BE2Yyp8ZEpr7fgLeR4BYXIkIlCCK9dQVkLdX0cTqfkwusZvGue1uQb3T9sw8mtYgjn4cPO7cSKmMZS24EvD3OJ5q3wULSLMEYaHLVModuOGbOsxMMeOi2c9leAEH7pnzQIUA8nq6_BsJOizQXA-8yY9nomGSYgSFZo&nonce=637577327284454470.OTFlY2NlODQtZGZlMi00M2JjLTkyYzgtNjk4ZDNmNGRmMTgzMTY4ZDY5MTgtOTNkMS00MzhhLWIwN2EtMWQ0NDg2MTBiZGJm&x-client-SKU=ID_NET451&x-client-ver=5.2.1.0"
+                target="_blank"
+                >Primeiros passos</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="documentation">
+        <img
+          loading="lazy"
+          src="https://drive.google.com/uc?export=view&id=1bi7tmz-6HHNCgPA_FI6243Qffuse_O0R"
+          alt="background"
+          class="background"
+        />
+
+        <div class="doc-content">
+          <div class="main-title">Documentação</div>
+          <div class="table-main">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>CATÁLOGOS</th>
+                  <th>NÚMERO DE PUBLICAÇÃO</th>
+                  <th>IDIOMA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Folheto sobre a tecnologia IntelliCENTER com EtherNet/IP
+                  </td>
+                  <td class="center">MCC-BR003</td>
+                  <td class="center">
+                    <a
+                      class="blue-text"
+                      href="https://drive.google.com/file/d/1yv88bsuWxZG2X4cgEdaC6-Oft7Y1t7vW/view?usp=sharing"
+                      target="_blank"
+                      >Español</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Descrição do produto CCM CENTERLINE 2500</td>
+                  <td class="center">2500-PP001</td>
+                  <td class="center">
+                    <a
+                      class="blue-text"
+                      href="https://drive.google.com/file/d/1qEDy8MMaP4oeiT6MykzncZc6Se3vwAdY/view?usp=sharing"
+                      target="_blank"
+                      >Español</a
+                    >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Guia de seleção do CENTERLINE 2500</td>
+                  <td class="center">2500-SG001</td>
+                  <td class="center">
+                    <a
+                      class="blue-text"
+                      href="https://drive.google.com/file/d/18N_wuF88iI0P0LkKhVsHuece0uSuOW56/view?usp=sharing"
+                      target="_blank"
+                      >Español</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Manual de instalação do CCM CENTERLINE 2500</td>
+                  <td class="center">2500-IN001</td>
+                  <td class="center">
+                    <a
+                      class="blue-text"
+                      href="https://drive.google.com/file/d/18SXJttSokCt2x2NXVRMuvvqlT1ig5sOY/view?usp=sharing"
+                      target="_blank"
+                      >Español</a
+                    >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    Modernização das colunas das séries A a C do CENTERLINE 2500
+                    <br />
+                    com instruções de instalação das unidades da série D
+                  </td>
+                  <td class="center">2500-IN006</td>
+                  <td class="center">
+                    <a
+                      class="blue-text"
+                      href="https://drive.google.com/file/d/1mufHuVkt3oJW0xfV3op4mVCwHNWYemui/view?usp=sharing"
+                      target="_blank"
+                      >Español</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lista de verificação da seleção do CENTERLINE 2500</td>
+                  <td class="center">2500-SR001</td>
+                  <td class="center">
+                    <a
+                      class="blue-text"
+                      href="https://drive.google.com/file/d/1hD7apuS77j_fTOm3TOMldM0V1Q6NS39I/view?usp=sharing"
+                      target="_blank"
+                      >English</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Especificações de provisão do CCM CENTERLINE 2500</td>
+                  <td class="center">2500-SR002</td>
+                  <td class="center">
+                    <a
+                      class="blue-text"
+                      href="https://drive.google.com/file/d/1u-9lw5uBOASaGTPS2nk540YYv2P36NMi/view?usp=sharing"
+                      target="_blank"
+                      >Español</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="social-media-title">Conecte-se conosco</div>
+        <div class="social-media">
+          <a href="https://www.facebook.com/ROKAutomation" target="_blank"
+            ><img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=10n8DUxKYarozrH00gahwnmhDTRnhL77Y"
+              alt="logo-face"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/rockwell-automation/mycompany/"
+            target="_blank"
+          >
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1ydjUGhzU4rSDtgmV-AQdHmVJQNHAp59a"
+              alt="logo-linkedin"
+          /></a>
+          <a href="https://twitter.com/ROKAutomationLA" target="_blank">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1iEMGRDBdiVywu9H9giQiW4zAl7MKUxdh"
+              alt="logo-twitter"
+          /></a>
+          <a href="https://www.youtube.com/user/ROKAutomation" target="_blank">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1K8xmSoglqfVu_62LaFXYPFlNFJOsOvTc"
+              alt="logo-youtube"
+          /></a>
+          <a
+            href="https://www.rockwellautomation.com/en-us/company/news/blogs.html"
+            target="_blank"
+          >
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1SWvZ8J8L4_y4jnUhF1HpZ0FKctkyRmJX"
+              alt="logo-blob"
+          /></a>
+        </div>
+        <div class="footer-copyright">
+          <p>Copyright © 2021 Rockwell Automation, Inc.</p>
+          <div class="separator"></div>
+          <div class="logo">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1K6mIxwEk97hq-SkR4St6I9ySdGzBN7oO"
+              alt="logo-blob"
+              class="logo-footer"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

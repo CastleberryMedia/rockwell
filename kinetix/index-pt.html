@@ -1,0 +1,1139 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
+
+      * {
+        margin: 0;
+        font-family: "Barlow", sans-serif;
+        /*    letter-spacing: -1px; */
+      }
+
+      button {
+        border-radius: 3px;
+      }
+
+      b {
+        font-weight: 600;
+      }
+
+      p {
+        color: #000000;
+      }
+
+      header {
+        background-color: #ffffff;
+        display: flex;
+        height: 84px;
+        z-index: 100;
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        top: 0;
+      }
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .header-logo {
+        margin-left: 40px;
+      }
+
+      .header-separator {
+        border: 1px solid rgb(171, 171, 171);
+        margin-right: 40px;
+        height: 25px;
+      }
+
+      .header-options {
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+      }
+
+      .header-search img {
+        width: 45%;
+      }
+
+      .header-button {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: #ffffff;
+        height: 36px;
+        text-transform: uppercase;
+        color: rgb(197, 26, 68);
+        cursor: pointer;
+      }
+
+      .button-white {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: #ffffff;
+        height: 36px;
+        text-transform: uppercase;
+        color: rgb(197, 26, 68);
+        cursor: pointer;
+        letter-spacing: 0;
+        padding: 0 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+      }
+
+      .button-red {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: rgb(197, 26, 68);
+        height: 36px;
+        text-transform: uppercase;
+        color: #ffffff;
+        cursor: pointer;
+        letter-spacing: 0;
+        padding: 0 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        width: fit-content;
+      }
+      .blue-text {
+        color: rgb(104, 186, 230);
+        font-weight: 500;
+      }
+
+      .background {
+        width: 100%;
+      }
+
+      .general-description {
+        display: flex;
+        position: relative;
+      }
+
+      .section-main {
+        background-image: url(https://drive.google.com/uc?export=view&id=1iH00jnD3APvbaAa2_3H6Tgio_1QoKBzF);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 516px;
+        padding-top: 84px;
+        display: flex;
+        align-items: center;
+      }
+      .section-main .content {
+        display: flex;
+        width: 100%;
+      }
+
+      .section-main .img-main {
+        width: 100%;
+      }
+      .section-main .img-img-product {
+        width: 50%;
+      }
+      .section-main .img-product {
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .section-main .img-product,
+      .section-main .title-buttons {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .section-main .content .title {
+        font-size: 32px;
+        margin: 20px 0 20px 0;
+      }
+      .section-main .content .logo-allen {
+        width: 13em;
+      }
+
+      .general-description {
+        background-image: url(https://drive.google.com/uc?export=view&id=1weooB2QArCv2oWFhE7sFOFOj2pOEkgo8);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .general-description .description,
+      .general-description .spec {
+        width: 50%;
+      }
+
+      .general-description .spec {
+        margin: 20px 100px 20px 50px;
+      }
+
+      .general-description .description {
+        margin: 20px 50px 20px 100px;
+      }
+      .general-description .all-content {
+        display: flex;
+      }
+
+      .general-description .description .subtitle {
+        font-size: 25px;
+      }
+
+      .main-title {
+        color: rgb(197, 26, 68);
+        font-size: 30px;
+      }
+      .general-description .subtitle {
+        margin: 20px 0 10px 0;
+      }
+      .general-description ul {
+        margin-top: 10px;
+      }
+      .general-description li,
+      .general-description p {
+        color: #000000;
+        font-weight: 300;
+      }
+
+      .general-description .aditional .title {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .general-description .aditional p {
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+
+      .selection-products {
+        padding: 20px 100px 20px 100px;
+      }
+
+      .documentation {
+        background-image: url(https://drive.google.com/uc?export=view&id=1weooB2QArCv2oWFhE7sFOFOj2pOEkgo8);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        position: relative;
+        display: flex;
+        height: 27em;
+        overflow: hidden;
+      }
+
+      .documentation .table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      /*   .documentation .doc-content {
+
+            } */
+      .especific-bg {
+        position: absolute;
+        right: 0;
+        width: 60%;
+        top: 3em;
+      }
+
+      .documentation .background {
+        height: 50em;
+      }
+
+      .doc-content {
+        width: 100%;
+      }
+
+      .documentation .main-title,
+      .table-main {
+        margin: 20px 100px 20px 100px;
+      }
+
+      .documentation .table thead {
+        background-color: rgb(197, 26, 68);
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+      .documentation .table thead tr {
+        height: 55px;
+      }
+      .documentation .table tbody tr {
+        color: #000000;
+        font-weight: 300;
+        height: 40px;
+        font-size: 15px;
+        border-bottom: 1px solid rgb(178, 178, 179);
+      }
+
+      .documentation .table tbody .center {
+        text-align: center;
+      }
+
+      .selection-products {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        align-items: center;
+      }
+
+      .selection-products .text,
+      .selection-products .button {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+
+      .selection-products .button {
+        margin-left: 100px;
+      }
+
+      .selection-products .text .subtitle {
+        font-size: 25px;
+        margin-top: 10px;
+      }
+
+      .selection-products .text .subtitle {
+        font-size: 25px;
+        margin-top: 10px;
+      }
+      .selection-products .text p {
+        color: #000000;
+        font-weight: 300;
+      }
+
+      .related-products {
+        position: relative;
+        display: flex;
+        height: 40em;
+        overflow: hidden;
+      }
+      .related-products img.imgcard {
+        width: 100%;
+      }
+      .related-products .related-content {
+        position: absolute;
+        padding: 40px 100px 40px 100px;
+      }
+      .img-video {
+        display: flex;
+        align-items: center;
+      }
+
+      .related-products .cards {
+        display: flex;
+        margin-top: 50px;
+      }
+      .related-products .card {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin-left: 10px;
+        flex: 1 2 200px;
+      }
+
+      .related-products .subtitle {
+        color: #000000;
+        font-weight: 300;
+      }
+
+      .related-products .card .category {
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+      .related-products .card a {
+        color: rgb(104, 186, 230);
+        font-size: 12px;
+      }
+      .video-responsive {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 50%;
+        padding-top: 19px;
+        position: relative;
+      }
+      .video-responsive iframe,
+      .video-responsive object,
+      .video-responsive embed {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      .img-responsive {
+        /*  height: 200px; */
+        border: 1px solid rgb(144, 144, 145);
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      footer {
+        height: 250px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+      }
+      img.logo-footer {
+        width: 150px;
+      }
+      .separator {
+        border: 0.5px solid #ffffff;
+        height: 21px;
+        margin: 0 20px 0 20px;
+      }
+
+      footer .background {
+        height: 67em;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .footer-content {
+        position: absolute;
+        bottom: 0;
+      }
+
+      .social-media {
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      .social-media-title {
+        margin: 0 auto;
+        width: 250px;
+        color: rgb(197, 26, 68);
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .footer-copyright {
+        background-image: url("http://drive.google.com/uc?export=view&id=1BAfgTYsGduiJK9R6j2XbWmwx8rrPSzYG");
+        height: 77px;
+        width: 820px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+      }
+
+      .footer-copyright p {
+        color: #ffffff;
+      }
+
+      @media (max-width: 700px) {
+        .swiper-container {
+          overflow: visible !important;
+        }
+        .section-main .img-img-product {
+          width: 100%;
+        }
+
+        .section-main .img-product {
+          margin: auto;
+        }
+        .section-main {
+          background-image: url(https://drive.google.com/uc?export=view&id=1xx9X0RenD-PS8gEIxczkzJufYKEbQBgo);
+          height: auto;
+          padding: 20px 30px;
+          margin-top: 84px;
+        }
+        .section-main .content {
+          flex-direction: column-reverse;
+        }
+        .general-description .all-content {
+          display: block;
+          padding: 30px 30px;
+        }
+        .general-description .description,
+        .general-description .spec {
+          width: 100%;
+          margin: 0;
+        }
+        .general-description .spec {
+          margin: 40px 0;
+        }
+        .general-description .aditional {
+          margin-top: 40px;
+        }
+        .selection-products {
+          display: none;
+        }
+        .header-options {
+          display: none;
+        }
+        .documentation {
+          height: auto;
+        }
+        .documentation .main-title,
+        .table-main {
+          margin: 20px;
+        }
+        .related-products .cards {
+          display: block;
+          background-color: #ffffff;
+        }
+        .related-products .card {
+          margin-bottom: 20px;
+        }
+        .related-products .related-content {
+          padding: 20px;
+        }
+
+        .related-products .related-content {
+          position: initial;
+          z-index: 99;
+        }
+        .related-products {
+          height: auto;
+        }
+        .especific-bg {
+          width: 100%;
+          top: 5em;
+        }
+        .footer-copyright {
+          height: 35px;
+          font-size: 12px;
+          background-size: 100%;
+          width: 100%;
+        }
+        img.logo-footer {
+          width: 70px;
+        }
+        .text-footer {
+          right: auto;
+        }
+        .footer-content {
+          width: 100%;
+        }
+        .separator {
+          border: 0.5px solid #ffffff;
+          height: 21px;
+          margin: 0 20px 0 20px;
+          margin: 0 5px;
+        }
+      }
+
+      @media (max-width: 800px) {
+        .section-main {
+          background-image: url(https://drive.google.com/uc?export=view&id=1xx9X0RenD-PS8gEIxczkzJufYKEbQBgo);
+          height: auto;
+          padding: 30px 70px;
+          margin-top: 84px;
+        }
+        .swiper-container {
+          overflow: visible !important;
+        }
+        .section-main .img-img-product {
+          width: 100%;
+          height: auto;
+        }
+
+        .section-main .content {
+          flex-direction: column-reverse;
+          overflow: hidden;
+        }
+
+        .section-main .img-product {
+          margin: auto;
+          height: fit-content;
+        }
+        .related-products .related-content {
+          padding: 20px;
+          position: relative;
+        }
+
+        .related-products .cards {
+          flex-wrap: wrap;
+        }
+        .related-products .card {
+          margin: 0 27px;
+          margin-bottom: 20px;
+        }
+        .related-products {
+          height: auto;
+        }
+
+        .especific-bg {
+          width: 100%;
+          top: 5em;
+        }
+        .documentation .main-title,
+        .table-main {
+          margin: 40px 20px;
+        }
+
+        .selection-products {
+          padding: 40px 20px;
+        }
+        .selection-products .button {
+          margin-left: 0;
+        }
+        .general-description .all-content {
+          display: block;
+          padding: 30px 30px;
+        }
+        .general-description .description {
+          margin: 40px 20px;
+        }
+
+        .general-description .description,
+        .general-description .spec {
+          width: 100%;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img
+          loading="lazy"
+          src="https://drive.google.com/uc?export=view&id=1C6I91qo8Ulv4BUGOuVVdd1ANgXS113qR"
+          alt="logo"
+        />
+      </div>
+      <div class="header-options">
+        <div class="header-separator"></div>
+        <div class="header-search">
+          <img
+            loading="lazy"
+            src="https://drive.google.com/uc?export=view&id=1iWKrq-1oyJYFygPcXHFzZOVk6jshzv2X"
+            alt="search"
+          />
+        </div>
+        <a
+          href="https://campaigns.rockwellautomation.com/Formulario_PT_Kinetix"
+          data-targettype="webpage"
+          target="_blank"
+          class="button-white"
+        >
+          BUSQUE A ASSESSORIA</a
+        >
+      </div>
+    </header>
+    <main>
+      <div class="section-main">
+        <div class="content">
+          <div class="swiper-container mySwiper img-product">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  loading="lazy"
+                  src="https://drive.google.com/uc?export=view&id=1xVgPEyv3vkV7nByR0mXM8-lm0RBP149N"
+                  alt="imgproduct"
+                  class="img-img-product one"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  loading="lazy"
+                  src="https://drive.google.com/uc?export=view&id=1wLu5TWdslM_aytg7B38tR0ASfyRRUcyH"
+                  alt="imgproduct"
+                  class="img-img-product two"
+                />
+              </div>
+            </div>
+            <br />
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="title-buttons">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1DA1Zk8unG4ahb6DV3NMNjAHlc6D5YFDB"
+              alt="logo-allen"
+              class="logo-allen"
+            />
+            <div class="title">
+              Servo drives para un solo <br />
+              eje <b>Kinetix 5300 EtherNet/IP</b>
+            </div>
+
+            <a
+              href="https://campaigns.rockwellautomation.com/Formulario_PT_Kinetix"
+              data-targettype="webpage"
+              target="_blank"
+              class="button-white"
+            >
+              BUSQUE A ASSESSORIA</a
+            >
+            <br /><a
+              class="button-red"
+              href="https://locator.rockwellautomation.com/Distributor"
+              target="_blank"
+              >ENTRE EM CONTATO COM UM DISTRIBUIDOR</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="general-description">
+        <div class="all-content">
+          <div class="description">
+            <div class="subtitle">
+              Servo-drives EtherNet/IP de eixo simples
+              <b>Kinetix 5300 EtherNet/IP</b>
+            </div>
+            <p>
+              No atual ambiente competitivo, o projeto simplificado de
+              equipamentos, a exibilidade do sistema e o desempenho geral
+              otimizado das máquinas são vantagens primordiais. Seja para
+              desenvolver máquinas pequenas e independentes ou sistemas grandes
+              e complexos, os produtos de
+              <a
+                class="blue-text"
+                href="https://www.rockwellautomation.com/es-co/products/hardware/allen-bradley/motion-control.html"
+                target="_blank"
+                >controle de movimiento</a
+              >
+              Kinetix da Allen-Bradley podem ajudar você a atingir seus
+              objetivos.
+            </p>
+            <br />
+            <p>
+              Adequados para máquinas de pequeno e médio porte, os servo-drives
+              Ethernet/IP de eixo simples Kinetix® 5300 código 2198 oferecem a
+              exibilidade de projeto que você espera dos servo-drives
+              EtherNet/IP de movimento integrado da Allen-Bradley, em uma oferta
+              otimizada para atender às suas necessidades essenciais de
+              construção de máquinas.
+            </p>
+            <br /><br />
+            <div class="main-title">Características</div>
+
+            <ul>
+              <li>
+                Oferece faixas de potências mais abrangentes do que soluções
+                comparáveis, de 0,05 a 2 kW de 120 a 230 V, 3 a 7,5 kW de 230 V
+                e 0,4 a 7,5 kW de 460 V.
+              </li>
+              <li>
+                Fornece recursos de segurança sem peças ou cabos adicionais com
+                Safe-Torque-Off com fiação padrão.
+              </li>
+              <li>Tem um dimensionamento simples.</li>
+              <li>
+                A potência nominal se refere à potência de saída no motor.
+                Quando o Kinetix 5300 é pareado com o motor Kinetix TLP, os
+                esforços de dimensionamento são reduzidos.
+              </li>
+              <li>
+                Inclui quatro entradas digitais, duas das quais podem ser usadas
+                como funções rápidas de entrada digital.
+              </li>
+              <li>
+                É compatível por padrão com a funcionalidade de DLR, reduzindo a
+                necessidade de acessórios de rede como E-Taps.
+              </li>
+              <li>
+                Inclui a tecnologia de sincronização com o observador de carga e
+                o filtro de encaixe de rastreamento para permitir o
+                funcionamento com mais rapidez.
+              </li>
+              <li>
+                Utiliza instruções de
+                <a
+                  class="blue-text"
+                  href="https://www.rockwellautomation.com/es-co/products/hardware/allen-bradley/motion-control.html"
+                  target="_blank"
+                  >controle de movimiento</a
+                >
+                padrão no ambiente de projeto Studio 5000®.
+              </li>
+            </ul>
+          </div>
+          <div class="spec">
+            <div class="main-title">Especificações</div>
+            <div class="subtitle">CERTIFICAÇÕES</div>
+            <hr />
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1NC2lCf1hXk-vmli_yBlPxCp92AMXs_Su"
+              alt="homologations"
+            />
+            <ul>
+              <li>Listado no cULus</li>
+              <li>Identificação CE</li>
+              <li>KC</li>
+              <li>RCM</li>
+              <li>Segurança funcional de TÜV Rheinland</li>
+            </ul>
+
+            <div class="aditional">
+              <div class="title">Procurando informações adicionais?</div>
+              <p>
+                Para encontrar informações adicionais sobre produtos, inclusive
+                arquivos de desenho CAD, modelos 3D e muito mais, use nosso
+                catálogo de produtos.
+              </p>
+            </div>
+            <a
+              class="button-white"
+              href="https://configurator.rockwellautomation.com/#/browse"
+              target="_blank"
+              >Catálogo de produtos</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="selection-products">
+        <div class="text">
+          <div class="main-title">Seleção de produtos</div>
+          <div class="subtitle">Assistente de configuração de produtos</div>
+          <p>
+            Use o
+            <a
+              class="blue-text"
+              href="https://configurator.rockwellautomation.com/#/configurator/6F07DD7B5B364287ABF2D955A53DC572"
+              target="_blank"
+              >Assistente de configuração de produtos</a
+            >
+            para ver nossa oferta completa de produtos.
+          </p>
+        </div>
+        <div class="button">
+          <a
+            class="button-red"
+            target="_blank"
+            href="https://configurator.rockwellautomation.com/#/configurator/9C5192F2D2BA439C8E1BB486ABF5A024"
+          >
+            ASSISTENTE DE CONFIGURAÇÃO DE PRODUTOS
+          </a>
+        </div>
+      </div>
+
+      <div class="documentation">
+        <div class="doc-content">
+          <div class="main-title">Documentação</div>
+          <div class="table-main">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>CATÁLOGOS</th>
+                  <th>NÚMERO DE PUBLICAÇÃO</th>
+                  <th>IDIOMA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Perfil de produto Kinetix 5100, 5300 e TLP</td>
+                  <td class="center">KINETIX-PP001</td>
+                  <td class="center">
+                    <a
+                      target="_blank"
+                      class="blue-text"
+                      href="https://drive.google.com/file/d/1BBS9dvBzL4U6I9MFhDr0_MjnsLq94Uxg/view?usp=sharing"
+                    >
+                      Español
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Especificações do servo-drive Kinetix</td>
+                  <td class="center">KNX-TD003</td>
+                  <td class="center">
+                    <a
+                      target="_blank"
+                      class="blue-text"
+                      href="https://drive.google.com/uc?export=view&id=1VKU8eA4Cw8758NuAcDdEVd7L5qDvvOyd"
+                    >
+                      English
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Guia de projeto de sistemas dos servo-drives Kinetix 5300
+                  </td>
+                  <td class="center">KNX-RM012</td>
+                  <td class="center">
+                    <a
+                      target="_blank"
+                      class="blue-text"
+                      href="https://drive.google.com/uc?export=view&id=1AnDfhQpf9UJ4umrZ_1UcPhOMAHwc3TQ6"
+                    >
+                      English
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Manual do usuário dos servo-drives EtherNet/IP de eixo
+                    simples Kinetix 5300
+                  </td>
+                  <td class="center">2198-UM005</td>
+                  <td class="center">
+                    <a
+                      target="_blank"
+                      class="blue-text"
+                      href="https://drive.google.com/uc?export=view&id=1IR7dlyBo4TyZ_QZCSC27kDYGJLZIuR9D"
+                    >
+                      English
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Guia de migração dos servo-drives Kinetix 350 para Kinetix
+                    5300
+                  </td>
+                  <td class="center">2198-RM005</td>
+                  <td class="center">
+                    <a
+                      target="_blank"
+                      class="blue-text"
+                      href="https://drive.google.com/uc?export=view&id=1yG7nzdd6nfeAfS6eb6JANYjkzeBwH-fu"
+                    >
+                      English
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Guia de migração de servo-drives digitais Ultra3000 para
+                    Kinetix 5300
+                  </td>
+                  <td class="center">2198-RM006</td>
+                  <td class="center">
+                    <a
+                      target="_blank"
+                      class="blue-text"
+                      href="https://drive.google.com/uc?export=view&id=1n4ZxdRov1naNyaC-WtoliThiD-HYgKhP"
+                    >
+                      English
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="related-products">
+        <div class="especific-bg">
+          <img
+            loading="lazy"
+            src="https://drive.google.com/uc?export=view&id=1YsqCHa3TuLm0-Geij9vWDGzNRHqPZlbN"
+            alt="background"
+            class="background"
+          />
+        </div>
+        <div class="related-content">
+          <div class="main-title">Produtos relacionados</div>
+
+          <div class="cards">
+            <div class="card">
+              <div class="img-responsive">
+                <img
+                  loading="lazy"
+                  src="https://drive.google.com/uc?export=view&id=103OCrOG43GhQa4g5jL_CCqS-CT0LGFJy"
+                  alt="imgcard"
+                  class="imgcard"
+                />
+              </div>
+              <br />
+              <div class="category">hadware</div>
+              <div class="title">Servo-motores Kinetix TL-Series</div>
+              <br />
+              <div class="subtitle">
+                Os servo-motores Kinetix® TL-Series™ são uma solução econômica
+                para projetistas de máquinas com diversas necessidades de
+                aplicação.
+              </div>
+              <br />
+              <a
+                target="_blank"
+                href="https://www.rockwellautomation.com/es-mx/products/hardware/allen-bradley/motion-control/servo-motors/rotary-motors/tl-series.html"
+                >Primeiros passos</a
+              >
+            </div>
+
+            <div class="card">
+              <div class="img-responsive">
+                <img
+                  loading="lazy"
+                  src="https://drive.google.com/uc?export=view&id=1DbWhkcpty2w44kNKSi6RbyrEWAPoLYfO"
+                  alt="imgcard"
+                  class="imgcard"
+                />
+              </div>
+              <br />
+              <div class="category">hadware</div>
+              <div class="title">
+                <br />
+                Cabos Kinetix com conectores DIN SpeedTEC
+              </div>
+              <div class="subtitle">
+                Os cabos Kinetix® código 2090 são uma família completa de cabos
+                exíveis padrão e contínuos, equipados com conectores DIN
+                SpeedTEC® para uma conexão rápida, de um quarto de volta.
+              </div>
+              <br />
+              <a
+                target="_blank"
+                href="https://www.rockwellautomation.com/es-pr/products/hardware/allen-bradley/motion-control/servo-motors/kinetix-cables.html"
+                >Primeiros passos</a
+              >
+            </div>
+            <div class="card">
+              <div class="img-responsive">
+                <img
+                  loading="lazy"
+                  src="https://drive.google.com/uc?export=view&id=1WVo9vy7XMoaC31x5bFKQXvYMoDN8lhEm"
+                  alt="imgcard"
+                  class="imgcard"
+                />
+              </div>
+              <br />
+              <div class="category">hadware</div>
+              <div class="title">Controle de motores</div>
+              <br />
+              <div class="subtitle">
+                Os dispositivos inteligentes compõem sistemas conectados
+                inteligentes. Com as informações recebidas desses dispositivos
+                de controle inteligente de motores, você pode tomar decisões
+                inteligentes e embasadas. Descubra como as informações de nosso
+                portfólio de controle inteligente de motores podem preparar você
+                para tomar melhores decisões operacionais, otimizar o desempenho
+                do sistema e ganhar eficiência operacional.
+              </div>
+              <br />
+              <a
+                target="_blank"
+                href="https://www.rockwellautomation.com/es-co/products/hardware/allen-bradley/programmable-controllers/small-controllers/compactlogix-family.html#:~:text=Esta%20homogeneidad%20brinda%20la%20integraci%C3%B3n,y%20variadores%20en%20un%20controlador"
+                >Primeiros passos</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img
+        loading="lazy"
+        src="https://drive.google.com/uc?export=view&id=1mMWswgMHOXe0IujDct-f5k6hF1tmzUOg"
+        alt="background"
+        class="background"
+      />
+
+      <div class="footer-content">
+        <div class="social-media-title">Conecte-se conosco</div>
+        <div class="social-media">
+          <a href="https://www.facebook.com/ROKAutomation" target="_blank"
+            ><img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=10n8DUxKYarozrH00gahwnmhDTRnhL77Y"
+              alt="logo-face"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/rockwell-automation/mycompany/"
+            target="_blank"
+          >
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1ydjUGhzU4rSDtgmV-AQdHmVJQNHAp59a"
+              alt="logo-linkedin"
+          /></a>
+          <a href="https://twitter.com/ROKAutomationLA" target="_blank">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1iEMGRDBdiVywu9H9giQiW4zAl7MKUxdh"
+              alt="logo-twitter"
+          /></a>
+          <a href="https://www.youtube.com/user/ROKAutomation" target="_blank">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1K8xmSoglqfVu_62LaFXYPFlNFJOsOvTc"
+              alt="logo-youtube"
+          /></a>
+          <a
+            href="https://www.rockwellautomation.com/en-us/company/news/blogs.html"
+            target="_blank"
+          >
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1SWvZ8J8L4_y4jnUhF1HpZ0FKctkyRmJX"
+              alt="logo-blob"
+          /></a>
+        </div>
+        <div class="footer-copyright">
+          <p>Copyright © 2021 Rockwell Automation, Inc.</p>
+          <div class="separator"></div>
+          <div class="logo">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1K6mIxwEk97hq-SkR4St6I9ySdGzBN7oO"
+              alt="logo-blob"
+              class="logo-footer"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
