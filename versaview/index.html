@@ -1,740 +1,748 @@
 <html>
-   <head>
-      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-      <meta
-         name="viewport"
-         content="user-scalable=no, width=device-width, initial-scale=1"
-         />
-      <style>
-         @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
-         @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
-         @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap");
-         @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap");
-         @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
-         * {
-         margin: 0;
-         font-family: "Barlow", sans-serif;
-         /*    letter-spacing: -1px; */
-         font-weight: 300;
-         }
-         html,
-         body {
-         height: 100%;
-         }
-         button {
-         border-radius: 3px;
-         }
-         b {
-         font-weight: 500;
-         }
-         header {
-         background-color: #ffffff;
-         display: flex;
-         height: 84px;
-         z-index: 101;
-         position: fixed;
-         align-items: center;
-         width: 100%;
-         top: 0;
-         }
-         main {
-         margin-top: 84px;
-         }
-         a {
-         color: #ffffff;
-         text-decoration: none;
-         }
-         p {
-         color: #000000;
-         font-weight: 300;
-         }
-         .header-logo {
-         margin-left: 40px;
-         }
-         .header-separator {
-         border: 1px solid rgb(171, 171, 171);
-         margin-right: 40px;
-         height: 25px;
-         }
-         .header-options {
-         position: absolute;
-         right: 0;
-         display: flex;
-         align-items: center;
-         margin-right: 40px;
-         }
-         .header-search img {
-         width: 45%;
-         }
-         .header-button {
-         border: 1px solid rgb(197, 26, 68);
-         background-color: #ffffff;
-         height: 36px;
-         text-transform: uppercase;
-         color: rgb(197, 26, 68);
-         cursor: pointer;
-         }
-         .button-white {
-         border: 1px solid rgb(197, 26, 68);
-         background-color: #ffffff;
-         height: 36px;
-         text-transform: uppercase;
-         color: rgb(197, 26, 68);
-         cursor: pointer;
-         letter-spacing: 0;
-         padding: 0 14px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         width: fit-content;
-         }
-         .button-red {
-         border: 1px solid rgb(197, 26, 68);
-         background-color: rgb(197, 26, 68);
-         height: 36px;
-         text-transform: uppercase;
-         color: #ffffff;
-         cursor: pointer;
-         letter-spacing: 0;
-         padding: 0 14px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         font-weight: 300;
-         width: fit-content;
-         }
-         .blue-text {
-         color: rgb(104, 186, 230);
-         font-weight: 600;
-         }
-         .background {
-         width: 100%;
-         }
-         .content-video {
-         position: relative;
-         display: flex;
-         align-items: center;
-         width: 100%;
-         }
-         .content-video {
-         position: relative;
-         display: flex;
-         align-items: center;
-         width: 100%;
-         }
-         .content-video .content-video-source {
-         width: 100%;
-         }
-         .content-video-data {
-         position: absolute;
-         right: 70px;
-         }
-         .content-video-data-title {
-         font-size: 50px;color: #ffffff;
-         }
-         .content-video-data-subtitle {
-         font-size: 22px;
-         margin: 15px 0;
-         font-weight: 300;
-         color: #ffffff;
-         }
-         .content-video-source video {
-         width: 100%;
-         }
-         /* .section-main {
-         background-image: url(https://drive.google.com/uc?export=view&id=1UTBl2ER1c9PqY892Wm1Q65rDKzmsDLPC);
-         background-repeat: no-repeat;
-         background-size: cover;
-         padding: 6em 0;
-         display: flex;
-         align-items: center;
-         } */
-         .section-main .content {
-         /* position: absolute; */
-         right: 0;
-         display: flex;
-         width: 100%;
-         align-items: center;
-         }
-         .section-main .img-main {
-         width: 100%;
-         }
-         .section-main .img-img-product {
-         width: 100%;
-         }
-         .section-main .img-product {
-         margin-left: 80px;
-         margin-right: 80px;
-         }
-         .section-main .img-product p {
-         margin-top: 40px;
-         color: #000000;
-         font-weight: 300;
-         }
-         .section-main .img-product,
-         .section-main .title-buttons {
-         flex-grow: 1;
-         flex-basis: 0;
-         }
-         .section-main .content .title {
-         font-size: 32px;
-         margin: 20px 0 20px 0;
-         }
-         .section-main .content .logo-allen {
-         width: 13em;
-         }
-         .section-description {
-         background-image: url(https://drive.google.com/uc?export=view&id=1nFu94ANFZXyeeI9ZHVq5XeOYHWRKoy8i);
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position-y: center;
-         padding: 70px 50px;
-         }
-         .section-description p {
-         display: flex;
-         justify-content: center;
-         font-size: 20px;
-         }
-         .info-colors {
-         display: flex;
-         background-image: url(https://drive.google.com/uc?export=view&id=1J4N43qadPWPcEfb_iFwol8MD6vV0pzFE);
-         background-repeat: no-repeat;
-         background-size: cover;
-         flex-wrap: wrap;
-         }
-         .info-card {
-         margin: 30px 0 30px 50px;
-         padding: 30px;
-         flex-grow: 1;
-         flex-basis: 0;
-         color: #ffffff;
-         border-right: 1px solid;
-         }
-         .info-card:last-child {
-         border: none;
-         }
-         .info-card-img {
-         width: 100%;
-         margin-bottom: 30px;
-         display: flex;
-         justify-content: center;
-         }
-         .info-card-title {
-         margin-bottom: 10px;
-         }
-         .products-main {
-         display: flex;
-         flex-wrap: wrap;
-         }
-         .products h2 {
-         color: rgb(197, 26, 68);
-         font-weight: 300;
-         margin-left: 50px;
-         margin-top: 70px;
-         margin-bottom: 20px;
-         }
-         .product-card {
-         padding: 30px 50px 70px 50px;
-         flex-grow: 1;
-         flex-basis: 0;
-         position: relative;
-         transition: transform 0.2s;
-         }
-         .product-card:hover {
-         transform: scale(1.1);
-         }
-         .product-card-title {
-         font-size: 25px;
-         }
-         .product-card > .button-red {
-         position: absolute;
-         bottom: 0;
-         }
-         .product-card-img {
-         width: 100%;
-         border-bottom: 1px solid rgb(197, 26, 68);
-         margin-bottom: 20px;
-         padding-bottom: 20px;
-         }
-         .img-product {
-         width: 100%;
-         }
-         .video-info {
-         display: table;
-         align-items: center;
-         margin-top: 5em;
-         padding-left: 50px;
-         }
-         .video-info-video {
-         /*  flex-grow: 1;
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
+      * {
+        margin: 0;
+        font-family: "Barlow", sans-serif;
+        /*    letter-spacing: -1px; */
+        font-weight: 300;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      button {
+        border-radius: 3px;
+      }
+      b {
+        font-weight: 500;
+      }
+      header {
+        background-color: #ffffff;
+        display: flex;
+        height: 84px;
+        z-index: 101;
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        top: 0;
+      }
+      main {
+        margin-top: 84px;
+        text-align: justify;
+      }
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+      p {
+        color: #000000;
+        font-weight: 300;
+      }
+      .cursive {
+        font-style: italic;
+      }
+
+      .header-logo {
+        margin-left: 40px;
+      }
+      .header-separator {
+        border: 1px solid rgb(171, 171, 171);
+        margin-right: 40px;
+        height: 25px;
+      }
+      .header-options {
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+      }
+      .header-search img {
+        width: 45%;
+      }
+      .header-button {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: #ffffff;
+        height: 36px;
+        text-transform: uppercase;
+        color: rgb(197, 26, 68);
+        cursor: pointer;
+      }
+      .button-white {
+        border: 2px solid rgb(197, 26, 68);
+        background-color: #ffffff;
+        height: 36px;
+        text-transform: uppercase;
+        color: rgb(197, 26, 68);
+        cursor: pointer;
+        letter-spacing: 0;
+        padding: 0 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        font-weight: 500;
+      }
+      .button-red {
+        border: 1px solid rgb(197, 26, 68);
+        background-color: rgb(197, 26, 68);
+        height: 36px;
+        text-transform: uppercase;
+        color: #ffffff;
+        cursor: pointer;
+        letter-spacing: 0;
+        padding: 0 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        width: fit-content;
+      }
+      .blue-text {
+        color: rgb(104, 186, 230);
+        font-weight: 600;
+      }
+      .background {
+        width: 100%;
+      }
+      .content-video {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      .content-video {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      .content-video .content-video-source {
+        width: 100%;
+      }
+      .content-video-data {
+        position: absolute;
+        right: 70px;
+      }
+      .content-video-data-title {
+        font-size: 50px;
+        color: #ffffff;
+      }
+      .content-video-data-subtitle {
+        font-size: 22px;
+        margin: 15px 0;
+        font-weight: 300;
+        color: #ffffff;
+      }
+      .content-video-source video {
+        width: 100%;
+      }
+
+      .section-main .content {
+        right: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+      }
+      .section-main .img-main {
+        width: 100%;
+      }
+      .section-main .img-img-product {
+        width: 100%;
+      }
+      .section-main .img-product {
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+      .section-main .img-product p {
+        margin-top: 40px;
+        color: #000000;
+        font-weight: 300;
+      }
+      .section-main .img-product,
+      .section-main .title-buttons {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .section-main .content .title {
+        font-size: 32px;
+        margin: 20px 0 20px 0;
+      }
+      .section-main .content .logo-allen {
+        width: 13em;
+      }
+      .section-description {
+        background-image: url(https://drive.google.com/uc?export=view&id=1nFu94ANFZXyeeI9ZHVq5XeOYHWRKoy8i);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+        padding: 70px 50px;
+      }
+      .section-description p {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+      }
+      .info-colors {
+        display: flex;
+        background-image: url(https://drive.google.com/uc?export=view&id=1J4N43qadPWPcEfb_iFwol8MD6vV0pzFE);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-wrap: wrap;
+      }
+      .info-card {
+        margin: 30px 0 30px 50px;
+        padding: 30px;
+        flex-grow: 1;
+        flex-basis: 0;
+        color: #ffffff;
+        border-right: 1px solid;
+      }
+      .info-card:last-child {
+        border: none;
+      }
+      .info-card-img {
+        width: 100%;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+      }
+      .info-card-title {
+        margin-bottom: 10px;
+      }
+      .products-main {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .products h2 {
+        color: rgb(197, 26, 68);
+        font-weight: 300;
+        margin-left: 50px;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
+      .product-card {
+        padding: 30px 50px 70px 50px;
+        flex-grow: 1;
+        flex-basis: 0;
+        position: relative;
+        transition: transform 0.2s;
+      }
+      .product-card:hover {
+        transform: scale(1.1);
+      }
+      .product-card-title {
+        font-size: 25px;
+      }
+      .product-card > .button-red {
+        position: absolute;
+        bottom: 0;
+      }
+      .product-card-img {
+        width: 100%;
+        border-bottom: 1px solid rgb(197, 26, 68);
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+      }
+      .img-product {
+        width: 100%;
+      }
+      .video-info {
+        display: table;
+        align-items: center;
+        margin-top: 5em;
+        padding-left: 50px;
+      }
+      .video-info-video {
+        /*  flex-grow: 1;
          flex-basis: 0;
          min-width: 50%; */
-         width: 50%;
-         display: table-cell;
-         }
-         .video-info-info-main {
-         background-image: url(https://drive.google.com/uc?export=view&id=1nFu94ANFZXyeeI9ZHVq5XeOYHWRKoy8i);
-         background-repeat: no-repeat;
-         background-size: cover;
-         width: 50%;
-         display: table-cell;
-         vertical-align: middle;
-         }
-         .video-info-info {
-         margin: 0px 10%;
-         }
-         .video-info-video {
-         position: relative;
-         padding-bottom: 26.25%;
-         padding-top: 39px;
-         height: 0;
-         overflow: hidden;
-         }
-         .video-info-video iframe,
-         .video-info-video object,
-         .video-info-video embed {
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         }
-         footer {
-         height: 250px;
-         position: relative;
-         display: flex;
-         justify-content: center;
-         }
-         .footer-content {
-         position: absolute;
-         bottom: 0;
-         }
-         .social-media {
-         height: 25px;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         width: 250px;
-         margin: 0 auto;
-         margin-bottom: 20px;
-         }
-         .social-media-title {
-         margin: 0 auto;
-         width: 250px;
-         color: rgb(197, 26, 68);
-         font-size: 25px;
-         font-weight: bold;
-         margin-bottom: 15px;
-         }
-         .footer-copyright {
-         background-image: url("http://drive.google.com/uc?export=view&id=1BAfgTYsGduiJK9R6j2XbWmwx8rrPSzYG");
-         height: 77px;
-         width: 820px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         color: #ffffff;
-         }
-         .footer-copyright p {
-         color: #ffffff;
-         }
-         .img-product-movil {
-         display: none;
-         }
-         img.logo-footer {
-         width: 150px;
-         }
-         .separator {
-         border: 0.5px solid #ffffff;
-         height: 21px;
-         margin: 0 20px 0 20px;
-         }
-         @media (max-width: 800px) {
-         .section-main .content {
-         display: block;
-         }
-         .footer-copyright {
-         height: 60px;
-         background-position-y: bottom;
-         background-size: 80%;
-         background-repeat: no-repeat;
-         background-position: center;
-         }
-         }
-         @media (max-width: 700px) {
-         .header-options {
-         display: none;
-         }
-         .content-video-data {
-         right: 0 ;   width: 100%;
-         text-align: center;
-         }
-         .content-video-data-title,.content-video-data-subtitle {
-         font-size: 20px;
-         }
-         .content-video-data-button {
-         display: flex;
-         justify-content: center;
-         }
-         .info-colors, .products-main {
-         display: block;
-         }
-         .info-card {
-         margin: 30px;
-         padding: 30px;
-         border: none;
-         }
-         .video-info{
-         padding:0;
-         }
-         .video-info-video iframe, .video-info-video object, .video-info-video embed {
-         width: 100%;
-         height: 254px;position: relative;
-         }
-         .video-info-video{
-         position: relative;
-         padding-bottom: 0;
-         padding-top: 0;
-         height: auto;
-         overflow: visible;
-         }
-         .video-info-video, .video-info-info-main{
-         display: block;
-         width: 100%;
-         }
-         .video-info-info-main{
-         padding: 40px 0px;
-         }
-         .footer-copyright {
-         height: 35px;
-         font-size: 12px;
-         background-size: 100%;
-         width: 100%;
-         }
-         img.logo-footer {
-         width: 70px;
-         }
-         .text-footer {
-         right: auto;
-         }
-         .footer-content {
-         width: 100%;
-         }
-         .separator {
-         border: 0.5px solid #ffffff;
-         height: 21px;
-         margin: 0 20px 0 20px;
-         margin: 0 5px;
-         }
-         }
-      </style>
-   </head>
-   <body>
-      <header class="header">
-         <div class="header-logo">
+        width: 50%;
+        display: table-cell;
+      }
+      .video-info-info-main {
+        background-image: url(https://drive.google.com/uc?export=view&id=1nFu94ANFZXyeeI9ZHVq5XeOYHWRKoy8i);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        display: table-cell;
+        vertical-align: middle;
+      }
+      .video-info-info {
+        margin: 0px 10%;
+      }
+      .video-info-video {
+        position: relative;
+        padding-bottom: 26.25%;
+        padding-top: 39px;
+        height: 0;
+        overflow: hidden;
+      }
+      .video-info-video iframe,
+      .video-info-video object,
+      .video-info-video embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      footer {
+        height: 250px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+      .footer-content {
+        position: absolute;
+        bottom: 0;
+      }
+      .social-media {
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+      .social-media-title {
+        margin: 0 auto;
+        width: 250px;
+        color: rgb(197, 26, 68);
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .footer-copyright {
+        background-image: url("http://drive.google.com/uc?export=view&id=1BAfgTYsGduiJK9R6j2XbWmwx8rrPSzYG");
+        height: 77px;
+        width: 820px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+      }
+      .footer-copyright p {
+        color: #ffffff;
+      }
+      .img-product-movil {
+        display: none;
+      }
+      img.logo-footer {
+        width: 150px;
+      }
+      .separator {
+        border: 0.5px solid #ffffff;
+        height: 21px;
+        margin: 0 20px 0 20px;
+      }
+      @media (max-width: 800px) {
+        .section-main .content {
+          display: block;
+        }
+        .footer-copyright {
+          height: 60px;
+          background-position-y: bottom;
+          background-size: 80%;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      @media (max-width: 700px) {
+        .header-options {
+          display: none;
+        }
+        .content-video-data {
+          right: 0;
+          width: 100%;
+          text-align: center;
+        }
+        .content-video-data-title,
+        .content-video-data-subtitle {
+          font-size: 20px;
+        }
+        .content-video-data-button {
+          display: flex;
+          justify-content: center;
+        }
+        .info-colors,
+        .products-main {
+          display: block;
+        }
+        .info-card {
+          margin: 30px;
+          padding: 30px;
+          border: none;
+        }
+        .video-info {
+          padding: 0;
+        }
+        .video-info-video iframe,
+        .video-info-video object,
+        .video-info-video embed {
+          width: 100%;
+          height: 254px;
+          position: relative;
+        }
+        .video-info-video {
+          position: relative;
+          padding-bottom: 0;
+          padding-top: 0;
+          height: auto;
+          overflow: visible;
+        }
+        .video-info-video,
+        .video-info-info-main {
+          display: block;
+          width: 100%;
+        }
+        .video-info-info-main {
+          padding: 40px 0px;
+        }
+        .footer-copyright {
+          height: 35px;
+          font-size: 12px;
+          background-size: 100%;
+          width: 100%;
+        }
+        img.logo-footer {
+          width: 70px;
+        }
+        .text-footer {
+          right: auto;
+        }
+        .footer-content {
+          width: 100%;
+        }
+        .separator {
+          border: 0.5px solid #ffffff;
+          height: 21px;
+          margin: 0 20px 0 20px;
+          margin: 0 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img
+          loading="lazy"
+          src="https://drive.google.com/uc?export=view&id=1C6I91qo8Ulv4BUGOuVVdd1ANgXS113qR"
+          alt="logo"
+        />
+      </div>
+      <div class="header-options">
+        <div class="header-separator"></div>
+        <div class="header-search">
+          <img
+            loading="lazy"
+            src="https://drive.google.com/uc?export=view&id=1iWKrq-1oyJYFygPcXHFzZOVk6jshzv2X"
+            alt="search"
+          />
+        </div>
+        <a
+          href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
+          data-targettype="webpage"
+          target="_blank"
+          class="button-white"
+        >
+          Busque asesoría de un experto</a
+        >
+      </div>
+    </header>
+    <main>
+      <div class="section-main">
+        <div class="content-video">
+          <div class="content-video-source">
+            <video loop="true" autoplay="autoplay" muted playsinline>
+              <source
+                src="https://drive.google.com/uc?export=download&id=1x0cOORmmWty072h0y-eQpYnNq9F-Jj-d"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div class="content-video-data">
+            <div class="content-video-data-title">
+              <b>VERSAVIEW 6300</b>
+              <br />
+            </div>
+            <div class="content-video-data-subtitle">
+              Nueva generación de PCs, clientes <br />
+              ligeros y monitores industriales
+            </div>
+            <div class="content-video-data-button">
+              <a
+                href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
+                data-targettype="webpage"
+                target="_blank"
+                class="button-red"
+              >
+                Busque asesoría de un experto</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-description">
+        <p>
+          En la fabricación moderna, es fundamental tener una visión completa y
+          coordinada <br />
+          de los datos, haciendo que la producción sea más eficiente. Versaview
+          6300, la nueva <br />
+          generación de PCs, clientes ligeros (thin clients) y monitores
+          idustriales, brindan <br />
+          soluciones para las limitaciones físicas y los requisitos de su
+          entorno.
+        </p>
+      </div>
+      <div class="info-colors">
+        <div class="info-card">
+          <div class="info-card-img">
             <img
-               loading="lazy"
-               src="https://drive.google.com/uc?export=view&id=1C6I91qo8Ulv4BUGOuVVdd1ANgXS113qR"
-               alt="logo"
-               />
-         </div>
-         <div class="header-options">
-            <div class="header-separator"></div>
-            <div class="header-search">
-               <img
-                  loading="lazy"
-                  src="https://drive.google.com/uc?export=view&id=1iWKrq-1oyJYFygPcXHFzZOVk6jshzv2X"
-                  alt="search"
-                  />
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1qnFk0U5Fp2FpXPA4uIdi1Z3cwZLMPmKk"
+              alt="img-info"
+              class="img-info"
+            />
+          </div>
+          <div class="info-card-title"><b>Mejore la calidad</b></div>
+          <div class="info-card-subtitle">
+            Automatice las operaciones para la inspección de calidad en tiempo
+            real y ayude a prevenir errores en el proceso de fabricación,
+            mediante respuestas inmediatas a productos defectuosos.
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-img">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=18_leqTiSF2VOZIPJvWEv64c-ERHlIt23"
+              alt="img-info"
+              class="img-info"
+            />
+          </div>
+          <div class="info-card-title"><b>Aumente la productividad</b></div>
+          <div class="info-card-subtitle">
+            Al poder obtener información detallada sobre las operaciones, el
+            equipo de producción podrá disminuir los tiempos de inactividad de
+            las máquinas.
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-img">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1F_pYxd0d7liNfUSOWr3j2OnoA6ocWgr3"
+              alt="img-info"
+              class="img-info"
+            />
+          </div>
+          <div class="info-card-title"><b>Ciberseguridad mejorada</b></div>
+          <div class="info-card-subtitle">
+            Al integrar el software ThinManager® las aplicaciones, se podrá
+            ejecutar y mantener desde una ubicación central y segura.
+          </div>
+        </div>
+      </div>
+      <div class="products">
+        <h2><b>Implemente operaciones más eficientes</b></h2>
+        <div class="products-main">
+          <div class="product-card">
+            <div class="product-card-img">
+              <img
+                loading="lazy"
+                src="https://drive.google.com/uc?export=view&id=1mUsJpt-EV2Za-cGCzo1d7CZ6bS3pHyGX"
+                alt="img-product"
+                class="img-product"
+              />
             </div>
+            <div class="product-card-title">
+              <b>VersaView 6300B Box PCs</b>
+            </div>
+            <br />
+            <div class="product-card-subtitle">
+              Los Box PC Allen-Bradley® <b>VersaView® 6300B</b> están
+              disponibles en varias formas factores y procesadores para
+              adaptarse a su aplicación. Las unidades de montaje de libros
+              tienen un diseño sin ventilador que las hace óptimos para
+              aplicaciones que requieren bajos mantenimiento.
+            </div>
+            <br />
             <a
-               href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
-               data-targettype="webpage"
-               target="_blank"
-               class="button-white"
-               >
-            Busque asesoría de un experto</a
-               >
-         </div>
-      </header>
-      <main>
-         <div class="section-main">
-            <div class="content-video">
-               <div class="content-video-source">
-                  <video loop="true" autoplay="autoplay" muted playsinline>
-                     <source src="https://drive.google.com/uc?export=download&id=1x0cOORmmWty072h0y-eQpYnNq9F-Jj-d"
-                        type="video/mp4" />
-                  </video>
-               </div>
-               <div class="content-video-data">
-                  <div class="content-video-data-title">
-                     <b>VERSAVIEW 6300</b>
-                     <br />
-                  </div>
-                  <div class="content-video-data-subtitle">
-                     Nueva generación de pcs, clientes  <br /> ligeros, y monitores
-                     industriales
-                  </div>
-                  <div class="content-video-data-button">
-                     <a
-                        href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
-                        data-targettype="webpage"
-                        target="_blank"
-                        class="button-red"
-                        >
-                     Busque asesoría de un experto</a
-                        >
-                  </div>
-               </div>
+              href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
+              data-targettype="webpage"
+              target="_blank"
+              class="button-red"
+            >
+              descarga</a
+            >
+          </div>
+          <div class="product-card">
+            <div class="product-card-img">
+              <!--  src="https://drive.google.com/uc?export=view&id=1PJBBXl2jDgPyto77mEnoW9-ABCccElRD" -->
+              <img
+                loading="lazy"
+                src="https://drive.google.com/uc?export=view&id=1v3mpnospWSFwt6PfISVZjqTxTZbwr9JV"
+                alt="img-product"
+                class="img-product"
+              />
             </div>
-         </div>
-         <div class="section-description">
-            <p>
-               En la fabricación moderna es fundamental tener una visión completa y
-               coordinada <br />
-               de los datos haciendo que la producción sea más eciente. Versaview
-               6300 las nueva <br />
-               generación de PCs, clientes lgeros (Thin clients) y monitores
-               idustriales brindan <br />
-               soluciones para las limitaciones físicas y los requisitos de su
-               entorno.
-            </p>
-         </div>
-         <div class="info-colors">
-            <div class="info-card">
-               <div class="info-card-img">
-                  <img
-                     loading="lazy"
-                     src="https://drive.google.com/uc?export=view&id=1CvEPSZs0GP7E1QrAR3XvRSKeu1pC3MU8"
-                     alt="img-info"
-                     class="img-info"
-                     />
-               </div>
-               <div class="info-card-title"><b>Mejore la Calidad</b></div>
-               <div class="info-card-subtitle">
-                  Atomatice las operaciones para la inspección de calidad en tiempo
-                  real y ayude a prevenir errores en el proceso de fabricación
-                  mediante respuestas inmediatas a productos defectuosos.
-               </div>
+            <div class="product-card-title">
+              <b>Clientes ligeros VersaView 6300T Box</b>
             </div>
-            <div class="info-card">
-               <div class="info-card-img">
-                  <img
-                     loading="lazy"
-                     src="https://drive.google.com/uc?export=view&id=18_leqTiSF2VOZIPJvWEv64c-ERHlIt23"
-                     alt="img-info"
-                     class="img-info"
-                     />
-               </div>
-               <div class="info-card-title"><b>Aumente la productividad</b></div>
-               <div class="info-card-subtitle">
-                  Al poder obtener información detallada sobre las operaciones el
-                  equipo de producción podrá disminuir los tiemos de inactividad de
-                  las máquinas.
-               </div>
+            <br />
+            <div class="product-card-subtitle">
+              Los <b>VersaView® 6300T</b> Box cuentan con procesadores Intel
+              Apollo Lake Atom, lo que los hace ideales para aplicaciones de
+              interfaz hombre-máquina (HMI), puerta de enlace IIoT y registro de
+              datos. Las unidades de clase Atom también están disponibles como
+              clientes ligeros.
             </div>
-            <div class="info-card">
-               <div class="info-card-img">
-                  <img
-                     loading="lazy"
-                     src="https://drive.google.com/uc?export=view&id=1F_pYxd0d7liNfUSOWr3j2OnoA6ocWgr3"
-                     alt="img-info"
-                     class="img-info"
-                     />
-               </div>
-               <div class="info-card-title"><b>Ciberseguridad mejorada</b></div>
-               <div class="info-card-subtitle">
-                  Al integrar software ThinManager@ las apliaciones se podrá ejecutar
-                  y mantener desde una ubicación central y segura.
-               </div>
+            <br />
+            <a
+              href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
+              data-targettype="webpage"
+              target="_blank"
+              class="button-red"
+            >
+              descarga</a
+            >
+          </div>
+          <div class="product-card">
+            <div class="product-card-img">
+              <!--  src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o" -->
+              <img
+                loading="lazy"
+                src="https://drive.google.com/uc?export=view&id=15KkFjpRJL--DN-ND1O9FHhnkCyBPGt-a"
+                alt="img-product"
+                class="img-product"
+              />
             </div>
-         </div>
-         <div class="products">
-            <h2>Implemente operaciones más eficientes</h2>
-            <div class="products-main">
-               <div class="product-card">
-                  <div class="product-card-img">
-                     <img
-                        loading="lazy"
-                        src="https://drive.google.com/uc?export=view&id=1mUsJpt-EV2Za-cGCzo1d7CZ6bS3pHyGX"
-                        alt="img-product"
-                        class="img-product"
-                        />
-                  </div>
-                  <div class="product-card-title">
-                     <b>VersaView 6300B Box PCss</b>
-                  </div>
-                  <br />
-                  <div class="product-card-subtitle">
-                     Los Box PC Allen-Bradley® <b>VersaView® 6300B</b> están
-                     disponibles en varias formas factores y procesadores para
-                     adaptarse a su aplicación. Unidades de montaje de libros tienen un
-                     diseño sin ventilador que los hace óptimos para aplicaciones que
-                     requieren bajos mantenimiento.
-                  </div>
-                  <br />
-                  <a
-                     href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
-                     data-targettype="webpage"
-                     target="_blank"
-                     class="button-red"
-                     >
-                  descarga</a
-                     >
-               </div>
-               <div class="product-card">
-                  <div class="product-card-img">
-                     <!--  src="https://drive.google.com/uc?export=view&id=1PJBBXl2jDgPyto77mEnoW9-ABCccElRD" -->
-                     <img
-                        loading="lazy"
-                        src="https://drive.google.com/uc?export=view&id=1v3mpnospWSFwt6PfISVZjqTxTZbwr9JV"
-                        alt="img-product"
-                        class="img-product"
-                        />
-                  </div>
-                  <div class="product-card-title">
-                     <b>Clientes ligeros VersaView 6300T Box</b>
-                  </div>
-                  <br />
-                  <div class="product-card-subtitle">
-                     Los <b>VersaView® 6300T</b> Box cuentan con procesadores Intel
-                     Apollo Lake Atom, lo que los hace ideales para aplicaciones de
-                     interfaz hombre-máquina (HMI), puerta de enlace IIoT y registro de
-                     datos. Las unidades de clase Atom también están disponibles como
-                     clientes ligeros.
-                  </div>
-                  <br />
-                  <a
-                     href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
-                     data-targettype="webpage"
-                     target="_blank"
-                     class="button-red"
-                     >
-                  descarga</a
-                     >
-               </div>
-               <div class="product-card">
-                  <div class="product-card-img">
-                     <!--  src="https://drive.google.com/uc?export=view&id=1I4BkNJZcWWyL_NUGv7xS5A9pCsZuxA7o" -->
-                     <img
-                        loading="lazy"
-                        src="https://drive.google.com/uc?export=view&id=15KkFjpRJL--DN-ND1O9FHhnkCyBPGt-a"
-                        alt="img-product"
-                        class="img-product"
-                        />
-                  </div>
-                  <div class="product-card-title">
-                     <b>VersaView 6300P Panel PC</b>
-                  </div>
-                  <br />
-                  <div class="product-card-subtitle">
-                     Los <b>Panel PC VersaView 6300P</b> cuentan con Core i3, i5 e i7
-                     de séptima generación de la plataforma Intel Kaby Lake H, lo que
-                     le permite manejar aplicaciones industriales complejas. Las
-                     tecnologías de pantalla táctil, que mejoran la facilidad de uso,
-                     incluyen resistiva analógica y capacitiva proyectada (para
-                     operación multitáctil).
-                  </div>
-                  <br />
-                  <a
-                     href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
-                     data-targettype="webpage"
-                     target="_blank"
-                     class="button-red"
-                     >
-                  descarga</a
-                     >
-               </div>
+            <div class="product-card-title">
+              <b>VersaView 6300P Panel PC</b>
             </div>
-         </div>
-         <div class="video-info">
-            <div class="video-info-video">
-               <iframe
-                  width=""
-                  height=""
-                  src="https://www.youtube.com/embed/kiie9LgpcGM?controls=0&rel=0&showinfo=0"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                  ></iframe>
+            <br />
+            <div class="product-card-subtitle">
+              Los <b>Panel PC VersaView 6300P</b> cuentan con Core i3, i5 e i7
+              de séptima generación de la plataforma Intel Kaby Lake H, lo que
+              le permite manejar aplicaciones industriales complejas. Las
+              tecnologías de pantalla táctil, que mejoran la facilidad de uso,
+              incluyen resistiva analógica y capacitiva proyectada (para
+              operación multitáctil).
             </div>
-            <div class="video-info-info-main">
-               <div class="video-info-info">
-                  <div class="video-title">
-                     <b
-                        >ThinManager® Entrega y gestión de Connected Enterprise®:
-                     descripción general</b
-                        >
-                  </div>
-                  <br /><br />
-                  <div class="video-subtitle">
-                     La plataforma ThinManager® está diseñada para simplicar la forma
-                     en que se entrega el contenido de productividad y los dispositivos
-                     se administran dentro de los entornos de fabricación o producción.
-                     Descubra cómo el software ThinManager® puede revolucionar todo,
-                     desde el piso de la planta hasta la sala de control, cambiar la
-                     forma en que ve la movilidad en esas áreas y entregar y
-                     administrar The Connected Enterprise® hoy.
-                  </div>
-               </div>
+            <br />
+            <a
+              href="https://campaigns.rockwellautomation.com/Formulario_ES_Centerline"
+              data-targettype="webpage"
+              target="_blank"
+              class="button-red"
+            >
+              descarga</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="video-info">
+        <div class="video-info-video">
+          <iframe
+            width=""
+            height=""
+            src="https://www.youtube.com/embed/kiie9LgpcGM?controls=0&rel=0&showinfo=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video-info-info-main">
+          <div class="video-info-info">
+            <div class="video-title">
+              <b
+                >ThinManager®. Entrega y gestión de Connected Enterprise®:
+                descripción general</b
+              >
             </div>
-         </div>
-      </main>
-      <footer>
-         <div class="footer-content">
-            <div class="social-media-title">Síganos</div>
-            <div class="social-media">
-               <a href="https://www.facebook.com/ROKAutomation" target="_blank"
-                  ><img
-                  loading="lazy"
-                  src="https://drive.google.com/uc?export=view&id=10n8DUxKYarozrH00gahwnmhDTRnhL77Y"
-                  alt="logo-face"
-                  /></a>
-               <a
-                  href="https://www.linkedin.com/company/rockwell-automation/mycompany/"
-                  target="_blank"
-                  >
-               <img
-                  loading="lazy"
-                  src="https://drive.google.com/uc?export=view&id=1ydjUGhzU4rSDtgmV-AQdHmVJQNHAp59a"
-                  alt="logo-linkedin"
-                  /></a>
-               <a href="https://twitter.com/ROKAutomationLA" target="_blank">
-               <img
-                  loading="lazy"
-                  src="https://drive.google.com/uc?export=view&id=1iEMGRDBdiVywu9H9giQiW4zAl7MKUxdh"
-                  alt="logo-twitter"
-                  /></a>
-               <a href="https://www.youtube.com/user/ROKAutomation" target="_blank">
-               <img
-                  loading="lazy"
-                  src="https://drive.google.com/uc?export=view&id=1K8xmSoglqfVu_62LaFXYPFlNFJOsOvTc"
-                  alt="logo-youtube"
-                  /></a>
-               <a
-                  href="https://www.rockwellautomation.com/en-us/company/news/blogs.html"
-                  target="_blank"
-                  >
-               <img
-                  loading="lazy"
-                  src="https://drive.google.com/uc?export=view&id=1SWvZ8J8L4_y4jnUhF1HpZ0FKctkyRmJX"
-                  alt="logo-blob"
-                  /></a>
+            <br /><br />
+            <div class="video-subtitle">
+              La plataforma ThinManager® está diseñada para simplificar la forma
+              en como se entrega el contenido de productividad y los
+              dispositivos se administran dentro de los entornos de fabricación
+              o producción. Descubra cómo el software ThinManager® puede
+              revolucionar todo, desde el piso de la planta hasta la sala de
+              control, cambiar la forma en que ve la movilidad en esas áreas, y
+              entregar y administrar The Connected Enterprise® hoy.
             </div>
-            <div class="footer-copyright">
-               <p>Copyright © 2021 Rockwell Automation, Inc.</p>
-               <div class="separator"></div>
-               <div class="logo">
-                  <img
-                     loading="lazy"
-                     src="https://drive.google.com/uc?export=view&id=1K6mIxwEk97hq-SkR4St6I9ySdGzBN7oO"
-                     alt="logo-blob"
-                     class="logo-footer"
-                     />
-               </div>
-            </div>
-         </div>
-      </footer>
-   </body>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="social-media-title">Síganos</div>
+        <div class="social-media">
+          <a href="https://www.facebook.com/ROKAutomation" target="_blank"
+            ><img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=10n8DUxKYarozrH00gahwnmhDTRnhL77Y"
+              alt="logo-face"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/rockwell-automation/mycompany/"
+            target="_blank"
+          >
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1ydjUGhzU4rSDtgmV-AQdHmVJQNHAp59a"
+              alt="logo-linkedin"
+          /></a>
+          <a href="https://twitter.com/ROKAutomationLA" target="_blank">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1iEMGRDBdiVywu9H9giQiW4zAl7MKUxdh"
+              alt="logo-twitter"
+          /></a>
+          <a href="https://www.youtube.com/user/ROKAutomation" target="_blank">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1K8xmSoglqfVu_62LaFXYPFlNFJOsOvTc"
+              alt="logo-youtube"
+          /></a>
+          <a
+            href="https://www.rockwellautomation.com/en-us/company/news/blogs.html"
+            target="_blank"
+          >
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1SWvZ8J8L4_y4jnUhF1HpZ0FKctkyRmJX"
+              alt="logo-blob"
+          /></a>
+        </div>
+        <div class="footer-copyright">
+          <p>Copyright © 2021 Rockwell Automation, Inc.</p>
+          <div class="separator"></div>
+          <div class="logo">
+            <img
+              loading="lazy"
+              src="https://drive.google.com/uc?export=view&id=1K6mIxwEk97hq-SkR4St6I9ySdGzBN7oO"
+              alt="logo-blob"
+              class="logo-footer"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
