@@ -981,7 +981,7 @@
       <div class="video-carousel">
         <div class="video-carousel-item">
           <div class="video-carousel-item-video" onclick="loadVideo('totalforce-vd1-pt-1-AVS')">
-            <!-- <div class="video-carousel-item-video" onclick="changeVideo('1eMVrnHZ_ILSPJoYTyn-4C84Povn3ovX8')"> -->
+       
             <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1fzdmplbhvTD_lny8FKQkWo95t4jmYqL7"
               class="img-carousel" alt="img-carousel" />
             <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1Vkhiw6sAg_tg57rM8bBqklSBWai7FjCB"
@@ -997,7 +997,7 @@
         </div>
         <div class="video-carousel-item">
           <div class="video-carousel-item-video" onclick="loadVideo('totalforce-md2-pt-1-AVS')">
-            <!-- <div class="video-carousel-item-video" onclick="changeVideo('1g0uDckkIir8aAG1Lt5mtVe93CcbAJz5Q')"> -->
+          
             <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1PzSOjwJIK--SfbsU-YIC_TUa6Ui2Kl2a"
               class="img-carousel" alt="img-carousel" />
             <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1Vkhiw6sAg_tg57rM8bBqklSBWai7FjCB"
@@ -1014,7 +1014,7 @@
         </div>
         <div class="video-carousel-item">
           <div class="video-carousel-item-video" onclick="loadVideo('totalforce-rce3-pt-1-AVS')">
-            <!--   <div class="video-carousel-item-video" onclick="changeVideo('1frnygK7kxEW3pS-3kDu10K6zZvjU4EE6')"> -->
+       
             <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1ltOA9qnAaoU5UdLJk3Ixy7OjL_ADMsFE"
               class="img-carousel" alt="img-carousel" />
             <img loading="lazy" src="https://drive.google.com/uc?export=view&id=1Vkhiw6sAg_tg57rM8bBqklSBWai7FjCB"
@@ -1269,7 +1269,10 @@
   <script>
 
     function loadVideo(e) {
-      var s7videoviewer = new s7viewers.VideoViewer({
+      
+  
+
+      s7videoviewer = new s7viewers.VideoViewer({
         "containerId": "s7video_div",
         "params": {
           "serverurl": "https://rockwellautomation.scene7.com/is/image/",
@@ -1281,7 +1284,9 @@
         }
       })
 
+      
       s7videoviewer.init();
+      
 
     }
 
@@ -1293,3 +1298,5 @@
 </body>
 
 </html>
+
+
