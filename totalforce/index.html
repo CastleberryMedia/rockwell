@@ -971,8 +971,7 @@
       </div>
     </div>
     <div class="section-2">
-      <div class="main-video">
-     
+      <div id="top" class="main-video">
         <div id="s7video_div"></div>
       </div>
       <div class="section-2-title">RETOS EN LA <b>MANUFACTURA</b></div>
@@ -1220,6 +1219,17 @@
   <script>
 
     function loadVideo(e) {
+
+
+      var d = document.getElementById("top");
+      var d_nested = document.getElementById("s7video_div");
+      var throwawayNode = d.removeChild(d_nested);
+      
+      a = document.createElement("div");
+      a.id = 's7video_div';
+      document.getElementById("top").appendChild(a);
+  
+
       var s7videoviewer = new s7viewers.VideoViewer({
         "containerId": "s7video_div",
         "params": {

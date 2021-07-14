@@ -973,8 +973,7 @@
       </div>
     </div>
     <div class="section-2">
-      <div class="main-video">
-       
+      <div id="top" class="main-video">
         <div id="s7video_div"></div>
       </div>
       <div class="section-2-title">DESAFIOS NA <b>MANUFATURA</b></div>
@@ -1269,7 +1268,14 @@
   <script>
 
     function loadVideo(e) {
+
+      var d = document.getElementById("top");
+      var d_nested = document.getElementById("s7video_div");
+      var throwawayNode = d.removeChild(d_nested);
       
+      a = document.createElement("div");
+      a.id = 's7video_div';
+      document.getElementById("top").appendChild(a);
   
 
       s7videoviewer = new s7viewers.VideoViewer({
@@ -1281,6 +1287,7 @@
           "posterimage": "rockwellautomation/" + e,
           "videoserverurl": "https://rockwellautomation.scene7.com/is/content",
           "asset": "rockwellautomation/" + e
+          
         }
       })
 
