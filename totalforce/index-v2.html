@@ -78,7 +78,10 @@
 
     }
 
-    #banner-1, #banner-2, #banner-3, #banner-4{
+    #banner-1,
+    #banner-2,
+    #banner-3,
+    #banner-4 {
       display: none;
     }
 
@@ -151,9 +154,10 @@
     }
 
     .content-video-data-subtitle {
-      font-size: 22px;
+      font-size: 25px;
       margin: 15px 0;
-      font-weight: 300;
+      font-weight: 500;
+    letter-spacing: 2px;
     }
 
     .content-video-source video {
@@ -264,7 +268,7 @@
       height: 700px;
     } */
 
-/*     .section-4,
+    /*     .section-4,
     .section-6 {
       height: 558px;
     } */
@@ -277,7 +281,7 @@
 
     .statistics .conten-main {
       position: relative;
-      padding: 34px 10px;
+      padding: 0 10px;
     }
 
 
@@ -292,6 +296,16 @@
       top: 0;
       color: #ffffff;
       flex-wrap: wrap;
+    }
+
+    .statistics-text-footert {
+      position: absolute;
+      right: 50px;
+      margin-top: 10px;
+      text-decoration: underline;
+      font-size: 13px;
+    letter-spacing: normal;
+    font-weight: 300;
     }
 
     .text-footer {
@@ -326,9 +340,16 @@
 
       flex-grow: 1;
       flex-basis: 0;
-      border-left: 1px solid #ffff;
-      padding: 34px;
+      /*   border-left: 1px solid #ffff; */
+      padding: 30px;
+      padding-top: 15px;
       flex: 1 2 200px;
+    }
+
+    .statistics .item-null {
+      width: 1px;
+      background-color: white;
+      margin: 40px 0;
     }
 
     .statistics .item:first-child {
@@ -355,8 +376,8 @@
       display: flex;
       align-items: center;
       background-image: url("https://i.postimg.cc/MHTLzw8n/fondo-rombos-RESIZE.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     .section-5-main,
@@ -460,8 +481,12 @@
 
     .section-7-title {
       font-size: 28px;
-      color: #000000;
+      color: rgb(197, 27, 67);
       font-weight: 300;
+    }
+
+    .special-black{
+      color: black;
     }
 
     .section-7-title span {
@@ -918,8 +943,6 @@
       }
 
     }
-
-    
   </style>
 </head>
 
@@ -933,9 +956,12 @@
       <div class="header-search">
         <img loading="lazy" src="https://i.postimg.cc/Ss2jBFYr/image.png" alt="search" />
       </div>
-      <a href="https://campaigns.rockwellautomation.com/Formulario_ES_TF" data-targettype="webpage" target="_blank"
+      <a href="#gate-7a4e2c37-0c8e-4f33-8c6f-22170f88ad23" data-targettype="webpage" target="_blank"
         class="header-button">
         Busque asesoría de un experto</a>
+      <!-- <a href="https://campaigns.rockwellautomation.com/Formulario_ES_TF" data-targettype="webpage" target="_blank"
+        class="header-button">
+        Busque asesoría de un experto</a> -->
     </div>
   </header>
   <main>
@@ -961,17 +987,20 @@
           </div>
           <div class="content-video-data-button">
 
-            <a href="https://campaigns.rockwellautomation.com/Formulario_ES_TF" data-targettype="webpage"
+            <a href="#gate-7a4e2c37-0c8e-4f33-8c6f-22170f88ad23" data-targettype="webpage"
               target="_blank" class="button-red">
               Busque asesoría de un experto</a>
-            <!-- <a href="#gate-7a4e2c37-0c8e-4f33-8c6f-22170f88ad23" data-targettype="webpage" target="_blank" class="button-red">
+           <!--  <a href="https://campaigns.rockwellautomation.com/Formulario_ES_TF" data-targettype="webpage"
+              target="_blank" class="button-red">
               Busque asesoría de un experto</a> -->
+            
           </div>
         </div>
-        
+
       </div>
       <div class="section-3" id="banner-1">
-        <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots" class="dots" />
+        <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
+          class="dots" />
         <div class="section-3-main">
           <img loading="lazy" src="https://i.postimg.cc/3wXNFCp8/image.png" alt="mineria-text"
             class="section-3-backgroung" />
@@ -980,11 +1009,11 @@
               Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
               problemas de la Industria de Neumáticos & Cauchos.
             </div>
-  
+
             <a target="_blank" class="button-red" href="#gate-9781521f-9f54-458b-bbf5-e2aae7f446b1">Descarga</a>
             <!-- <a target="_blank" class="button-red"
               href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br004_-es-e.pdf">Descarga</a> -->
-  
+
           </div>
         </div>
       </div>
@@ -996,16 +1025,17 @@
             Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
             problemas de la Industria de Metales.
           </div>
-  
+
           <a target="_blank" class="button-red" href="#gate-b50d4739-0656-4e99-878f-ae72c9944361">Descarga</a>
           <!-- <a target="_blank" class="button-red"
             href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br002_-es-p.pdf">Descarga</a> -->
-  
+
         </div>
       </div>
       <div class="section-5" id="banner-3">
-        <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots" class="dots" />
-  
+        <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
+          class="dots" />
+
         <div class="section-5-main">
           <img loading="lazy" src="https://i.postimg.cc/9fCCC3R2/image.png" alt="mineria-text"
             class="section-5-backgroung" />
@@ -1014,11 +1044,11 @@
               Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
               problemas de la Industria Minera.
             </div>
-  
+
             <a target="_blank" class="button-red" href="#gate-f4d1865f-2e27-4928-b4fc-c361dbff1884">Descarga</a>
             <!--    <a target="_blank" class="button-red"
               href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br003_-es-p.pdf">Descarga</a> -->
-  
+
           </div>
         </div>
       </div>
@@ -1030,7 +1060,7 @@
             Entérese aquí cómo la tecnología <b>TotalForce®</b> soluciona los
             problemas de la Industria de Petróleo & Gas.
           </div>
-  
+
           <a target="_blank" class="button-red" href="#gate-3e543ac2-50c5-40c1-98e7-a959fd7e24f2">Descarga</a>
           <!-- <a target="_blank" class="button-red"
             href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br001_-es-p.pdf">Descarga</a> -->
@@ -1038,7 +1068,8 @@
       </div>
 
 
-    </div><div class="step-banner" onclick="step()">CLICK</div>
+    </div>
+    <div class="step-banner" onclick="step()">CLICK</div>
 
 
     <div class="statistics">
@@ -1058,6 +1089,7 @@
               </div>
             </a>
           </div>
+          <div class="item-null"></div>
           <div class="item">
             <a href="#metales">
               <div class="title">Industria <br> de Metales</div>
@@ -1068,6 +1100,7 @@
               </div>
             </a>
           </div>
+          <div class="item-null"></div>
           <div class="item">
             <a href="#minera">
               <div class="title">Industria <br> Minera</div>
@@ -1077,6 +1110,7 @@
               </div>
             </a>
           </div>
+          <div class="item-null"></div>
           <div class="item">
             <a href="#petroleo">
               <div class="title">Industria de Petróleo & Gas</div>
@@ -1089,10 +1123,11 @@
           </div>
 
         </div>
-        <div class="text-footer">Porcentajes de ahorro de inversión promedio. Para obtener un cáculo específico contacte
-          un asesor.</div>
+        <div class="text-footer">Porcentajes de ahorro de inversión promedio.</div>
       </div>
     </div>
+    <div class="statistics-text-footert">Para obtener un cáculo específico contacte
+      un asesor.</div>
 
     <div class="content-video-description">
       <div class="content-video-description-title">
@@ -1186,14 +1221,15 @@
 
 
     <div class="section-3" id="neumaticos">
-      <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots" class="dots" />
+      <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
+        class="dots" />
       <div class="section-3-main">
         <img loading="lazy" src="https://i.postimg.cc/3wXNFCp8/image.png" alt="mineria-text"
           class="section-3-backgroung" />
         <div class="section-3-content">
           <div class="section-3-subtitle">
             Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
-            problemas de la Industria de Neumáticos & Cauchos.
+            problemas de la Industria de <b>Neumáticos & Cauchos.</b>
           </div>
 
           <a target="_blank" class="button-red" href="#gate-9781521f-9f54-458b-bbf5-e2aae7f446b1">Descarga</a>
@@ -1209,7 +1245,7 @@
         <div class="section-4-title">Metales</div>
         <div class="section-4-subtitle">
           Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
-          problemas de la Industria de Metales.
+          problemas de la <b>Industria de Metales.</b> 
         </div>
 
         <a target="_blank" class="button-red" href="#gate-b50d4739-0656-4e99-878f-ae72c9944361">Descarga</a>
@@ -1219,7 +1255,8 @@
       </div>
     </div>
     <div class="section-5" id="minera">
-      <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots" class="dots" />
+      <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
+        class="dots" />
 
       <div class="section-5-main">
         <img loading="lazy" src="https://i.postimg.cc/9fCCC3R2/image.png" alt="mineria-text"
@@ -1227,7 +1264,7 @@
         <div class="section-5-content">
           <div class="section-5-subtitle">
             Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
-            problemas de la Industria Minera.
+            problemas de la <b>Industria Minera.</b> 
           </div>
 
           <a target="_blank" class="button-red" href="#gate-f4d1865f-2e27-4928-b4fc-c361dbff1884">Descarga</a>
@@ -1243,7 +1280,7 @@
         <div class="section-6-title">Petróleo & Gas</div>
         <div class="section-6-subtitle">
           Entérese aquí cómo la tecnología <b>TotalForce®</b> soluciona los
-          problemas de la Industria de Petróleo & Gas.
+          problemas de la <b>Industria de Petróleo & Gas.</b> 
         </div>
 
         <a target="_blank" class="button-red" href="#gate-3e543ac2-50c5-40c1-98e7-a959fd7e24f2">Descarga</a>
@@ -1253,7 +1290,7 @@
     </div>
     <div class="section-7">
       <div class="section-7-title">
-        Productos con tecnología <b>TotalFORCE®</b>
+        Productos con tecnología <b class="special-black">TotalFORCE®</b>
       </div>
       <div class="section-7-items">
         <div class="section-7-item">
@@ -1318,44 +1355,40 @@
 
       </div>
     </div>
-    
+
   </footer>
 
   <script>
 
 
-var activeStep = 0;
+    var activeStep = 0;
 
-    function step(){
-
-
-    var hidde = "";
-    var visible = "";
+    function step() {
 
 
-  if(activeStep === 4){
- 
-    hidde= "banner-"+(activeStep);
-  visible= "banner-0";
-  activeStep= 0;
-  }
-  else{
-
-    console.log("aqui")
-  
-    hidde= "banner-"+(activeStep);
-  visible= "banner-"+(activeStep+1);
-  activeStep= activeStep+1;
-  }
+      var hidde = "";
+      var visible = "";
 
 
+      if (activeStep === 4) {
 
-console.log(hidde,visible)
+        hidde = "banner-" + (activeStep);
+        visible = "banner-0";
+        activeStep = 0;
+      }
+      else {
+
+
+        hidde = "banner-" + (activeStep);
+        visible = "banner-" + (activeStep + 1);
+        activeStep = activeStep + 1;
+      }
+
 
       document.getElementById(hidde).style.display = "none";
       document.getElementById(visible).style.display = "flex";
 
-      
+
 
 
     }
