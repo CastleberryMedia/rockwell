@@ -83,12 +83,10 @@
     #banner-3,
     #banner-4 {
       display: none;
+      height: 400px;
     }
-    
-    #banner-2, #banner-4{
-      height: 381px;
 
-    }
+
 
     .header-button {
       border: 1px solid rgb(197, 26, 68);
@@ -132,7 +130,7 @@
       height: fit-content;
     }
 
-   
+
 
     #s7video_div.s7videoviewer {
       width: 100%;
@@ -161,10 +159,10 @@
     }
 
     .content-video-data-subtitle {
-      font-size: 25px;
+      font-size: 34px;
       margin: 15px 0;
       font-weight: 500;
-    letter-spacing: 2px;
+      letter-spacing: 2px;
     }
 
     .content-video-source video {
@@ -172,13 +170,13 @@
     }
 
     .content-video-description-title {
-      font-size: 30px;
+      font-size: 40px;
       margin-bottom: 30px;
       margin-top: 60px;
     }
 
     .content-video-description-subtitle {
-      width: 680px;
+
       font-weight: 300;
 
     }
@@ -194,7 +192,7 @@
     }
 
     .content-video-description {
-      padding: 0 0 0 170px;
+      padding: 0 8em;
       margin-bottom: 50px;
     }
 
@@ -311,8 +309,8 @@
       margin-top: 10px;
       text-decoration: underline;
       font-size: 13px;
-    letter-spacing: normal;
-    font-weight: 300;
+      letter-spacing: normal;
+      font-weight: 300;
     }
 
     .text-footer {
@@ -329,7 +327,7 @@
 
     .statistics .title {
       text-align: center;
-      font-size: 30px;
+      font-size: 24px;
       height: 90px;
       font-weight: bold;
       display: flex;
@@ -378,14 +376,24 @@
       width: 473px;
     }
 
-    .section-5,
+    /*   .section-5,
     .section-3 {
       display: flex;
       align-items: center;
       background-image: url("https://i.postimg.cc/MHTLzw8n/fondo-rombos-RESIZE.webp");
       background-repeat: no-repeat;
       background-size: cover;
+    } */
+
+    .section-5,
+    .section-3 {
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      height: 605px;
     }
+
 
     .section-5-main,
     .section-3-main {
@@ -393,13 +401,13 @@
       justify-content: center;
       align-items: center;
       position: absolute;
-      margin-left: 150px;
+      height: 100%;
     }
 
     .section-5-content {
       width: 318px;
       margin-left: 15px;
-      margin-top: 33px;
+      margin-top: 9em;
     }
 
     .section-3-content {
@@ -413,7 +421,7 @@
     .section-5-subtitle,
     .section-3-subtitle {
       margin-bottom: 30px;
-      font-size: 19px;
+      font-size: 30px;
       font-weight: 300;
     }
 
@@ -444,7 +452,9 @@
     .section-5-backgroung,
     .section-3-backgroung {
       max-width: 40%;
+      margin-left: 6em;
     }
+
 
     .section-6,
     .section-4 {
@@ -477,7 +487,7 @@
     }
 
     .img-section {
-      /*   height: 100%; */
+      height: 100%;
       width: 100%;
     }
 
@@ -492,7 +502,7 @@
       font-weight: 300;
     }
 
-    .special-black{
+    .special-black {
       color: black;
     }
 
@@ -552,7 +562,9 @@
     }
 
     .dots {
-      margin-left: 160px;
+      height: 100%;
+      position: absolute;
+      left: 3em;
     }
 
     footer {
@@ -966,9 +978,6 @@
       <a href="#gate-7a4e2c37-0c8e-4f33-8c6f-22170f88ad23" data-targettype="webpage" target="_blank"
         class="header-button">
         Busque asesoría de un experto</a>
-      <!-- <a href="https://campaigns.rockwellautomation.com/Formulario_ES_TF" data-targettype="webpage" target="_blank"
-        class="header-button">
-        Busque asesoría de un experto</a> -->
     </div>
   </header>
   <main>
@@ -994,27 +1003,27 @@
           </div>
           <div class="content-video-data-button">
 
-            <a href="#gate-7a4e2c37-0c8e-4f33-8c6f-22170f88ad23" data-targettype="webpage"
-              target="_blank" class="button-red">
+            <a href="#gate-7a4e2c37-0c8e-4f33-8c6f-22170f88ad23" data-targettype="webpage" target="_blank"
+              class="button-red">
               Busque asesoría de un experto</a>
-           <!--  <a href="https://campaigns.rockwellautomation.com/Formulario_ES_TF" data-targettype="webpage"
-              target="_blank" class="button-red">
-              Busque asesoría de un experto</a> -->
-            
+
           </div>
         </div>
 
       </div>
       <div class="section-3" id="banner-1">
-        <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
-          class="dots" />
+        <img loading="lazy" class="img-section" src="https://i.postimg.cc/xdJ5BxMH/Fondo-gris-2.png"
+          alt="img-petroleo" />
+
         <div class="section-3-main">
+          <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
+            class="dots" />
           <img loading="lazy" src="https://i.postimg.cc/3wXNFCp8/image.png" alt="mineria-text"
             class="section-3-backgroung" />
           <div class="section-3-content">
             <div class="section-3-subtitle">
               Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
-              problemas de la Industria de Neumáticos & Cauchos.
+              problemas de la Industria de <b>Neumáticos & Cauchos.</b>
             </div>
 
             <a target="_blank" class="button-red" href="#gate-9781521f-9f54-458b-bbf5-e2aae7f446b1">Descarga</a>
@@ -1025,7 +1034,8 @@
         </div>
       </div>
       <div class="section-4" id="banner-2">
-        <img loading="lazy" class="img-section" src="https://i.postimg.cc/5tYHmrvd/Metales2-Standard.png" alt="img-petroleo" />
+        <img loading="lazy" class="img-section" src="https://i.postimg.cc/5tYHmrvd/Metales2-Standard.png"
+          alt="img-petroleo" />
         <div class="section-4-content">
           <div class="section-4-title">Metales</div>
           <div class="section-4-subtitle">
@@ -1034,12 +1044,12 @@
           </div>
 
           <a target="_blank" class="button-red" href="#gate-b50d4739-0656-4e99-878f-ae72c9944361">Descarga</a>
-          <!-- <a target="_blank" class="button-red"
-            href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br002_-es-p.pdf">Descarga</a> -->
 
         </div>
       </div>
       <div class="section-5" id="banner-3">
+        <img loading="lazy" class="img-section" src="https://i.postimg.cc/xdJ5BxMH/Fondo-gris-2.png"
+          alt="img-petroleo" />
         <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
           class="dots" />
 
@@ -1049,12 +1059,11 @@
           <div class="section-5-content">
             <div class="section-5-subtitle">
               Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
-              problemas de la Industria Minera.
+              problemas de la <b>Industria Minera.</b>
             </div>
 
             <a target="_blank" class="button-red" href="#gate-f4d1865f-2e27-4928-b4fc-c361dbff1884">Descarga</a>
-            <!--    <a target="_blank" class="button-red"
-              href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br003_-es-p.pdf">Descarga</a> -->
+
 
           </div>
         </div>
@@ -1069,14 +1078,13 @@
           </div>
 
           <a target="_blank" class="button-red" href="#gate-3e543ac2-50c5-40c1-98e7-a959fd7e24f2">Descarga</a>
-          <!-- <a target="_blank" class="button-red"
-            href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br001_-es-p.pdf">Descarga</a> -->
+
         </div>
       </div>
 
 
     </div>
-    <div class="step-banner" onclick="step()">CLICK</div>
+    <!-- <div class="step-banner" onclick="step()">CLICK</div> -->
 
 
     <div class="statistics">
@@ -1228,9 +1236,11 @@
 
 
     <div class="section-3" id="neumaticos">
-      <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
-        class="dots" />
+      <img loading="lazy" class="img-section" src="https://i.postimg.cc/xdJ5BxMH/Fondo-gris-2.png" alt="img-petroleo" />
+
       <div class="section-3-main">
+        <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
+          class="dots" />
         <img loading="lazy" src="https://i.postimg.cc/3wXNFCp8/image.png" alt="mineria-text"
           class="section-3-backgroung" />
         <div class="section-3-content">
@@ -1246,13 +1256,14 @@
         </div>
       </div>
     </div>
+
     <div class="section-4" id="metales">
       <img loading="lazy" class="img-section" src="https://i.postimg.cc/kXL5rhvM/image.png" alt="img-petroleo" />
       <div class="section-4-content">
         <div class="section-4-title">Metales</div>
         <div class="section-4-subtitle">
           Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
-          problemas de la <b>Industria de Metales.</b> 
+          problemas de la <b>Industria de Metales.</b>
         </div>
 
         <a target="_blank" class="button-red" href="#gate-b50d4739-0656-4e99-878f-ae72c9944361">Descarga</a>
@@ -1262,6 +1273,8 @@
       </div>
     </div>
     <div class="section-5" id="minera">
+
+      <img loading="lazy" class="img-section" src="https://i.postimg.cc/xdJ5BxMH/Fondo-gris-2.png" alt="img-petroleo" />
       <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
         class="dots" />
 
@@ -1271,7 +1284,7 @@
         <div class="section-5-content">
           <div class="section-5-subtitle">
             Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
-            problemas de la <b>Industria Minera.</b> 
+            problemas de la <b>Industria Minera.</b>
           </div>
 
           <a target="_blank" class="button-red" href="#gate-f4d1865f-2e27-4928-b4fc-c361dbff1884">Descarga</a>
@@ -1287,7 +1300,7 @@
         <div class="section-6-title">Petróleo & Gas</div>
         <div class="section-6-subtitle">
           Entérese aquí cómo la tecnología <b>TotalForce®</b> soluciona los
-          problemas de la <b>Industria de Petróleo & Gas.</b> 
+          problemas de la <b>Industria de Petróleo & Gas.</b>
         </div>
 
         <a target="_blank" class="button-red" href="#gate-3e543ac2-50c5-40c1-98e7-a959fd7e24f2">Descarga</a>
@@ -1399,7 +1412,9 @@
 
 
     }
-
+    /* setInterval(function() {
+    step()
+}, 5000); */
     function loadVideo(e) {
       var d = document.getElementById("top");
       var d_nested = document.getElementById("s7video_div");
