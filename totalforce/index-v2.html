@@ -106,19 +106,17 @@
     .button-red {
       border: 1px solid rgb(197, 26, 68);
       background-color: rgb(197, 26, 68);
-      height: 15px;
       text-transform: uppercase;
       color: #ffffff;
       cursor: pointer;
       letter-spacing: 0;
-      padding: 14px;
+      padding: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 18px;
-      font-weight: 300;
       width: fit-content;
       border-radius: 6px;
+      font-size: 18px;
     }
 
     .blue-text {
@@ -178,6 +176,7 @@
     .content-video-description-subtitle {
 
       font-weight: 300;
+      font-size: 20px;
 
     }
 
@@ -197,7 +196,7 @@
     }
 
     .section-2-title {
-      margin: 10px 0;
+      margin: 0 0 10px 0;
       font-size: 40px;
       color: rgb(197, 26, 68);
     }
@@ -253,7 +252,7 @@
       display: flex;
       align-items: center;
       padding: 0 20px;
-      font-size: 20px;
+      font-size: 24px;
       flex-grow: 1;
       flex-basis: 0;
     }
@@ -337,7 +336,6 @@
 
     .statistics .subtitle {
       font-size: 20px;
-      text-align: center;
       font-weight: 300;
     }
 
@@ -357,10 +355,6 @@
       margin: 40px 0;
     }
 
-    .statistics .item:first-child {
-      border: none;
-    }
-
     .statistics .img-statistics {
       height: 160px;
       display: block;
@@ -373,17 +367,9 @@
       position: absolute;
       right: 0;
       padding-right: 55px;
-      width: 473px;
+      width: 40%;
     }
 
-    /*   .section-5,
-    .section-3 {
-      display: flex;
-      align-items: center;
-      background-image: url("https://i.postimg.cc/MHTLzw8n/fondo-rombos-RESIZE.webp");
-      background-repeat: no-repeat;
-      background-size: cover;
-    } */
 
     .section-5,
     .section-3 {
@@ -404,18 +390,26 @@
       height: 100%;
     }
 
+   
+    .section-3-content,
     .section-5-content {
-      width: 318px;
-      margin-left: 15px;
-      margin-top: 9em;
-    }
-
-    .section-3-content {
-      width: 318px;
+      width: 30%;
       margin-top: 11px;
       margin-left: 15px;
-      height: 150px;
       position: relative;
+    }
+
+    .section-3-main-text,
+    .section-5-main-text {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+
+    .section-3 .button-red,
+    .section-5 .button-red {
+      font-size: 35px;
     }
 
     .section-5-subtitle,
@@ -468,21 +462,21 @@
     .section-6-content {
       position: absolute;
       right: 0;
-      padding-right: 216px;
-      width: 473px;
+      padding-right: 100px;
+      width: 40%;
     }
 
     .section-6-title,
     .section-4-title {
       margin-bottom: 10px;
-      font-size: 60px;
+      font-size: 70px;
       font-weight: bold;
     }
 
     .section-6-subtitle,
     .section-4-subtitle {
       margin-bottom: 30px;
-      font-size: 19px;
+      font-size: 30px;
       font-weight: 300;
     }
 
@@ -497,7 +491,7 @@
     }
 
     .section-7-title {
-      font-size: 28px;
+      font-size: 40px;
       color: rgb(197, 27, 67);
       font-weight: 300;
     }
@@ -545,8 +539,12 @@
       flex-basis: 0;
     }
 
+    .section-7 .blue-text {
+      font-size: 20px;
+    }
+
     .item-title {
-      font-size: 23px;
+      font-size: 24px;
       margin-bottom: 25px;
     }
 
@@ -554,11 +552,13 @@
       margin-bottom: 20px;
       font-weight: 300;
       color: #000000;
+      font-size: 20px;
     }
 
     .item-category {
       font-weight: 300;
       color: #000000;
+      font-size: 20px;
     }
 
     .dots {
@@ -625,41 +625,172 @@
       margin: 0 20px 0 20px;
     }
 
+    @media (min-width: 1200px) {
+
+
+      .content-video-data-subtitle {
+        font-size: 44px;
+      }
+
+      .button-red {
+        font-size: 24px;
+      }
+
+      .statistics .title {
+        font-size: 32px;
+      }
+
+      .statistics .subtitle {
+
+        font-size: 26px;
+
+      }
+
+      .content-video-description-title {
+        font-size: 53px;
+      }
+
+      .content-video-description-subtitle {
+        font-size: 26px;
+      }
+
+      .section-5, .section-3 {
+  
+    height: 50em;
+}
+
+.section-3-main-text, .section-5-main-text {
+   
+    margin-top: 7em;
+}
+
+.section-3-content, .section-5-content {
+    width: 32%;
+   
+}
+
+      .statistics-text-footert {
+        font-size: 18px;
+      }
+
+      .text-footer {
+        font-size: 18px;
+      }
+
+
+      .section-2-title {
+        font-size: 53px;
+      }
+
+      .section-2 .video-carousel-title {
+        font-size: 32px;
+      }
+
+      .section-5-subtitle,
+      .section-3-subtitle {
+        font-size: 40px;
+      }
+
+      .section-3-content .button-red,
+      .section-5-content .button-red,
+      .section-4-content .button-red,
+      .section-6-content .button-red {
+        font-size: 33px;
+      }
+
+      .section-6-title,
+      .section-4-title {
+        font-size: 93px;
+      }
+
+      .section-6-subtitle,
+      .section-4-subtitle {
+        font-size: 40px;
+      }
+
+
+      .section-7-title {
+        font-size: 53px;
+      }
+
+      .section-7 .item-category {
+        font-size: 26px;
+      }
+
+      .section-7 .item-title {
+        font-size: 30px
+      }
+
+      .section-7 .blue-text {
+        font-size: 26px;
+      }
+
+      .section-7 .item-description {
+        font-size: 26px;
+      }
+
+
+
+    }
+
     @media (max-width: 800px) {
 
 
-
-      .statistics .item,
-      .statistics .item:first-child {
-
-        border-bottom: 1px solid #ffff;
-        border-right: 1px solid #ffff;
-
+      .statistics .item-null:nth-child(4) {
+        display: none;
       }
 
-      .statistics .item:nth-child(3n),
-      .item:nth-child(4n) {
-        border-left: none;
-        border-bottom: none;
+      .item-null-l {
+        width: 100%;
+        background-color: #ffffff;
+        height: 1px;
       }
 
-      .statistics .item:nth-child(2n),
-      .item:nth-child(4n) {
-        border-right: none;
-        border-left: none;
-
+      .item-flex {
+        display: flex;
+        align-items: center;
       }
+      .item-flex .subtitle {
+        margin-left: 15px;
+      }
+
+      .text-footer ,.statistics-text-footert {
+font-size: 14px;
+      }
+
+      .content-video-description-title{
+        font-size: 35px;
+      }
+
+      .content-video-description-subtitle{
+        font-size: 17px;
+      }
+
+      .section-2-content{
+        display: block;
+      }
+
+      .video-carousel-flex {
+    display: flex;
+}
+
+
+.section-3-main-text, .section-5-main-text {
+    
+    margin-top: 8em;
+}
 
 
 
       .section-2-title {
         margin: 30px 40px;
-
+        font-size: 35px;
       }
 
       .section-2 .video-carousel-item {
         display: block;
         margin-left: 20px;
+        margin-bottom: 0;
       }
 
       .section-2 .video-carousel-item:first-child {
@@ -670,6 +801,7 @@
       .section-2 .video-carousel-title {
         font-size: 26px;
         margin-top: 10px;
+        margin-bottom: 10px;
       }
 
       .content-video-description {
@@ -688,41 +820,52 @@
       }
 
       .dots {
-        margin-left: 10px;
-        width: 50%;
+        margin-left: -2em;
       }
 
       .section-5,
       .section-3 {
-        height: auto;
+        height: 27em;
       }
+
+      .section-3-content, .section-5-content {
+    width: 40%;
+    
+}
+
+      .section-5-subtitle, .section-3-subtitle {
+    font-size: 20px;
+}
+
+.section-3 .button-red, .section-5 .button-red {
+    font-size: 18px;
+}
+
+.section-6-title, .section-4-title {
+    font-size: 43px;
+}
+
+.section-6-subtitle, .section-4-subtitle {
+  
+    font-size: 20px
+}
 
       .section-4,
       .section-6 {
         height: auto;
       }
 
-      .section-4-content {
+      .section-4-content,.section-6-content {
 
         padding-right: 62px;
-        width: 200px;
+        width: 36%;
       }
 
-      .section-6-content {
-
-        padding-right: 62px;
-        width: 376px;
-      }
-
-      .section-6-subtitle {
-
-        font-size: 27px;
-
-      }
+  
 
       .section-5-backgroung,
       .section-3-backgroung {
-        max-width: 60%;
+        max-width: 43%;
       }
 
       .section-5-main,
@@ -771,22 +914,6 @@
       }
     }
 
-    @media (max-width: 1500px) {
-
-      /*    .main-video {
-        height: 50em;
-        max-height: 50em;
-      } */
-    }
-
-    @media (max-width: 1024px) {
-
-      .main-video {
-        height: 36em;
-        max-height: 36em;
-      }
-    }
-
     @media (max-width: 414px) {
 
       .main-video {
@@ -798,20 +925,24 @@
     @media (max-width: 700px) {
 
 
-
-      .statistics .item:first-child {
-
-        border-right: none;
-
-
+      .item-null, .item-null-l{
+        display: none;
       }
 
+      .statistics .contents,.item-flex {
+    display: block;
+    text-align: center;
+}
       .statistics .item:last-child {
+   border: none;
+}
 
-        border-bottom: none;
+.video-carousel-flex {
+    display: block;
+}
 
 
-      }
+
 
       .statistics .item {
         border-right: none;
@@ -846,8 +977,16 @@
       .section-4-content,
       .section-6-content {
         padding: 10px;
-        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
         text-align: center;
+        height: fit-content;
+        background-color: rgba(0, 0, 0, 0.2); 
+        
       }
 
       .section-6-title {
@@ -877,12 +1016,12 @@
         width: 100px;
       }
 
-      .section-5-main,
-      .section-3-main {
-        display: block;
-        text-align: center;
-        margin: 10px;
-      }
+      .section-5-main, .section-3-main {
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    align-items: center;
+}
 
       .section-5-content,
       .section-3-content {
@@ -947,6 +1086,7 @@
 
       .section-2 .video-carousel {
         display: block;
+        margin: 0;
       }
 
       .section-2 .video-carousel-item-video {
@@ -1096,11 +1236,13 @@
             <a href="#neumaticos">
               <div class="title">Industria de Neumáticos & Cauchos</div>
 
-              <img loading="lazy" src="https://i.postimg.cc/d3HK9D4t/image.png" alt="neumaticos"
-                class="img-statistics" />
-              <div class="subtitle">
-                <b>Reducción de tiempo improductivo en al menos 10%</b>, con
-                soluciones compactas y eficientes.
+              <div class="item-flex">
+                <img loading="lazy" src="https://i.postimg.cc/d3HK9D4t/image.png" alt="neumaticos"
+                  class="img-statistics" />
+                <div class="subtitle">
+                  <b>Reducción de tiempo improductivo en al menos 10%</b>, con
+                  soluciones compactas y eficientes.
+                </div>
               </div>
             </a>
           </div>
@@ -1108,38 +1250,49 @@
           <div class="item">
             <a href="#metales">
               <div class="title">Industria <br> de Metales</div>
-              <img loading="lazy" src="https://i.postimg.cc/QN0sDnhG/image.png" alt="metales" class="img-statistics" />
-              <div class="subtitle">
-                <b>Eficiencia energética</b> que amortiza el cambio de tecnología vs. la
-                tradicional <b>en menos de 6 meses.</b>
-              </div>
-            </a>
+              <div class="item-flex">
+                <img loading="lazy" src="https://i.postimg.cc/QN0sDnhG/image.png" alt="metales"
+                  class="img-statistics" />
+                <div class="subtitle">
+                  <b>Eficiencia energética</b> que amortiza el cambio de tecnología vs. la
+                  tradicional <b>en menos de 6 meses.</b>
+                </div>
+              </div>  </a>
           </div>
-          <div class="item-null"></div>
-          <div class="item">
-            <a href="#minera">
-              <div class="title">Industria <br> Minera</div>
+        
+       
+        <div class="item-null"></div>
+
+        <div class="item">
+          <div class="item-null-l"></div>
+          <a href="#minera">
+            <div class="title">Industria <br> Minera</div>
+            <div class="item-flex">
               <img loading="lazy" src="https://i.postimg.cc/ht7q9Dxc/image.png" alt="minera" class="img-statistics" />
               <div class="subtitle">
                 <b>Ahorros energéticos</b> en la operación <b>mayores al 30%.</b>
               </div>
-            </a>
-          </div>
-          <div class="item-null"></div>
-          <div class="item">
-            <a href="#petroleo">
-              <div class="title">Industria de Petróleo & Gas</div>
-              <img loading="lazy" src="https://i.postimg.cc/XvfSzsQP/image.png" alt="Gas" class="img-statistics" />
+            </div>
+          </a>
+        </div>
+        <div class="item-null"></div>
+        <div class="item">
+          <div class="item-null-l"></div>
+          <a href="#petroleo">
+            <div class="title">Industria de Petróleo & Gas</div>
+            <div class="item-flex"> <img loading="lazy" src="https://i.postimg.cc/XvfSzsQP/image.png" alt="Gas"
+                class="img-statistics" />
               <div class="subtitle">
                 <b>Optimización de espacio mayor al 50% </b> vs. el espacio de la solución
                 tradicional.
               </div>
-            </a>
-          </div>
-
+            </div>
+          </a>
         </div>
-        <div class="text-footer">Porcentajes de ahorro de inversión promedio.</div>
+
       </div>
+      <div class="text-footer">Porcentajes de ahorro de inversión promedio.</div>
+    </div>
     </div>
     <div class="statistics-text-footert">Para obtener un cáculo específico contacte
       un asesor.</div>
@@ -1189,6 +1342,8 @@
 
         <div class="video-carousel">
           <div class="section-2-title">RETOS EN LA <b>MANUFACTURA</b></div>
+
+          <div class="video-carousel-flex">
           <div class="video-carousel-item">
             <div class="video-carousel-item-video" onclick="loadVideo('Total Force 1-AVS')">
 
@@ -1228,7 +1383,7 @@
                 <b>Reducir</b> costos de energía
               </div>
             </div>
-          </div>
+          </div></div>
         </div>
       </div>
     </div>
@@ -1241,19 +1396,24 @@
       <div class="section-3-main">
         <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
           class="dots" />
-        <img loading="lazy" src="https://i.postimg.cc/3wXNFCp8/image.png" alt="mineria-text"
-          class="section-3-backgroung" />
-        <div class="section-3-content">
-          <div class="section-3-subtitle">
-            Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
-            problemas de la Industria de <b>Neumáticos & Cauchos.</b>
+
+        <div class="section-3-main-text">
+
+          <img loading="lazy" src="https://i.postimg.cc/3wXNFCp8/image.png" alt="mineria-text"
+            class="section-3-backgroung" />
+          <div class="section-3-content">
+            <div class="section-3-subtitle">
+              Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
+              problemas de la Industria de <b>Neumáticos & Cauchos.</b>
+            </div>
+
+            <a target="_blank" class="button-red" href="#gate-9781521f-9f54-458b-bbf5-e2aae7f446b1">Descarga</a>
+
+
           </div>
-
-          <a target="_blank" class="button-red" href="#gate-9781521f-9f54-458b-bbf5-e2aae7f446b1">Descarga</a>
-          <!-- <a target="_blank" class="button-red"
-            href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br004_-es-e.pdf">Descarga</a> -->
-
         </div>
+
+
       </div>
     </div>
 
@@ -1267,8 +1427,7 @@
         </div>
 
         <a target="_blank" class="button-red" href="#gate-b50d4739-0656-4e99-878f-ae72c9944361">Descarga</a>
-        <!-- <a target="_blank" class="button-red"
-          href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br002_-es-p.pdf">Descarga</a> -->
+
 
       </div>
     </div>
@@ -1279,18 +1438,20 @@
         class="dots" />
 
       <div class="section-5-main">
-        <img loading="lazy" src="https://i.postimg.cc/9fCCC3R2/image.png" alt="mineria-text"
-          class="section-5-backgroung" />
-        <div class="section-5-content">
-          <div class="section-5-subtitle">
-            Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
-            problemas de la <b>Industria Minera.</b>
+        <div class="section-5-main-text">
+          <img loading="lazy" src="https://i.postimg.cc/9fCCC3R2/image.png" alt="mineria-text"
+            class="section-5-backgroung" />
+
+          <div class="section-5-content">
+            <div class="section-5-subtitle">
+              Entérese aquí cómo la tecnología <b>TotalForce</b> soluciona los
+              problemas de la <b>Industria Minera.</b>
+            </div>
+
+            <a target="_blank" class="button-red" href="#gate-f4d1865f-2e27-4928-b4fc-c361dbff1884">Descarga</a>
+
+
           </div>
-
-          <a target="_blank" class="button-red" href="#gate-f4d1865f-2e27-4928-b4fc-c361dbff1884">Descarga</a>
-          <!--    <a target="_blank" class="button-red"
-            href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br003_-es-p.pdf">Descarga</a> -->
-
         </div>
       </div>
     </div>
@@ -1304,8 +1465,7 @@
         </div>
 
         <a target="_blank" class="button-red" href="#gate-3e543ac2-50c5-40c1-98e7-a959fd7e24f2">Descarga</a>
-        <!-- <a target="_blank" class="button-red"
-          href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br001_-es-p.pdf">Descarga</a> -->
+
       </div>
     </div>
     <div class="section-7">
@@ -1412,9 +1572,9 @@
 
 
     }
-    /* setInterval(function() {
-    step()
-}, 5000); */
+    /*  setInterval(function() {
+     step()
+ }, 5000); */
     function loadVideo(e) {
       var d = document.getElementById("top");
       var d_nested = document.getElementById("s7video_div");
