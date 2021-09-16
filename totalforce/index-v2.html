@@ -390,7 +390,7 @@
       height: 100%;
     }
 
-   
+
     .section-3-content,
     .section-5-content {
       width: 30%;
@@ -603,6 +603,7 @@
       font-size: 25px;
       font-weight: bold;
       margin-bottom: 15px;
+      text-align: center;
     }
 
     .footer-copyright {
@@ -623,6 +624,14 @@
       border: 0.5px solid #ffffff;
       height: 21px;
       margin: 0 20px 0 20px;
+    }
+
+    .content-video-source .normal {
+      display: block;
+    }
+
+    .content-video-source .movil {
+      display: none;
     }
 
     @media (min-width: 1200px) {
@@ -654,20 +663,23 @@
         font-size: 26px;
       }
 
-      .section-5, .section-3 {
-  
-    height: 50em;
-}
+      .section-5,
+      .section-3 {
 
-.section-3-main-text, .section-5-main-text {
-   
-    margin-top: 7em;
-}
+        height: 50em;
+      }
 
-.section-3-content, .section-5-content {
-    width: 32%;
-   
-}
+      .section-3-main-text,
+      .section-5-main-text {
+
+        margin-top: 7em;
+      }
+
+      .section-3-content,
+      .section-5-content {
+        width: 32%;
+
+      }
 
       .statistics-text-footert {
         font-size: 18px;
@@ -735,6 +747,14 @@
 
     @media (max-width: 800px) {
 
+      .content-video-source .normal {
+        display: none;
+      }
+
+      .content-video-source .movil {
+        display: block;
+      }
+
 
       .statistics .item-null:nth-child(4) {
         display: none;
@@ -750,35 +770,38 @@
         display: flex;
         align-items: center;
       }
+
       .item-flex .subtitle {
         margin-left: 15px;
       }
 
-      .text-footer ,.statistics-text-footert {
-font-size: 14px;
+      .text-footer,
+      .statistics-text-footert {
+        font-size: 14px;
       }
 
-      .content-video-description-title{
+      .content-video-description-title {
         font-size: 35px;
       }
 
-      .content-video-description-subtitle{
+      .content-video-description-subtitle {
         font-size: 17px;
       }
 
-      .section-2-content{
+      .section-2-content {
         display: block;
       }
 
       .video-carousel-flex {
-    display: flex;
-}
+        display: flex;
+      }
 
 
-.section-3-main-text, .section-5-main-text {
-    
-    margin-top: 8em;
-}
+      .section-3-main-text,
+      .section-5-main-text {
+
+        margin-top: 8em;
+      }
 
 
 
@@ -828,40 +851,46 @@ font-size: 14px;
         height: 27em;
       }
 
-      .section-3-content, .section-5-content {
-    width: 40%;
-    
-}
+      .section-3-content,
+      .section-5-content {
+        width: 40%;
 
-      .section-5-subtitle, .section-3-subtitle {
-    font-size: 20px;
-}
+      }
 
-.section-3 .button-red, .section-5 .button-red {
-    font-size: 18px;
-}
+      .section-5-subtitle,
+      .section-3-subtitle {
+        font-size: 20px;
+      }
 
-.section-6-title, .section-4-title {
-    font-size: 43px;
-}
+      .section-3 .button-red,
+      .section-5 .button-red {
+        font-size: 18px;
+      }
 
-.section-6-subtitle, .section-4-subtitle {
-  
-    font-size: 20px
-}
+      .section-6-title,
+      .section-4-title {
+        font-size: 43px;
+      }
+
+      .section-6-subtitle,
+      .section-4-subtitle {
+
+        font-size: 20px
+      }
 
       .section-4,
       .section-6 {
         height: auto;
       }
 
-      .section-4-content,.section-6-content {
+      .section-4-content,
+      .section-6-content {
 
         padding-right: 62px;
         width: 36%;
       }
 
-  
+
 
       .section-5-backgroung,
       .section-3-backgroung {
@@ -925,21 +954,24 @@ font-size: 14px;
     @media (max-width: 700px) {
 
 
-      .item-null, .item-null-l{
+      .item-null,
+      .item-null-l {
         display: none;
       }
 
-      .statistics .contents,.item-flex {
-    display: block;
-    text-align: center;
-}
-      .statistics .item:last-child {
-   border: none;
-}
+      .statistics .contents,
+      .item-flex {
+        display: block;
+        text-align: center;
+      }
 
-.video-carousel-flex {
-    display: block;
-}
+      .statistics .item:last-child {
+        border: none;
+      }
+
+      .video-carousel-flex {
+        display: block;
+      }
 
 
 
@@ -985,8 +1017,8 @@ font-size: 14px;
         margin: auto;
         text-align: center;
         height: fit-content;
-        background-color: rgba(0, 0, 0, 0.2); 
-        
+        background-color: rgba(0, 0, 0, 0.2);
+
       }
 
       .section-6-title {
@@ -1016,12 +1048,13 @@ font-size: 14px;
         width: 100px;
       }
 
-      .section-5-main, .section-3-main {
-    display: flex;
-    text-align: center;
-    margin: 10px;
-    align-items: center;
-}
+      .section-5-main,
+      .section-3-main {
+        display: flex;
+        text-align: center;
+        margin: 10px;
+        align-items: center;
+      }
 
       .section-5-content,
       .section-3-content {
@@ -1126,10 +1159,18 @@ font-size: 14px;
     <div class="section-1">
       <div class="content-video" id="banner-0">
         <div class="content-video-source">
-          <video loop="true" autoplay="autoplay" muted playsinline>
-            <source src="https://drive.google.com/uc?export=download&id=1PpJagn3IiPJe5X6G9tE5NLdGkgRAJ-bU"
+          <video loop="true" autoplay="autoplay" muted playsinline class="normal">
+            <source src="https://drive.google.com/uc?export=download&id=1EtrlY7-dT0qcxHUA99t2XTabmDmQ7GVW"
               type="video/mp4" />
           </video>
+          <video loop="true" autoplay="autoplay" muted playsinline class="movil">
+            <source src="https://drive.google.com/uc?export=download&id=1iQbzuGvkCN1lLnM7jjwgg_bC4ajsTaaN"
+              type="video/mp4" />
+          </video>
+
+
+
+
         </div>
         <div class="content-video-data">
 
@@ -1167,8 +1208,7 @@ font-size: 14px;
             </div>
 
             <a target="_blank" class="button-red" href="#gate-9781521f-9f54-458b-bbf5-e2aae7f446b1">Descarga</a>
-            <!-- <a target="_blank" class="button-red"
-              href="https://literature.rockwellautomation.com/idc/groups/literature/documents/br/tforce-br004_-es-e.pdf">Descarga</a> -->
+
 
           </div>
         </div>
@@ -1257,42 +1297,43 @@ font-size: 14px;
                   <b>Eficiencia energética</b> que amortiza el cambio de tecnología vs. la
                   tradicional <b>en menos de 6 meses.</b>
                 </div>
-              </div>  </a>
+              </div>
+            </a>
           </div>
-        
-       
-        <div class="item-null"></div>
 
-        <div class="item">
-          <div class="item-null-l"></div>
-          <a href="#minera">
-            <div class="title">Industria <br> Minera</div>
-            <div class="item-flex">
-              <img loading="lazy" src="https://i.postimg.cc/ht7q9Dxc/image.png" alt="minera" class="img-statistics" />
-              <div class="subtitle">
-                <b>Ahorros energéticos</b> en la operación <b>mayores al 30%.</b>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="item-null"></div>
-        <div class="item">
-          <div class="item-null-l"></div>
-          <a href="#petroleo">
-            <div class="title">Industria de Petróleo & Gas</div>
-            <div class="item-flex"> <img loading="lazy" src="https://i.postimg.cc/XvfSzsQP/image.png" alt="Gas"
-                class="img-statistics" />
-              <div class="subtitle">
-                <b>Optimización de espacio mayor al 50% </b> vs. el espacio de la solución
-                tradicional.
-              </div>
-            </div>
-          </a>
-        </div>
 
+          <div class="item-null"></div>
+
+          <div class="item">
+            <div class="item-null-l"></div>
+            <a href="#minera">
+              <div class="title">Industria <br> Minera</div>
+              <div class="item-flex">
+                <img loading="lazy" src="https://i.postimg.cc/ht7q9Dxc/image.png" alt="minera" class="img-statistics" />
+                <div class="subtitle">
+                  <b>Ahorros energéticos</b> en la operación <b>mayores al 30%.</b>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item-null"></div>
+          <div class="item">
+            <div class="item-null-l"></div>
+            <a href="#petroleo">
+              <div class="title">Industria de Petróleo & Gas</div>
+              <div class="item-flex"> <img loading="lazy" src="https://i.postimg.cc/XvfSzsQP/image.png" alt="Gas"
+                  class="img-statistics" />
+                <div class="subtitle">
+                  <b>Optimización de espacio mayor al 50% </b> vs. el espacio de la solución
+                  tradicional.
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="text-footer">Porcentajes de ahorro de inversión promedio.</div>
       </div>
-      <div class="text-footer">Porcentajes de ahorro de inversión promedio.</div>
-    </div>
     </div>
     <div class="statistics-text-footert">Para obtener un cáculo específico contacte
       un asesor.</div>
@@ -1344,46 +1385,47 @@ font-size: 14px;
           <div class="section-2-title">RETOS EN LA <b>MANUFACTURA</b></div>
 
           <div class="video-carousel-flex">
-          <div class="video-carousel-item">
-            <div class="video-carousel-item-video" onclick="loadVideo('Total Force 1-AVS')">
+            <div class="video-carousel-item">
+              <div class="video-carousel-item-video" onclick="loadVideo('Total Force 1-AVS')">
 
-              <img loading="lazy" src="https://i.postimg.cc/KjY64xxX/image.png" class="img-carousel"
-                alt="img-carousel" />
-              <img loading="lazy" src="https://i.postimg.cc/zvP9g6Gy/image.png" class="play-icon" alt="play" />
+                <img loading="lazy" src="https://i.postimg.cc/KjY64xxX/image.png" class="img-carousel"
+                  alt="img-carousel" />
+                <img loading="lazy" src="https://i.postimg.cc/zvP9g6Gy/image.png" class="play-icon" alt="play" />
+              </div>
+              <div class="video-carousel-title">
+                <div>
+                  <b>Optimización</b> de la producción
+                </div>
+              </div>
             </div>
-            <div class="video-carousel-title">
-              <div>
-                <b>Optimización</b> de la producción
+            <div class="video-carousel-item">
+              <div class="video-carousel-item-video" onclick="loadVideo('Total Force 2-AVS')">
+
+                <img loading="lazy" src="https://i.postimg.cc/j5M1pmNM/image.png" class="img-carousel"
+                  alt="img-carousel" />
+                <img loading="lazy" src="https://i.postimg.cc/zvP9g6Gy/image.png" class="play-icon" alt="play" />
+              </div>
+              <div class="video-carousel-title">
+                <div>
+                  <b>Minimizar</b> los paros no deseados
+                </div>
+              </div>
+            </div>
+            <div class="video-carousel-item">
+              <div class="video-carousel-item-video" onclick="loadVideo('Total Force 3-AVS')">
+
+                <img loading="lazy" src="https://i.postimg.cc/rmRhHsVw/image.png" class="img-carousel"
+                  alt="img-carousel" />
+                <img loading="lazy" src="https://i.postimg.cc/zvP9g6Gy/image.png" class="play-icon" alt="play" />
+              </div>
+
+              <div class="video-carousel-title">
+                <div>
+                  <b>Reducir</b> costos de energía
+                </div>
               </div>
             </div>
           </div>
-          <div class="video-carousel-item">
-            <div class="video-carousel-item-video" onclick="loadVideo('Total Force 2-AVS')">
-
-              <img loading="lazy" src="https://i.postimg.cc/j5M1pmNM/image.png" class="img-carousel"
-                alt="img-carousel" />
-              <img loading="lazy" src="https://i.postimg.cc/zvP9g6Gy/image.png" class="play-icon" alt="play" />
-            </div>
-            <div class="video-carousel-title">
-              <div>
-                <b>Minimizar</b> los paros no deseados
-              </div>
-            </div>
-          </div>
-          <div class="video-carousel-item">
-            <div class="video-carousel-item-video" onclick="loadVideo('Total Force 3-AVS')">
-
-              <img loading="lazy" src="https://i.postimg.cc/rmRhHsVw/image.png" class="img-carousel"
-                alt="img-carousel" />
-              <img loading="lazy" src="https://i.postimg.cc/zvP9g6Gy/image.png" class="play-icon" alt="play" />
-            </div>
-
-            <div class="video-carousel-title">
-              <div>
-                <b>Reducir</b> costos de energía
-              </div>
-            </div>
-          </div></div>
         </div>
       </div>
     </div>
@@ -1470,7 +1512,7 @@ font-size: 14px;
     </div>
     <div class="section-7">
       <div class="section-7-title">
-        Productos con tecnología <b class="special-black">TotalFORCE®</b>
+        Productos con tecnología <b>TotalFORCE®</b>
       </div>
       <div class="section-7-items">
         <div class="section-7-item">
@@ -1572,9 +1614,9 @@ font-size: 14px;
 
 
     }
-    /*  setInterval(function() {
-     step()
- }, 5000); */
+    /* setInterval(function() {
+    step()
+}, 5000); */
     function loadVideo(e) {
       var d = document.getElementById("top");
       var d_nested = document.getElementById("s7video_div");
