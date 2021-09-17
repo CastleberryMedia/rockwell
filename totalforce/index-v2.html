@@ -452,6 +452,7 @@
     .section-3-backgroung {
       max-width: 40%;
       margin-left: 6em;
+      z-index: 100;
     }
 
 
@@ -991,6 +992,17 @@
         height: 15em;
         max-height: 15em;
       }
+
+      .section-1  .section-4, .section-4  .section-4 {
+
+height: auto;
+
+    }
+
+
+    .section-1 .section-5-backgroung, .section-1 .section-3-backgroung {
+  margin-left: 0;
+}
     
 .section-4-content, .section-6-content {
 
@@ -1266,9 +1278,10 @@ align-items: center;
 
         <div class="section-3-main">
 
-          <div class="section-3-main-text">
+     
           <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
             class="dots" />
+            <div class="section-3-main-text">
           <img loading="lazy" src="https://i.postimg.cc/3wXNFCp8/image.png" alt="mineria-text"
             class="section-3-backgroung" />
           <div class="section-3-content">
@@ -1692,9 +1705,9 @@ align-items: center;
 
 
     }
-   /*  setInterval(function() {
+    setInterval(function() {
     step()
-}, 5000); */
+}, 5000);
     function loadVideo(e) {
       var d = document.getElementById("top");
       var d_nested = document.getElementById("s7video_div");
