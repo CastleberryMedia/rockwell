@@ -86,6 +86,11 @@
       height: 400px;
     }
 
+    .gcdc-gate.gcdc-modal-dialog .gcdc-form-render {
+  
+    padding: 20px !important;
+}
+
 
 
     .header-button {
@@ -242,8 +247,7 @@
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      flex-grow: 2;
-      flex-basis: 0;
+      flex:1;
     }
 
     .section-2 .video-carousel-title {
@@ -406,11 +410,6 @@
       align-items: flex-start;
     }
 
-
-    .section-3 .button-red,
-    .section-5 .button-red {
-      font-size: 35px;
-    }
 
     .section-5-subtitle,
     .section-3-subtitle {
@@ -634,7 +633,24 @@
       display: none;
     }
 
-    @media (min-width: 1200px) {
+
+    
+
+@media (min-width:1080px){
+  .section-3-main-text, .section-5-main-text {
+  
+    margin-top: 12em;
+  }
+}
+@media (max-width:1613px){
+  .section-3-main-text, .section-5-main-text {
+  
+    margin-top: 11em;
+}
+}
+
+
+    @media (min-width: 1920px) {
 
 
       .content-video-data-subtitle {
@@ -1614,9 +1630,9 @@
 
 
     }
-    /* setInterval(function() {
+    setInterval(function() {
     step()
-}, 5000); */
+}, 5000);
     function loadVideo(e) {
       var d = document.getElementById("top");
       var d_nested = document.getElementById("s7video_div");
