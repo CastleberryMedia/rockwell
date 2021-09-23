@@ -84,8 +84,8 @@
     #banner-2,
     #banner-3,
     #banner-4 {
-      display: none;
-
+      /* display: none;
+ */
     }
 
     .gcdc-gate.gcdc-modal-dialog .gcdc-form-render {
@@ -295,10 +295,10 @@ width: fit-content;
       left: 0;
     }
 
-    .section-1 .movil{
+     .movil{
       display: block;
     }
-    .section-1 .normal{
+ .normal{
       display: none;
     }
 
@@ -388,6 +388,7 @@ width: fit-content;
 
     .section-2 .main-video-main{
       height: 27%;
+      width: 100%;
     }
 
     .section-2-title{
@@ -531,7 +532,143 @@ text-align: left;
     @media (min-width: 768px) {}
 
     /* //Pantallas grandes (desktops de más de 992px) */
-    @media (min-width: 992px) {}
+    @media (min-width: 992px) {
+
+
+     .movil {
+    display: none;
+}
+     .normal {
+    display: block;
+}
+.contents {
+    display: flex;
+}
+
+.statistics .item-null{
+  display: block;
+  width: 1px;
+      background-color: white;
+     
+}
+
+.statistics .item {
+    flex: 1;
+    gap: 10px;
+    border: none;
+    padding: 0px 15px;
+}
+
+.statistics {
+    
+    padding: 10px;
+   
+}
+
+.statistics .item-flex {
+  
+    height: 100%;
+}
+
+.section-2-content {
+display: flex;
+}
+
+.content-video-description {
+    padding: 25px 6em;
+}
+.statistics-text-footert {
+  
+    position: absolute;
+    right: 5em;
+
+    }
+    .text-footer {
+    
+    text-align: end;
+}
+.section-background-title {
+    font-size: 70px
+}
+
+.section-background-subtitle {
+    font-size: 30px;
+    
+}
+
+.section-background-content {
+    margin-left: 30.5em;
+    margin-right: 10px;
+
+}
+
+.section-gray .dots {
+    width: 40%;
+ margin-left: 0;
+}
+
+.section-gray-main-text {
+    display: flex;
+}
+
+.section-gray-subtitle {
+    font-size: 30px
+}
+
+.section-gray .button-red, .section-background .button-red {
+    font-size: 20px;
+
+}
+.section-7-items {
+    display: flex;
+}
+
+.section-7-title {
+    font-size: 40px
+}
+
+.section-7 .item-title {
+    font-size: 24px
+}
+.section-7-items .item-category {
+    font-weight: 20px
+}
+
+.section-7 .item-description {
+    font-size: 20px;
+}
+
+.section-2 .video-carousel-title {
+    font-size: 24px;
+}
+
+.content-video-description-subtitle {
+    font-size: 20px;
+}
+
+.content-video-description-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.statistics .title {
+    font-size: 24px;
+}
+.statistics .subtitle {
+    font-size: 20px;
+}
+
+.content-video-data-subtitle {
+   font-size: 34px;
+}
+
+.section-1 .button-red{
+  font-size: 18px;
+}
+
+
+
+  }
 
     /* //Pantallas muy grandes (desktops de más de 1200px) */
     @media (min-width: 1200px) {}
@@ -560,7 +697,9 @@ text-align: left;
       <div class="content-video" id="banner-0">
         <div class="content-video-source">
           <video loop="true" autoplay="autoplay" muted playsinline class="normal">
-            <source src="https://drive.google.com/uc?export=download&id=1EtrlY7-dT0qcxHUA99t2XTabmDmQ7GVW"
+
+          
+            <source src="https://drive.google.com/uc?export=download&id=1xCzQA0H5fvcRxCgyQ6sjblCKLFj-4OxA"
               type="video/mp4" />
           </video>
           <video loop="true" autoplay="autoplay" muted playsinline class="movil">
@@ -593,7 +732,7 @@ text-align: left;
 
       </div>
       <div class="section-gray" id="banner-1">
-        <img loading="lazy" class="img-section normal" src="https://i.postimg.cc/wvRLgPMX/fondo-Gris-Resize.png"
+        <img loading="lazy" class="img-section normal" src="https://i.postimg.cc/RFdn0zKb/Fondo-gris-banner-2.png"
           alt="img-petroleo" />
         <img loading="lazy" class="img-section movil" src="https://i.postimg.cc/3rXx1Wmm/Fondo-gris-banner-1.png"
           alt="img-petroleo" />
@@ -620,7 +759,7 @@ text-align: left;
         </div>
       </div>
       <div class="section-background" id="banner-2">
-        <img loading="lazy" class="img-section normal" src="https://i.postimg.cc/26r26CpQ/metales-Resize.webp"
+        <img loading="lazy" class="img-section normal" src="https://i.postimg.cc/prgVW0G6/Metales2-Standard-banner.webp"
           alt="img-petroleo" />
         <img loading="lazy" class="img-section movil" src="https://i.postimg.cc/Jzq7LFPn/Metales2-banner-Movil-2.webp"
           alt="img-petroleo" />
@@ -662,7 +801,7 @@ text-align: left;
         </div>
       </div>
       <div class="section-background" id="banner-4">
-        <img loading="lazy" class="img-section normal" src="https://i.postimg.cc/kMtvmVR0/o-g-Resize.webp"
+        <img loading="lazy" class="img-section normal" src="https://i.postimg.cc/SRzqv6S7/O-G2-standard-banner.webp"
           alt="img-petroleo" />
         <img loading="lazy" class="img-section movil" src="https://i.postimg.cc/zXqf3W33/O-G2-banner-movil-1.webp"
           alt="img-petroleo" />
@@ -855,7 +994,8 @@ text-align: left;
 
 
     <div class="section-gray" id="neumaticos">
-      <img loading="lazy" class="img-section" src="https://i.postimg.cc/8PLkTFjC/Fondo-gris.png" alt="img-petroleo" />
+      <img loading="lazy" class="img-section normal" src="https://i.postimg.cc/Znf7p2tw/Fondo-gris-2-1.webp" alt="img-petroleo" />
+      <img loading="lazy" class="img-section movil" src="https://i.postimg.cc/8PLkTFjC/Fondo-gris.png" alt="img-petroleo" />
 
       <div class="section-gray-main">
 
@@ -887,7 +1027,9 @@ text-align: left;
     </div>
 
     <div class="section-background" id="metales">
-      <img loading="lazy" class="img-section" src="https://i.postimg.cc/028Z2Ws3/Metales2-Movil-2.jpg"
+      <img loading="lazy" class="img-section normal" src="https://i.postimg.cc/prgVW0G6/Metales2-Standard-banner.webp"
+        alt="img-petroleo" />
+      <img loading="lazy" class="img-section movil" src="https://i.postimg.cc/028Z2Ws3/Metales2-Movil-2.jpg"
         alt="img-petroleo" />
       <div class="section-background-content">
         <div class="section-background-title">Metales</div>
@@ -907,7 +1049,8 @@ text-align: left;
 
     <div class="section-gray" id="minera">
 
-      <img loading="lazy" class="img-section" src="https://i.postimg.cc/8PLkTFjC/Fondo-gris.png" alt="img-petroleo" />
+      <img loading="lazy" class="img-section normal" src="https://i.postimg.cc/Znf7p2tw/Fondo-gris-2-1.webp" alt="img-petroleo" />
+      <img loading="lazy" class="img-section movil" src="https://i.postimg.cc/8PLkTFjC/Fondo-gris.png" alt="img-petroleo" />
     
       <div class="section-gray-main">  <img loading="lazy" src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots"
         class="dots" />
@@ -933,7 +1076,8 @@ text-align: left;
       </div>
     </div>
     <div class="section-background" id="petroleo">
-      <img loading="lazy" class="img-section" src="https://i.postimg.cc/vTG7TBp9/O-G2-movil-1-0-1.webp"
+      <img loading="lazy" class="img-section normal"  src="https://i.postimg.cc/SRzqv6S7/O-G2-standard-banner.webp" alt="img-petroleo" />
+      <img loading="lazy" class="img-section movil"  src="https://i.postimg.cc/vTG7TBp9/O-G2-movil-1-0-1.webp"
         alt="img-petroleo" />
       <div class="section-background-content">
         <div class="section-background-title">Petróleo & Gas</div>
@@ -1053,9 +1197,9 @@ text-align: left;
 
 
     }
-    setInterval(function() {
+    /* setInterval(function() {
     step()
-}, 5000);
+}, 5000); */
     function loadVideo(e) {
       var d = document.getElementById("top");
       var d_nested = document.getElementById("s7video_div");
