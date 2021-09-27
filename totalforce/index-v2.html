@@ -34,6 +34,7 @@
 
     main {
       margin-top: 84px;
+      z-index: 900;
     }
 
     a {
@@ -65,6 +66,8 @@
       margin-right: 40px;
       display: none;
     }
+
+
 
     .header-search img {
       width: 45%;
@@ -132,6 +135,10 @@
 
     .section-1 .section-background-subtitle {
       margin-bottom: 10px;
+    }
+
+    .content-video-source {
+      width: 100%;
     }
 
     .item-flex {
@@ -319,11 +326,42 @@
       width: 100%;
     }
 
+    .section-1 {
+      position: relative;
+    }
+
     .section-1 .content-video {
       position: relative;
       display: inline-block;
       text-align: center;
       width: 100%;
+    }
+
+    .arrows {
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      justify-content: space-between;
+
+    }
+
+    .arrow-rigth {
+      transform: rotate(180deg);
+    }
+
+    .arrow-rigth,
+    .arrow-left {
+      width: 4%;
+      height: fit-content;
+      margin: 0 20px;
+    }
+
+    .arrow-click {
+      width: 100%;
+      cursor: pointer;
     }
 
     .section-1 .content-video-data {
@@ -601,6 +639,41 @@
 
     }
 
+    video {
+      /* override other styles to make responsive */
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    .triangulo_bottom_left {
+        width: 6%;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+      }
+      .triangulo_bottom_left img {
+        width: 100%;
+      }
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 
 
     /* 
@@ -621,10 +694,19 @@
     }
 
     /* //Pantallas medianas (tablets de más de 768px) */
-    @media (min-width: 768px) {}
+    @media (min-width: 768px) {
+      .header-options {
+
+        display: flex;
+      }
+    }
 
     /* //Pantallas grandes (desktops de más de 992px) */
     @media (min-width: 992px) {
+      .header-options {
+
+        display: flex;
+      }
 
 
       #metales,
@@ -683,7 +765,7 @@
 
       .statistics {
 
-        padding: 10px;
+        padding: 20px;
 
       }
 
@@ -697,7 +779,7 @@
       }
 
       .content-video-description {
-        padding: 6em 6em;
+        padding: 6em 15em;
       }
 
       .statistics-text-footert {
@@ -799,15 +881,7 @@
       }
 
 
-      .triangulo_bottom_left {
-        width: 0;
-        height: 0;
-        border-bottom: 80px solid #ffffff;
-        border-left: 80px solid transparent;
-        position: absolute;
-        right: -1px;
-        bottom: -1px;
-      }
+     
 
       img.logo-footer {
         width: 20%;
@@ -866,19 +940,19 @@
 
     }
 
+
     /* //Pantallas muy grandes (desktops de más de 1200px) */
     @media (min-width: 1200px) {
 
 
       .section-1 .content-video-data {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        right: 10%;
-        transform: translate(70%, -50%);
+
+        left: auto;
+        right: 0;
+        transform: translate(-50%, -50%);
         width: fit-content;
         justify-content: right;
-        display: grid;
+        top: 50%;
 
       }
 
@@ -899,7 +973,7 @@
       #banner-2,
       #banner-3,
       #banner-4 {
-        height: 706px;
+        height: 470px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1029,9 +1103,11 @@
     </div>
   </header>
   <main>
+   
     <div class="section-1">
       <div class="content-video" id="banner-0">
-        <div class="content-video-source"> <video loop="true" autoplay="autoplay" muted playsinline class="grande">
+        <div class="content-video-source">
+          <video ID="super-video" loop="true" autoplay="autoplay" muted playsinline class="grande">
             <source src="https://drive.google.com/uc?export=download&id=1MDzHC4JFBd99ma7_zTdaidX3ZJg1j0FX"
               type="video/mp4" />
           </video> <video loop="true" autoplay="autoplay" muted playsinline class="normal">
@@ -1040,7 +1116,8 @@
           </video> <video loop="true" autoplay="autoplay" muted playsinline class="movil">
             <source src="https://drive.google.com/uc?export=download&id=1apk5zUFuSf3ERPLFk4-F97dEM6PA28-j"
               type="video/mp4" />
-          </video> </div>
+          </video>
+        </div>
         <div class="content-video-data">
           <div class="content-video-data-title"> Tecnología <br /> <b>TotalFORCE®</b> </div>
           <div class="content-video-data-subtitle"> Control de motores de <br /> alto rendimiento </div>
@@ -1070,7 +1147,7 @@
         <div class="section-background-content">
           <div class="section-background-title">Metales</div>
           <div class="section-background-subtitle"> Entérese aquí cómo la tecnología <b>TotalForce®</b> soluciona los
-            problemas de la Industria de Metales. </div> <a target="_blank" class="button-red"
+            problemas de la <b>Industria de Metales.</b></div> <a target="_blank" class="button-red"
             href="#gate-b50d4739-0656-4e99-878f-ae72c9944361">Descarga</a>
         </div>
       </div>
@@ -1095,10 +1172,25 @@
         <div class="section-background-content">
           <div class="section-background-title">Petróleo & Gas</div>
           <div class="section-background-subtitle"> Entérese aquí cómo la tecnología <b>TotalForce®</b> soluciona los
-            problemas de la Industria de Petróleo & Gas. </div> <a target="_blank" class="button-red"
+            problemas de la <b>Industria de Petróleo & Gas.</b></div> <a target="_blank" class="button-red"
             href="#gate-3e543ac2-50c5-40c1-98e7-a959fd7e24f2">Descarga</a>
         </div>
       </div>
+      <div class="arrows">
+        <div class="arrow-left">
+          <img loading="lazy" onclick="stepBack()"
+            src="https://i.postimg.cc/B6861KSz/direction-left-next-previous-return-icon-1320185003886293346.png"
+            alt="minera" class="arrow-click" />
+        </div>
+        <div class="arrow-rigth">
+          <img loading="lazy" onclick="step()"
+            src="https://i.postimg.cc/B6861KSz/direction-left-next-previous-return-icon-1320185003886293346.png"
+            alt="minera" class="arrow-click" />
+        </div>
+      </div>
+
+
+
     </div>
     <!-- <div class="step-banner" onclick="step()">CLICK</div> -->
     <div class="statistics">
@@ -1106,7 +1198,7 @@
         <div class="contents">
           <div class="item">
             <a href="#neumaticos">
-              <div class="title">Industria de Neumáticos & Cauchos</div>
+              <div class="title"><b>Industria de Neumáticos & Cauchos</b></div>
               <div class="item-flex">
                 <div class="statistics-contain-img"> <img loading="lazy" src="https://i.postimg.cc/d3HK9D4t/image.png"
                     alt="neumaticos" class="img-statistics" /> </div>
@@ -1118,7 +1210,7 @@
           <div class="item-null"></div>
           <div class="item">
             <a href="#metales">
-              <div class="title">Industria de Metales</div>
+              <div class="title"><b>Industria de Metales</b></div>
               <div class="item-flex">
                 <div class="statistics-contain-img"> <img loading="lazy" src="https://i.postimg.cc/QN0sDnhG/image.png"
                     alt="metales" class="img-statistics" /> </div>
@@ -1131,7 +1223,7 @@
           <div class="item">
             <div class="item-null-l"></div>
             <a href="#minera">
-              <div class="title">Industria Minera</div>
+              <div class="title"><b>Industria Minera</b></div>
               <div class="item-flex">
                 <div class="statistics-contain-img"> <img loading="lazy" src="https://i.postimg.cc/ht7q9Dxc/image.png"
                     alt="minera" class="img-statistics" /></div>
@@ -1143,7 +1235,7 @@
           <div class="item">
             <div class="item-null-l"></div>
             <a href="#petroleo">
-              <div class="title">Industria de Petróleo & Gas</div>
+              <div class="title"><b>Industria de Petróleo & Gas</b></div>
               <div class="item-flex">
                 <div class="statistics-contain-img"><img loading="lazy" src="https://i.postimg.cc/XvfSzsQP/image.png"
                     alt="Gas" class="img-statistics" /></div>
@@ -1154,8 +1246,11 @@
           </div>
         </div>
         <div class="text-footer">Porcentajes de ahorro de inversión promedio.</div>
+      </div>  
+      <div class="triangulo_bottom_left">
+        <img loading="lazy" src="https://i.postimg.cc/BvQR87t4/borde.png"
+        alt="triangle"  />
       </div>
-      <div class="triangulo_bottom_left"></div>
     </div>
     <div class="statistics-text-footert">Para obtener un cáculo específico contacte un asesor.</div>
     <div class="content-video-description">
@@ -1236,7 +1331,10 @@
         <div class="section-background-button"> <a target="_blank" class="button-red"
             href="#gate-b50d4739-0656-4e99-878f-ae72c9944361">Descarga</a> </div>
       </div>
-      <div class="triangulo_bottom_left"></div>
+      <div class="triangulo_bottom_left">
+        <img loading="lazy" src="https://i.postimg.cc/BvQR87t4/borde.png"
+        alt="triangle"  />
+      </div>
     </div>
     <div class="section-gray" id="minera">
       <div class="content-dots"> <img loading="lazy"
@@ -1263,7 +1361,10 @@
         <div class="section-background-button"> <a target="_blank" class="button-red"
             href="#gate-3e543ac2-50c5-40c1-98e7-a959fd7e24f2">Descarga</a> </div>
       </div>
-      <div class="triangulo_bottom_left"></div>
+      <div class="triangulo_bottom_left">
+        <img loading="lazy" src="https://i.postimg.cc/BvQR87t4/borde.png"
+        alt="triangle"  />
+      </div>
     </div>
     <div class="section-7">
       <div class="section-7-title"> Productos con tecnología <b>TotalFORCE®</b> </div>
@@ -1323,12 +1424,8 @@
     var activeStep = 0;
 
     function step() {
-
-
       var hidde = "";
       var visible = "";
-
-
       if (activeStep === 4) {
 
         hidde = "banner-" + (activeStep);
@@ -1336,24 +1433,33 @@
         activeStep = 0;
       }
       else {
-
-
         hidde = "banner-" + (activeStep);
         visible = "banner-" + (activeStep + 1);
         activeStep = activeStep + 1;
       }
-
-
       document.getElementById(hidde).style.display = "none";
       document.getElementById(visible).style.display = "flex";
-
-
-
-
+      document.getElementById(visible).style.animation = "fade-in 1s";
     }
-    setInterval(function () {
-      step()
-    }, 5000);
+    function stepBack() {
+      var hidde = "";
+      var visible = "";
+      if (activeStep === 0) {
+        hidde = "banner-" + (activeStep);
+        visible = "banner-4";
+        activeStep = 4;
+      }
+      else {
+        hidde = "banner-" + (activeStep);
+        visible = "banner-" + (activeStep - 1);
+        activeStep = activeStep - 1;
+      }
+      document.getElementById(hidde).style.display = "none";
+      document.getElementById(visible).style.display = "flex";
+    }
+    /*  setInterval(function () {
+       step()
+     }, 10000); */
     function loadVideo(e) {
       var d = document.getElementById("top");
       var d_nested = document.getElementById("s7video_div");
@@ -1409,6 +1515,23 @@
 
 
 
+  console.log("aqui")
+    var banner1 = document.getElementById("banner-1");
+    var banner2 = document.getElementById("banner-2");
+    var banner3 = document.getElementById("banner-3");
+    var banner4 = document.getElementById("banner-4");
+    var vid = document.getElementById("banner-0");
+
+
+    var x = vid.offsetHeight * 26.5 / 100
+    var xx = vid.offsetHeight - x
+
+    banner1.style.height = xx + "px";
+    banner2.style.height = xx + "px";
+    banner3.style.height = xx + "px";
+    banner4.style.height = xx + "px";
+
+   
   </script>
 </body>
 
