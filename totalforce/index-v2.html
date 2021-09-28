@@ -94,16 +94,6 @@
       padding: 20px !important;
     }
 
-    #s7video_div_videoPlayer {
-
-height: auto !important;
-}
-
-#s7video_div.video{
-  top:0 !important;
-}
-
-
 
     .header-button {
       border: 1px solid rgb(197, 26, 68);
@@ -648,46 +638,46 @@ height: auto !important;
 
     }
 
-    video {
-      /* override other styles to make responsive */
-      width: 100% !important;
-      height: auto !important;
+    .main-video {
+
+      height: 15em;
+      max-height: 15em;
+
     }
 
-    #s7video_div.s7videoviewer {
-        width: 100%;
-        height: auto;
 
-      }
 
     .triangulo_bottom_left {
-        width: 6%;
-    position: absolute;
-    right: 0;
-    bottom: -1px;
+      width: 6%;
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+    }
+
+    .triangulo_bottom_left img {
+      width: 100%;
+    }
+
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
       }
-      .triangulo_bottom_left img {
-        width: 100%;
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade-out {
+      from {
+        opacity: 1;
       }
 
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
+      to {
+        opacity: 0;
+      }
+    }
 
 
 
@@ -721,6 +711,11 @@ height: auto !important;
       .header-options {
 
         display: flex;
+      }
+
+      .main-video {
+        height: 100%;
+        max-height: none;
       }
 
 
@@ -791,6 +786,7 @@ height: auto !important;
 
       .section-2-content {
         display: flex;
+        height: fit-content;
       }
 
       .content-video-description {
@@ -896,7 +892,7 @@ height: auto !important;
       }
 
 
-     
+
 
       img.logo-footer {
         width: 20%;
@@ -908,8 +904,12 @@ height: auto !important;
       }
 
       .section-2 .main-video-main {
-        height: 100%;
-        width: 100%;
+        height: auto;
+        width: auto;
+      }
+
+      .section-2 .video-carousel-item:last-child {
+        margin-bottom: 0;
       }
 
       .section-2 .video-carousel {
@@ -1118,7 +1118,7 @@ height: auto !important;
     </div>
   </header>
   <main>
-   
+
     <div class="section-1">
       <div class="content-video" id="banner-0">
         <div class="content-video-source">
@@ -1261,10 +1261,9 @@ height: auto !important;
           </div>
         </div>
         <div class="text-footer">Porcentajes de ahorro de inversión promedio.</div>
-      </div>  
+      </div>
       <div class="triangulo_bottom_left">
-        <img loading="lazy" src="https://i.postimg.cc/BvQR87t4/borde.png"
-        alt="triangle"  />
+        <img loading="lazy" src="https://i.postimg.cc/BvQR87t4/borde.png" alt="triangle" />
       </div>
     </div>
     <div class="statistics-text-footert">Para obtener un cáculo específico contacte un asesor.</div>
@@ -1284,43 +1283,69 @@ height: auto !important;
       </div>
     </div>
     <div class="section-2">
+
+
+
+
       <div class="section-2-content">
+
         <div class="main-video-main">
           <div id="top" class="main-video">
             <div id="s7video_div"></div>
           </div>
         </div>
+
+
+
         <div class="video-carousel">
           <div class="section-2-title">RETOS EN LA <b>MANUFACTURA</b></div>
+
           <div class="video-carousel-flex">
             <div class="video-carousel-item">
-              <div class="video-carousel-item-video" onclick="loadVideo('Total Force 1-AVS')"> <img loading="lazy"
-                  src="https://i.postimg.cc/KjY64xxX/image.png" class="img-carousel" alt="img-carousel" /> <img
-                  loading="lazy" src="https://i.postimg.cc/zvP9g6Gy/image.png" class="play-icon" alt="play" /> </div>
+              <div class="video-carousel-item-video" onclick="loadVideo('Total Force 1-AVS')">
+
+                <img loading="lazy" src="https://i.postimg.cc/KjY64xxX/image.png" class="img-carousel"
+                  alt="img-carousel" />
+                <img loading="lazy" src="https://i.postimg.cc/zvP9g6Gy/image.png" class="play-icon" alt="play" />
+              </div>
               <div class="video-carousel-title">
-                <div> <b>Optimización</b> de la producción </div>
+                <div>
+                  <b>Optimización</b> de la producción
+                </div>
               </div>
             </div>
             <div class="video-carousel-item">
-              <div class="video-carousel-item-video" onclick="loadVideo('Total Force 2-AVS')"> <img loading="lazy"
-                  src="https://i.postimg.cc/j5M1pmNM/image.png" class="img-carousel" alt="img-carousel" /> <img
-                  loading="lazy" src="https://i.postimg.cc/zvP9g6Gy/image.png" class="play-icon" alt="play" /> </div>
+              <div class="video-carousel-item-video" onclick="loadVideo('Total Force 2-AVS')">
+
+                <img loading="lazy" src="https://i.postimg.cc/j5M1pmNM/image.png" class="img-carousel"
+                  alt="img-carousel" />
+                <img loading="lazy" src="https://i.postimg.cc/zvP9g6Gy/image.png" class="play-icon" alt="play" />
+              </div>
               <div class="video-carousel-title">
-                <div> <b>Minimizar</b> los paros no deseados </div>
+                <div>
+                  <b>Minimizar</b> los paros no deseados
+                </div>
               </div>
             </div>
             <div class="video-carousel-item">
-              <div class="video-carousel-item-video" onclick="loadVideo('Total Force 3-AVS')"> <img loading="lazy"
-                  src="https://i.postimg.cc/rmRhHsVw/image.png" class="img-carousel" alt="img-carousel" /> <img
-                  loading="lazy" src="https://i.postimg.cc/zvP9g6Gy/image.png" class="play-icon" alt="play" /> </div>
+              <div class="video-carousel-item-video" onclick="loadVideo('Total Force 3-AVS')">
+
+                <img loading="lazy" src="https://i.postimg.cc/rmRhHsVw/image.png" class="img-carousel"
+                  alt="img-carousel" />
+                <img loading="lazy" src="https://i.postimg.cc/zvP9g6Gy/image.png" class="play-icon" alt="play" />
+              </div>
+
               <div class="video-carousel-title">
-                <div> <b>Reducir</b> costos de energía </div>
+                <div>
+                  <b>Reducir</b> costos de energía
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="section-gray" id="neumaticos">
       <div class="content-dots"> <img loading="lazy"
           src="https://i.postimg.cc/qM7tH5hW/imageonline-co-whitebackgroundremoved-2.png" alt="dots" class="dots" />
@@ -1347,8 +1372,7 @@ height: auto !important;
             href="#gate-b50d4739-0656-4e99-878f-ae72c9944361">Descarga</a> </div>
       </div>
       <div class="triangulo_bottom_left">
-        <img loading="lazy" src="https://i.postimg.cc/BvQR87t4/borde.png"
-        alt="triangle"  />
+        <img loading="lazy" src="https://i.postimg.cc/BvQR87t4/borde.png" alt="triangle" />
       </div>
     </div>
     <div class="section-gray" id="minera">
@@ -1377,8 +1401,7 @@ height: auto !important;
             href="#gate-3e543ac2-50c5-40c1-98e7-a959fd7e24f2">Descarga</a> </div>
       </div>
       <div class="triangulo_bottom_left">
-        <img loading="lazy" src="https://i.postimg.cc/BvQR87t4/borde.png"
-        alt="triangle"  />
+        <img loading="lazy" src="https://i.postimg.cc/BvQR87t4/borde.png" alt="triangle" />
       </div>
     </div>
     <div class="section-7">
@@ -1472,9 +1495,9 @@ height: auto !important;
       document.getElementById(hidde).style.display = "none";
       document.getElementById(visible).style.display = "flex";
     }
-    /*  setInterval(function () {
-       step()
-     }, 10000); */
+    setInterval(function () {
+      step()
+    }, 10000);
     function loadVideo(e) {
       var d = document.getElementById("top");
       var d_nested = document.getElementById("s7video_div");
@@ -1530,7 +1553,7 @@ height: auto !important;
 
 
 
-  console.log("aqui")
+    console.log("aqui")
     var banner1 = document.getElementById("banner-1");
     var banner2 = document.getElementById("banner-2");
     var banner3 = document.getElementById("banner-3");
@@ -1541,14 +1564,14 @@ height: auto !important;
     var x = vid.offsetHeight * 26.5 / 100
     var xx = vid.offsetHeight - x
 
-    if(xx >=421){
-    banner1.style.height = xx + "px";
-    banner2.style.height = xx + "px";
-    banner3.style.height = xx + "px";
-    banner4.style.height = xx + "px";
+    if (xx >= 421) {
+      banner1.style.height = xx + "px";
+      banner2.style.height = xx + "px";
+      banner3.style.height = xx + "px";
+      banner4.style.height = xx + "px";
     }
 
-   
+
   </script>
 </body>
 
