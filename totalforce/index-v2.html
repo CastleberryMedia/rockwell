@@ -835,6 +835,7 @@
 
       .section-gray-main-text {
         display: flex;
+        align-items: center;
       }
 
       .section-gray-subtitle {
@@ -972,6 +973,15 @@
 .footer-content {
    
     width: 36em;
+}
+
+.section-1 .content-video-data {
+    left: auto;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    justify-content: right;
+    top: 50%;
 }
 
     }
@@ -1364,7 +1374,7 @@
               </div>
               <div class="video-carousel-title">
                 <div>
-                  <b>Optimización</b> de la producción
+                  <b>Optimizar</b> la producción
                 </div>
               </div>
             </div>
@@ -1549,9 +1559,9 @@
       document.getElementById(hidde).style.display = "none";
       document.getElementById(visible).style.display = "flex";
     }
-  /*   setInterval(function () {
+    setInterval(function () {
       step()
-    }, 10000); */
+    }, 10000);
     function loadVideo(e) {
       var d = document.getElementById("top");
       var d_nested = document.getElementById("s7video_div");
